@@ -21,7 +21,7 @@ rss = "Curriculum vitae by N. Mueller"
 ## Researcher Identification
 
 - **ORCID**: [0000-0002-7798-0858](https://orcid.org/0000-0002-7798-0858)
-- **Google Scholar Profile**:  [https://scholar.google.com/citations?user=PXLbDdYAAAAJ&hl=en](https://scholar.google.com/citations?user=PXLbDdYAAAAJ&hl=en)
+- **Google Scholar**:  [https://scholar.google.com/citations?user=PXLbDdYAAAAJ&hl=en](https://scholar.google.com/citations?user=PXLbDdYAAAAJ&hl=en)
 
 ## Academic degrees
 
@@ -38,6 +38,7 @@ rss = "Curriculum vitae by N. Mueller"
 * Low-Rank Tensor Decompositions.  
 * Open Source Scientific Software.
 * High Performance Scientific Computing. 
+* Scientific Machine Learning.
 
 ## Experience
 
@@ -71,7 +72,7 @@ Author of [GridapROMs.jl](https://github.com/gridap/GridapROMs.jl), a Julia pack
 
 - Programming languages: Julia, Python, Matlab, C/C++, Git.
 - Parallel programming: [Julia multi-threading](https://docs.julialang.org/en/v1/manual/multi-threading/), [Julia Distributed](https://docs.julialang.org/en/v1/manual/distributed-computing/).
-- Favourite IDE: [VSCode](https://code.visualstudio.com/).
+- Favourite IDE: VSCode.
 - Other software: Comsol Multiphysics, Paraview, Gmsh.
 
 
