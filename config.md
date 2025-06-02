@@ -2,7 +2,7 @@
 Add here global page variables to use throughout your website.
 -->
 
-@def bibliography = "/assets/bib/refs.bib"
+@def bibliography = "/assets/references.bib"
 
 +++
 author = "Nicholas Mueller"
