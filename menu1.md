@@ -68,7 +68,7 @@ See publications [here](https://nichomueller.github.io/menu2/).
 
 Author of [GridapROMs.jl](https://github.com/gridap/GridapROMs.jl), a Julia package for solving parameterized partial differential equations using reduced order models. The library balances algorithmic efficiency with a simple, highly interpretable, and user-friendly API. It supports a wide range of applications, including linear and nonlinear problems, single- and multi-field systems, as well as steady and transient equations.
 
-## Programming skills
+## Programming Skills
 
 - Programming languages: Julia, Python, Matlab, C/C++, Git.
 - Parallel programming: [Julia multi-threading](https://docs.julialang.org/en/v1/manual/multi-threading/), [Julia Distributed](https://docs.julialang.org/en/v1/manual/distributed-computing/).
