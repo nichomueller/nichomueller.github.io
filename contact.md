@@ -3,11 +3,11 @@
 You can contact me at my institutional email
 
 ```
-nicholas.mueller (at) monash (dot) edu (dot) au
+nicholas.mueller@monash.edu.au
 ```
 
 or at my personal email 
 
 ```
-nicho.mueller (at) gmail (dot) com
+nicho.mueller@gmail.com
 ```

@@ -25,9 +25,8 @@ rss = "Curriculum vitae by N. Mueller"
 
 ## Academic degrees
 
-- Feb, 2022 - Sep, 2025: *PhD in Applied Mathematics* at [Monash University](https://www.monash.edu/), Melbourne, Australia. Dissertation: Linear Reduced Order Models for Parameterized Partial Differential Equations. Advisors: Prof. S. Badia, R. Ruiz Baier
-- Sep, 2019 - Jul, 2021: *Master of Science -- Applied Mathematics* at [EPFL](https://www.epfl.ch/en/), Lausanne, Switzerland. Master thesis: A Space-Time Reduced Model for
-the Unsteady Stokes Flow. Advisor: Prof. S. Deparis
+- Feb, 2022 - Sep, 2025: *PhD in Applied Mathematics* at [Monash University](https://www.monash.edu/), Melbourne, Australia. Dissertation: *Linear Reduced Order Models for Parameterized Partial Differential Equations*. Advisors: Prof. S. Badia, R. Ruiz Baier
+- Sep, 2019 - Jul, 2021: *Master of Science -- Applied Mathematics* at [EPFL](https://www.epfl.ch/en/), Lausanne, Switzerland. Master thesis: *A Space-Time Reduced Model for the Unsteady Stokes Flow*. Advisor: Prof. S. Deparis
 - Oct, 2016 - Jul, 2019: *Bachelor in Mathematical Engineering* at [Politecnico di Milano](https://www.polimi.it/), Milan, Italy.
 
 ## Research Interests
