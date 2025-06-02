@@ -1,0 +1,3243 @@
+#####################################################################
+###################### POD-RB-MDEIM REFERENCES ######################
+#####################################################################
+
+@article{MUELLER2024115767,
+title = {Model order reduction with novel discrete empirical interpolation methods in space–time},
+journal = {Journal of Computational and Applied Mathematics},
+volume = {444},
+pages = {115767},
+year = {2024},
+issn = {0377-0427},
+doi = {https://doi.org/10.1016/j.cam.2024.115767},
+url = {https://www.sciencedirect.com/science/article/pii/S0377042724000165},
+author = {Nicholas Mueller and Santiago Badia},
+keywords = {Parameterized, Unsteady partial differential equations, Space–time model order reduction, Reduced basis method, Discrete empirical interpolation, Hyper-reduction},
+abstract = {This work proposes novel techniques for the efficient numerical simulation of parameterized, unsteady partial differential equations. Projection-based reduced order models (ROMs) such as the reduced basis method employ a (Petrov-)Galerkin projection onto a linear low-dimensional subspace. In unsteady applications, space–time reduced basis (ST-RB) methods have been developed to achieve a dimension reduction both in space and time, eliminating the computational burden of time marching schemes. However, nonaffine parameterizations dilute any computational speedup achievable by traditional ROMs. Computational efficiency can be recovered by linearizing the nonaffine operators via hyper-reduction, such as the empirical interpolation method in matrix form. In this work, we implement new hyper-reduction techniques explicitly tailored to deal with unsteady problems and embed them in a ST-RB framework. For each of the proposed methods, we develop a posteriori error bounds. We run numerical tests to compare the performance of the proposed ROMs against high-fidelity simulations, in which we combine the finite element method for space discretization on 3D geometries and the Backward Euler time integrator. In particular, we consider a heat equation and an unsteady Stokes equation. The numerical experiments demonstrate the accuracy and computational efficiency our methods retain with respect to the high-fidelity simulations.}
+}
+
+@article{choi2019space,
+	title={Space--time least-squares {P}etrov--{G}alerkin projection for nonlinear model reduction},
+	author={Choi, Youngsoo and Carlberg, Kevin},
+	journal={SIAM Journal on Scientific Computing},
+	volume={41},
+	number={1},
+	pages={A26--A58},
+	year={2019},
+	publisher={SIAM}
+}
+
+@article{kim2021efficient, 
+	author = {Y. Kim and K. Wang and Y. Choi },
+	title = {Efficient Space–Time Reduced Order Model for Linear Dynamical Systems in {P}ython Using Less than 120 Lines of Code},
+	journal = {Mathematics 2021},
+	volume = {9},
+	number = {14},
+	pages = {},
+	year = {2021},
+}
+
+@article{choi2021space, 
+	author = {Y. Choi and P. Brown and W. Arrighi and R. Anderson and K. Huynh},
+	title = {Space–time reduced order model for large-scale linear dynamical systems with application to {B}oltzmann transport problems},
+	journal = {Journal of Computational Physics},
+	volume = {424},
+	number = {},
+	pages = {},
+	year = {2021},
+}
+
+@article{BADIA2018533,
+title = {The aggregated unfitted finite element method for elliptic problems},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {336},
+pages = {533-553},
+year = {2018},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2018.03.022},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782518301476},
+author = {Santiago Badia and Francesc Verdugo and Alberto F. Martín},
+keywords = {Unfitted finite elements, Embedded boundary methods, Ill-conditioning},
+abstract = {Unfitted finite element techniques are valuable tools in different applications where the generation of body-fitted meshes is difficult. However, these techniques are prone to severe ill conditioning problems that obstruct the efficient use of iterative Krylov methods and, in consequence, hindersthe practical usage of unfitted methods for realistic large scale applications. In this work, we present a technique that addresses such conditioning problems by constructing enhanced finite element spaces based on a cell aggregation technique. The presented method, called aggregated unfitted finite element method, is easy to implement, and can be used, in contrast to previous works, in Galerkin approximations of coercive problems with conforming Lagrangian finite element spaces. The mathematical analysis of the method states that the condition number of the resulting linear system matrix scales as in standard finite elements for body-fitted meshes, without being affected by small cut cells, and that the method leads to the optimal finite element convergence order. These theoretical results are confirmed with 2D and 3D numerical experiments.}
+}
+
+@article{CHASAPI2023115997,
+title = {A localized reduced basis approach for unfitted domain methods on parameterized geometries},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {410},
+pages = {115997},
+year = {2023},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2023.115997},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782523001214},
+author = {Margarita Chasapi and Pablo Antolin and Annalisa Buffa},
+keywords = {Reduced basis method, Discrete empirical interpolation method, Proper orthogonal decomposition, Immersed method, Isogeometric analysis, Trimming},
+abstract = {This work introduces a reduced order modeling (ROM) framework for the solution of parameterized second-order linear elliptic partial differential equations formulated on unfitted geometries. The goal is to construct efficient projection-based ROMs, which rely on techniques such as the reduced basis method and discrete empirical interpolation. The presence of geometrical parameters in unfitted domain discretizations entails challenges for the application of standard ROMs. Therefore, in this work we propose a methodology based on (i) extension of snapshots on the background mesh and (ii) localization strategies to decrease the number of reduced basis functions. The method we obtain is computationally efficient and accurate, while it is agnostic with respect to the underlying discretization choice. We test the applicability of the proposed framework with numerical experiments on two model problems, namely the Poisson and linear elasticity problems. In particular, we study several benchmarks formulated on two-dimensional, trimmed domains discretized with splines and we observe a significant reduction of the online computational cost compared to standard ROMs for the same level of accuracy. Moreover, we show the applicability of our methodology to a three-dimensional geometry of a linear elastic problem.}
+}
+
+@article{NOUY20113066,
+title = {Fictitious domain method and separated representations for the solution of boundary value problems on uncertain parameterized domains},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {200},
+number = {45},
+pages = {3066-3082},
+year = {2011},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2011.07.002},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782511002362},
+author = {A. Nouy and M. Chevreuil and E. Safatly},
+keywords = {Uncertainty quantification, Proper Generalized Decomposition, Tensor product approximation, Random domain, Fictitious domain method, Spectral stochastic methods},
+abstract = {A tensor-based method is proposed for the solution of partial differential equations defined on uncertain parameterized domains. It provides an accurate solution which is explicit with respect to parameters defining the shape of the domain, thus allowing efficient a posteriori probabilistic or parametric analyses. In the proposed method, a fictitious domain approach is first adopted for the reformulation of the parametric problem on a fixed domain, yielding a weak formulation in a tensor product space (product of space functions and parametric functions). The paper is limited to the case of Neumann conditions on uncertain parts of the boundary. The Proper Generalized Decomposition method is then introduced for the construction of a tensor product approximation (separated representation) of the solution. It can be seen as an a priori model reduction technique which automatically captures reduced bases of space functions and parametric functions which are optimal for the representation of the solution. This tensor-based method is made computationally tractable by introducing separated representations of variational forms, resulting from separated representations of the parameterized indicator function of the uncertain domain. For this purpose, a method is proposed for the construction of a constrained tensor product approximation which preserves positivity and therefore ensures well-posedness of problems associated with approximate indicator functions. Moreover, a regularization of the geometry is introduced to speed up the convergence of these tensor product approximations.}
+}
+
+@article{BALAJEWICZ2014489,
+title = {Reduction of nonlinear embedded boundary models for problems with evolving interfaces},
+journal = {Journal of Computational Physics},
+volume = {274},
+pages = {489-504},
+year = {2014},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2014.06.038},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999114004458},
+author = {Maciej Balajewicz and Charbel Farhat},
+keywords = {Data compression, Embedded boundary method, Evolving domains, Immersed boundary method, Interfaces, Model reduction, Singular value decomposition},
+abstract = {Embedded boundary methods alleviate many computational challenges, including those associated with meshing complex geometries and solving problems with evolving domains and interfaces. Developing model reduction methods for computational frameworks based on such methods seems however to be challenging. Indeed, most popular model reduction techniques are projection-based, and rely on basis functions obtained from the compression of simulation snapshots. In a traditional interface-fitted computational framework, the computation of such basis functions is straightforward, primarily because the computational domain does not contain in this case a fictitious region. This is not the case however for an embedded computational framework because the computational domain typically contains in this case both real and ghost regions whose definitions complicate the collection and compression of simulation snapshots. The problem is exacerbated when the interface separating both regions evolves in time. This paper addresses this issue by formulating the snapshot compression problem as a weighted low-rank approximation problem where the binary weighting identifies the evolving component of the individual simulation snapshots. The proposed approach is application independent and therefore comprehensive. It is successfully demonstrated for the model reduction of several two-dimensional, vortex-dominated, fluid–structure interaction problems.}
+}
+
+@article{KARATZAS2020833,
+title = {Projection-based reduced order models for a cut finite element method in parametrized domains},
+journal = {Computers \& Mathematics with Applications},
+volume = {79},
+number = {3},
+pages = {833-851},
+year = {2020},
+issn = {0898-1221},
+doi = {https://doi.org/10.1016/j.camwa.2019.08.003},
+url = {https://www.sciencedirect.com/science/article/pii/S0898122119303931},
+author = {Efthymios N. Karatzas and Francesco Ballarin and Gianluigi Rozza},
+keywords = {Reduced order methods, Cut finite element method, Geometrical parametrization, Free boundary problems, Embedded methods, Viscous flows},
+abstract = {This work presents a reduced order modeling technique built on a high fidelity embedded mesh finite element method. Such methods, and in particular the CutFEM method, are attractive in the generation of projection-based reduced order models thanks to their capabilities to seamlessly handle large deformations of parametrized domains and in general to handle topological changes. The combination of embedded methods and reduced order models allows us to obtain fast evaluation of parametrized problems, avoiding remeshing as well as the reference domain formulation, often used in the reduced order modeling for boundary fitted finite element formulations. The resulting novel methodology is presented on linear elliptic and Stokes problems, together with several test cases to assess its capability. The role of a proper extension and transport of embedded solutions to a common background is analyzed in detail.}
+}
+
+@article{KARATZAS2022140,
+title = {A Reduced Order Cut Finite Element method for geometrically parametrized steady and unsteady Navier–Stokes problems},
+journal = {Computers \& Mathematics with Applications},
+volume = {116},
+pages = {140-160},
+year = {2022},
+note = {New trends in Computational Methods for PDEs},
+issn = {0898-1221},
+doi = {https://doi.org/10.1016/j.camwa.2021.07.016},
+url = {https://www.sciencedirect.com/science/article/pii/S0898122121002790},
+author = {Efthymios N. Karatzas and Monica Nonino and Francesco Ballarin and Gianluigi Rozza},
+keywords = {Reduced Order Models, Unfitted mesh, Cut Finite Element Method, Navier–Stokes equations, Parameter–dependent shape geometry},
+abstract = {We focus on steady and unsteady Navier–Stokes flow systems in a reduced-order modeling framework based on Proper Orthogonal Decomposition within a levelset geometry description and discretized by an unfitted mesh Finite Element Method. This work extends the approaches of [1], [2], [3] to nonlinear CutFEM discretization. We construct and investigate a unified and geometry independent reduced basis which overcomes many barriers and complications of the past, that may occur whenever geometrical morphings are taking place. By employing a geometry independent reduced basis, we are able to avoid remeshing and transformation to reference configurations, and we are able to handle complex geometries. This combination of a fixed background mesh in a fixed extended background geometry with reduced order techniques appears beneficial and advantageous in many industrial and engineering applications, which could not be resolved efficiently in the past.}
+}
+
+@article{BAHARI2024116570,
+title = {Adaptive Isogeometric Analysis using optimal transport and their fast solvers},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {418},
+pages = {116570},
+year = {2024},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2023.116570},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782523006941},
+author = {M. Bahari and A. Habbal and A. Ratnani and E. Sonnendrücker},
+keywords = {B-spline discretization, Optimal transport, Isogeometric Analysis, Multi level, Mesh generation, r-refinement},
+abstract = {In this work, we devise fast solvers and adaptive mesh generation procedures based on the Monge–Ampère Equation using B-Splines Finite Elements, within the Isogeometric Analysis framework. Our approach ensures that the constructed mapping is a bijection, which is a major challenge in Isogeometric Analysis. First, we use standard B-Splines Finite Elements to solve the Monge–Ampère Equation. An analysis of this approach shows serious limitations when dealing with high variations near the boundary. In order to solve this problem, a new formulation is derived using compatible B-Splines discretization based on a discrete DeRham sequence. A new fast solver is devised in this case using the Fast Diagonalization method. Different tests are provided and show the performance of our new approach.}
+}
+
+@article{https://doi.org/10.1002/nme.4371,
+author = {Amsallem, David and Zahr, Matthew J. and Farhat, Charbel},
+title = {Nonlinear model order reduction based on local reduced-order bases},
+journal = {International Journal for Numerical Methods in Engineering},
+volume = {92},
+number = {10},
+pages = {891-916},
+keywords = {GNAT, hyper reduction, local basis, nonlinear model order reduction, proper orthogonal decomposition},
+doi = {https://doi.org/10.1002/nme.4371},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.4371},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.4371},
+abstract = {SUMMARY A new approach for the dimensional reduction via projection of nonlinear computational models based on the concept of local reduced-order bases is presented. It is particularly suited for problems characterized by different physical regimes, parameter variations, or moving features such as discontinuities and fronts. Instead of approximating the solution of interest in a fixed lower-dimensional subspace of global basis vectors, the proposed model order reduction method approximates this solution in a lower-dimensional subspace generated by most appropriate local basis vectors. To this effect, the solution space is partitioned into subregions, and a local reduced-order basis is constructed and assigned to each subregion offline. During the incremental solution online of the reduced problem, a local basis is chosen according to the subregion of the solution space where the current high-dimensional solution lies. This is achievable in real time because the computational complexity of the selection algorithm scales with the dimension of the lower-dimensional solution space. Because it is also applicable to the process of hyper reduction, the proposed method for nonlinear model order reduction is computationally efficient. Its potential for achieving large speedups while maintaining good accuracy is demonstrated for two nonlinear computational fluid and fluid-structure-electric interaction problems. Copyright © 2012 John Wiley \& Sons, Ltd.},
+year = {2012}
+}
+
+@article{doi:10.1137/130924408,
+author = {Peherstorfer, Benjamin and Butnaru, Daniel and Willcox, Karen and Bungartz, Hans-Joachim},
+title = {Localized Discrete Empirical Interpolation Method},
+journal = {SIAM Journal on Scientific Computing},
+volume = {36},
+number = {1},
+pages = {A168-A192},
+year = {2014},
+doi = {10.1137/130924408},
+URL = {https://doi.org/10.1137/130924408},
+eprint = {https://doi.org/10.1137/130924408},
+abstract = {This paper presents a new approach to construct more efficient reduced-order models for nonlinear partial differential equations with proper orthogonal decomposition and the discrete empirical interpolation method (DEIM). Whereas DEIM projects the nonlinear term onto one global subspace, our localized discrete empirical interpolation method (LDEIM) computes several local subspaces, each tailored to a particular region of characteristic system behavior. Then, depending on the current state of the system, LDEIM selects an appropriate local subspace for the approximation of the nonlinear term. In this way, the dimensions of the local DEIM subspaces, and thus the computational costs, remain low even though the system might exhibit a wide range of behaviors as it passes through different regimes. LDEIM uses machine learning methods in the offline computational phase to discover these regions via clustering. Local DEIM approximations are then computed for each cluster. In the online computational phase, machine-learning-based classification procedures select one of these local subspaces adaptively as the computation proceeds. The classification can be achieved using either the system parameters or a low-dimensional representation of the current state of the system obtained via feature extraction. The LDEIM approach is demonstrated for a reacting flow example of an \$\mathrm H\_2\$-Air flame. In this example, where the system state has a strong nonlinear dependence on the parameters, the LDEIM provides speedups of two orders of magnitude over standard DEIM. }
+}
+
+@article{PAGANI2018530,
+title = {Numerical approximation of parametrized problems in cardiac electrophysiology by a local reduced basis method},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {340},
+pages = {530-558},
+year = {2018},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2018.06.003},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782518303001},
+author = {Stefano Pagani and Andrea Manzoni and Alfio Quarteroni},
+keywords = {Cardiac electrophysiology, Parametrized monodomain model, Local reduced order model, Reduced basis method, Proper orthogonal decomposition, Empirical interpolation method},
+abstract = {The efficient solution of coupled PDEs/ODEs problems arising in cardiac electrophysiology is of key importance whenever interested to study the electrical behavior of the tissue for several instances of relevant physical and/or geometrical parameters. This poses significant challenges to reduced order modeling (ROM) techniques –such as the reduced basis method –traditionally employed when dealing with the repeated solution of parameter dependent differential equations. Indeed, the nonlinear nature of the problem, the presence of moving fronts in the solution, and the high sensitivity of this latter to parameter variations, make the application of standard ROM techniques very problematic. In this paper we propose a local ROM built through a k-means clustering in the state space of the snapshots for both the solution and the nonlinear term. Several comparisons among alternative local ROMs on a benchmark test case show the effectivity of the proposed approach. Finally, the application to a parametrized problem set on an idealized left-ventricle geometry shows the capability of the proposed ROM to face complex problems.}
+}
+
+@misc{karatzas2021reducedordermodelstable,
+    title={A reduced order model for a stable embedded boundary parametrized Cahn-Hilliard phase-field system based on cut finite elements}, 
+    author={Efthymios N. Karatzas and Gianluigi Rozza},
+    year={2021},
+    eprint={2009.01596},
+    archivePrefix={arXiv},
+    primaryClass={math.NA},
+    url={https://arxiv.org/abs/2009.01596}, 
+}
+
+@article{Karatzas_2019,
+  title={A reduced basis approach for PDEs on parametrized geometries based on the shifted boundary finite element method and application to a Stokes flow},
+  volume={347},
+  ISSN={0045-7825},
+  url={http://dx.doi.org/10.1016/j.cma.2018.12.040},
+  DOI={10.1016/j.cma.2018.12.040},
+  journal={Computer Methods in Applied Mechanics and Engineering},
+  publisher={Elsevier BV},
+  author={Karatzas, Efthymios N. and Stabile, Giovanni and Nouveau, Leo and Scovazzi, Guglielmo and Rozza, Gianluigi},
+  year={2019},
+  month=apr, pages={568–587} 
+}
+
+@article{Zeng_2022,
+  title={Embedded domain Reduced Basis Models for the shallow water hyperbolic equations with the Shifted Boundary Method},
+  volume={398},
+  ISSN={0045-7825},
+  url={http://dx.doi.org/10.1016/j.cma.2022.115143},
+  DOI={10.1016/j.cma.2022.115143},
+  journal={Computer Methods in Applied Mechanics and Engineering},
+  publisher={Elsevier BV},
+  author={Zeng, Xianyi and Stabile, Giovanni and Karatzas, Efthymios N. and Scovazzi, Guglielmo and Rozza, Gianluigi},
+  year={2022},
+  month=aug, pages={115143} 
+}
+
+@unknown{Katsouleas2020,
+author = {Katsouleas, Georgios and Karatzas, Efthymios and Travlopanos, Fotios},
+year = {2020},
+month = {10},
+pages = {},
+title = {Discrete Empirical Interpolation and unfitted mesh FEMs: application in PDE-constrained optimization},
+doi = {10.48550/arXiv.2010.09059}
+}
+
+@incollection{10.1093/oso/9780198534396.003.0003,
+    author = {Powell, M J D},
+    isbn = {9780198534396},
+    title = {The Theory of Radial Basis Function Approximation in 1990},
+    booktitle = {Advances in Numerical Analysis: Wavelets, Subdivision Algorithms, and Radial Basis Functions},
+    publisher = {Oxford University Press},
+    year = {1992},
+    month = {04},
+    abstract = {Throughout this work \{f(x) : x ∈ ℝ\} is a real valued function of d variables that is to be approximated by \{s(x): x ∈ ℝ\}. The radial basis function method gives many useful choices of s that have several advantages over piecewise polynomials. This approach to multivariable approximation is relatively new, however, so many of the most exciting properties have been proved to hold only in special cases. A coherent account of the known theory is presented. It includes some stunning results on orders of convergence and guaranteed nonsingularity of interpolation matrices. Therefore the author believes that radial basis function methods are becoming as important as piecewise polynomials although good software is not yet available for general computer calculations. We shall enjoy the theoretical discoveries that have been made so far and we will note some interesting conjectures. Earlier reviews of theory are presented by Dyn [12,13]. Many successful applications of radial basis functions are mentioned in ·a recent paper that provides an excellent survey of the practical side of the subject (Hardy [22]).},
+    doi = {10.1093/oso/9780198534396.003.0003},
+    url = {https://doi.org/10.1093/oso/9780198534396.003.0003},
+    eprint = {https://academic.oup.com/book/0/chapter/421958579/chapter-pdf/52351297/isbn-9780198534396-book-part-3.pdf},
+}
+
+@article{MAMONOV2022115122,
+title = {Interpolatory tensorial reduced order models for parametric dynamical systems},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {397},
+pages = {115122},
+year = {2022},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2022.115122},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782522003061},
+author = {Alexander V. Mamonov and Maxim A. Olshanskii},
+keywords = {Model order reduction, Parametric PDEs, Low-rank tensors, Dynamical systems, Proper orthogonal decomposition},
+abstract = {The paper introduces a reduced order model (ROM) for numerical integration of a dynamical system which depends on multiple parameters. The ROM is a projection of the dynamical system on a low dimensional space that is both problem-dependent and parameter-specific. The ROM exploits compressed tensor formats to find a low rank representation for a sample of high-fidelity snapshots of the system state. This tensorial representation provides ROM with an orthogonal basis in a universal space of all snapshots and encodes information about the state variation in parameter domain. During the online phase and for any incoming parameter, this information is used to find a reduced basis that spans a parameter-specific subspace in the universal space. The computational cost of the online phase then depends only on tensor compression ranks, but not on space or time resolution of high-fidelity computations. Moreover, certain compressed tensor formats enable to avoid the adverse effect of parameter space dimension on the online costs (known as the curse of dimension). The analysis of the approach includes an estimate for the representation power of the acquired ROM basis. We illustrate the performance and prediction properties of the ROM with several numerical experiments, where tensorial ROM’s complexity and accuracy is compared to those of conventional POD-ROM.}
+}
+
+@misc{mamonov2024priorianalysistensorrom,
+      title={A priori analysis of a tensor ROM for parameter dependent parabolic problems}, 
+      author={Alexander V. Mamonov and Maxim A. Olshanskii},
+      year={2024},
+      eprint={2311.07883},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/2311.07883}, 
+}
+
+@article{HANSBO20025537,
+title = {An unfitted finite element method, based on Nitsche’s method, for elliptic interface problems},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {191},
+number = {47},
+pages = {5537-5552},
+year = {2002},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/S0045-7825(02)00524-8},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782502005248},
+author = {Anita Hansbo and Peter Hansbo},
+abstract = {In this paper we propose a method for the finite element solution of elliptic interface problem, using an approach due to Nitsche. The method allows for discontinuities, internal to the elements, in the approximation across the interface. We show that optimal order of convergence holds without restrictions on the location of the interface relative to the mesh. Further, we derive a posteriori error estimates for the purpose of controlling functionals of the error and present some numerical examples.}
+}
+
+@article{https://doi.org/10.1002/nme.4823,
+author = {Burman, Erik and Claus, Susanne and Hansbo, Peter and Larson, Mats G. and Massing, André},
+title = {CutFEM: Discretizing geometry and partial differential equations},
+journal = {International Journal for Numerical Methods in Engineering},
+volume = {104},
+number = {7},
+pages = {472-501},
+keywords = {extended finite element method, unfitted methods, finite element methods, meshfree methods, Galerkin, level sets, stability},
+doi = {https://doi.org/10.1002/nme.4823},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.4823},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.4823},
+abstract = {Summary We discuss recent advances on robust unfitted finite element methods on cut meshes. These methods are designed to facilitate computations on complex geometries obtained, for example, from computer-aided design or image data from applied sciences. Both the treatment of boundaries and interfaces and the discretization of PDEs on surfaces are discussed and illustrated numerically. Copyright © 2014 John Wiley \& Sons, Ltd.},
+year = {2015}
+}
+
+@article{Elfverson_2018,
+   title={CutIGA with basis function removal},
+   volume={5},
+   ISSN={2213-7467},
+   url={http://dx.doi.org/10.1186/s40323-018-0099-2},
+   DOI={10.1186/s40323-018-0099-2},
+   number={1},
+   journal={Advanced Modeling and Simulation in Engineering Sciences},
+   publisher={Springer Science and Business Media LLC},
+   author={Elfverson, Daniel and Larson, Mats G. and Larsson, Karl},
+   year={2018},
+   month=mar }
+
+@article{Belytschko2001,
+author = {Belytschko, T. and Moës, N. and Usui, S. and Parimi, C.},
+title = {Arbitrary discontinuities in finite elements},
+journal = {International Journal for Numerical Methods in Engineering},
+volume = {50},
+number = {4},
+pages = {993-1013},
+keywords = {finite elements, fracture, fasteners, jointed rock},
+doi = {https://doi.org/10.1002/1097-0207(20010210)50:4<993::AID-NME164>3.0.CO;2-M},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/1097-0207%2820010210%2950%3A4%3C993%3A%3AAID-NME164%3E3.0.CO%3B2-M},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/1097-0207%2820010210%2950%3A4%3C993%3A%3AAID-NME164%3E3.0.CO%3B2-M},
+abstract = {Abstract A technique for modelling arbitrary discontinuities in finite elements is presented. Both discontinuities in the function and its derivatives are considered. Methods for intersecting and branching discontinuities are given. In all cases, the discontinuous approximation is constructed in terms of a signed distance functions, so level sets can be used to update the position of the discontinuities. A standard displacement Galerkin method is used for developing the discrete equations. Examples of the following applications are given: crack growth, a journal bearing, a non-bonded circular inclusion and a jointed rock mass. Copyright © 2001 John Wiley \& Sons, Ltd.},
+year = {2001}
+}
+
+@article{doi:10.1137/0710032,
+  author = {George, Alan},
+  title = {Nested Dissection of a Regular Finite Element Mesh},
+  journal = {SIAM Journal on Numerical Analysis},
+  volume = {10},
+  number = {2},
+  pages = {345-363},
+  year = {1973},
+  doi = {10.1137/0710032},
+  URL = {https://doi.org/10.1137/0710032},
+  eprint = {https://doi.org/10.1137/0710032},
+  abstract = { Let M be a mesh consisting of \$n^2 \$ squares called elements, formed by subdividing the unit square \$(0,1) \times (0,1)\$ into \$n^2 \$ small squares of side \${1 / h}\$, and having a node at each of the \$(n + 1)^2 \$ grid points. With M we associate the \$N \times N\$ symmetric positive definite system \$Ax = b\$, where \$N = (n + 1)^2 \$, each \$x\_i \$ is associated with a node of M, and \$A\_{ij} \ne 0\$ if and only if \$x\_i \$ and \$x\_j \$ are associated with nodes of the same element. If we solve the equations via the standard symmetric factorization of A, then \$O(n^4 )\$ arithmetic operations are required if the usual row by row (banded) numbering scheme is used, and the storage required is \$O(n^3 )\$. In this paper we present an unusual numbering of the mesh (unknowns) and show that if we avoid operating on zeros, the \$LDL^T \$ factorization of A can be computed using the same standard algorithm in \$O(n^3 )\$ arithmetic operations. Furthermore, the storage required is only \$O(n^2 \log \_2 n)\$. Finally, we prove that all orderings of the mesh must yield an operation count of at least \$O(n^3 )\$, provided we use the standard factorization algorithm. }
+}
+
+@misc{muellerbadiagridaproms,
+      title={GridapROMs.jl: Efficient reduced order modelling in the Julia programming language}, 
+      author={Nicholas Mueller and Santiago Badia},
+      year={2025},
+      eprint={2503.15994},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/2503.15994},
+}
+
+@incollection{PHARR2017401,
+title = {07 - Sampling and Reconstruction},
+editor = {Matt Pharr and Wenzel Jakob and Greg Humphreys},
+booktitle = {Physically Based Rendering (Third Edition)},
+publisher = {Morgan Kaufmann},
+edition = {Third Edition},
+address = {Boston},
+pages = {401-504},
+year = {2017},
+isbn = {978-0-12-800645-0},
+doi = {https://doi.org/10.1016/B978-0-12-800645-0.50007-5},
+url = {https://www.sciencedirect.com/science/article/pii/B9780128006450500075},
+author = {Matt Pharr and Wenzel Jakob and Greg Humphreys}
+}
+
+@Inbook{LeDret2016,
+  author="Le Dret, Herv{\'e}
+  and Lucquin, Brigitte",
+  title="The Finite Element Method in Dimension Two",
+  bookTitle="Partial Differential Equations: Modeling, Analysis and Numerical Approximation",
+  year="2016",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="167--218",
+  abstract="It should already be clear that there is no difference between elliptic problems in one dimension and elliptic problems in several dimensions from the variational viewpointFinite element method (FEM)in dimension two. The same goes for the abstract part of variational approximations. The difference lies in the description of the finite dimensional approximation spaces. The FEM in any dimension of space is based on the same principle as in one dimension, that is to say, we consider spaces of piecewise polynomials of low degree, with lots of pieces for accuracy. Now things are right away quite different, and actually considerably more complicated, since polynomials have several variables, and open sets are much more varied than in dimension one. For simplicity, we limit ourselves to the two-dimensional case.",
+  isbn="978-3-319-27067-8",
+  doi="10.1007/978-3-319-27067-8_6",
+  url="https://doi.org/10.1007/978-3-319-27067-8_6"
+}
+
+
+@misc{halko2010findingstructurerandomnessprobabilistic,
+  title={Finding structure with randomness: Probabilistic algorithms for constructing approximate matrix decompositions}, 
+  author={Nathan Halko and Per-Gunnar Martinsson and Joel A. Tropp},
+  year={2010},
+  eprint={0909.4061},
+  archivePrefix={arXiv},
+  primaryClass={math.NA},
+  url={https://arxiv.org/abs/0909.4061}, 
+}
+
+@misc{chertkov2022optimizationfunctionsgiventensor,
+      title={Optimization of Functions Given in the Tensor Train Format}, 
+      author={Andrei Chertkov and Gleb Ryzhakov and Georgii Novikov and Ivan Oseledets},
+      year={2022},
+      eprint={2209.14808},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/2209.14808}, 
+}
+
+@misc{dektor2024collocationmethodsnonlineardifferential,
+      title={Collocation methods for nonlinear differential equations on low-rank manifolds}, 
+      author={Alec Dektor},
+      year={2024},
+      eprint={2402.18721},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/2402.18721}, 
+}
+
+@article{Larsen99Lanczos,
+  author = {Larsen, Rasmus},
+  year = {1999},
+  month = {07},
+  pages = {},
+  title = {Lanczos Bidiagonalization With Partial Reorthogonalization},
+  volume = {27},
+  journal = {DAIMI Report Series},
+  doi = {10.7146/dpb.v27i537.7070}
+}
+
+@article{FONN2019486,
+title = {Fast divergence-conforming reduced basis methods for steady Navier–Stokes flow},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {346},
+pages = {486-512},
+year = {2019},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2018.11.038},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782518305978},
+author = {Eivind Fonn and Harald {van Brummelen} and Trond Kvamsdal and Adil Rasheed},
+keywords = {Reduced order modeling, Reduced basis method, Isogeometric analysis, Divergence-conforming},
+abstract = {Reduced-basis methods (RB methods or RBMs) form one of the most promising techniques to deliver numerical solutions of parametrized PDEs in real-time with reasonable accuracy. For incompressible flow problems, RBMs based on LBB stable velocity–pressure spaces do not generally inherit the stability of the underlying high-fidelity model and, instead, additional stabilization techniques must be introduced. One way of bypassing the loss of LBB stability in the RBM is to inflate the velocity space with supremizer modes. This however deteriorates the performance of the RBM in the performance-critical online stage, as additional DOFs must be introduced to retain stability, while these DOFs do not effectively contribute to accuracy of the RB approximation. In this work we consider a velocity-only RB approximation, exploiting a solenoidal velocity basis. The solenoidal reduced basis emerges directly from the high-fidelity velocity solutions in the offline stage. By means of Piola transforms, the solenoidality of the velocity space is retained under geometric transformations, making the proposed RB method suitable also for the investigation of geometric parameters. To ensure exact solenoidality of the high-fidelity velocity solutions that constitute the RB, we consider approximations based on divergence-conforming compatible B-splines. We show that the velocity-only RB method leads to a significant improvement in computational efficiency in the online stage, and that the pressure solution can be recovered a posteriori at negligible extra cost. We illustrate the solenoidal RB approach by modeling steady two-dimensional Navier–Stokes flow around a NACA0015 airfoil at various angles of attack.}
+}
+
+@article{doi:10.1137/0909057, 
+author = {George, Alan and Ng, Esmond},
+title = {On the Complexity of Sparse QR and LU Factorization of Finite-Element Matrices},
+journal = {SIAM Journal on Scientific and Statistical Computing},
+volume = {9},
+number = {5},
+pages = {849-861},
+year = {1988},
+doi = {10.1137/0909057},
+URL = {https://doi.org/10.1137/0909057},
+eprint = {https://doi.org/10.1137/0909057},
+}
+
+@article{deokar2018novel,
+	title={A novel model order reduction framework via staggered reduced basis space-time finite elements in linear first order transient systems},
+	author={Deokar, R and Tamma, KK},
+	journal={International Journal of Heat and Mass Transfer},
+	volume={117},
+	pages={991--1005},
+	year={2018},
+	publisher={Elsevier}
+}
+
+@article{choi2020sns,
+	title={SNS: A solution-based nonlinear subspace method for time-dependent model order reduction},
+	author={Choi, Youngsoo and Coombs, Deshawn and Anderson, Robert},
+	journal={SIAM Journal on Scientific Computing},
+	volume={42},
+	number={2},
+	pages={A1116--A1146},
+	year={2020},
+	publisher={SIAM}
+}
+
+@article{bertagna2017lifev,
+	title={The {L}ife{V} library: engineering mathematics beyond the proof of concept},
+	author={Bertagna, Luca and Deparis, Simone and Formaggia, Luca and Forti, Davide and Veneziani, Alessandro},
+	journal={arXiv preprint arXiv:1710.06596},
+	year={2017}
+}
+
+@article{dalsanto2019algebraic,
+	title={An algebraic least squares reduced basis method for the solution of nonaffinely parametrized {S}tokes equations},
+	author={Dal Santo, Niccol{\`o} and Deparis, Simone and Manzoni, Andrea and Quarteroni, Alfio},
+	journal={Computer Methods in Applied Mechanics and Engineering},
+	volume={344},
+	pages={186--208},
+	year={2019},
+	publisher={Elsevier}
+}
+
+@article{pegolotti2021model,
+	title={Model order reduction of flow based on a modular geometrical approximation of blood vessels},
+	author={Pegolotti, Luca and Pfaller, Martin R and Marsden, Alison L and Deparis, Simone},
+	journal={Computer methods in applied mechanics and engineering},
+	volume={380},
+	pages={113762},
+	year={2021},
+	publisher={Elsevier}
+}
+
+@article{quarteroni2000computational,
+	title={Computational vascular fluid dynamics: problems, models and methods},
+	author={Quarteroni, Alfio and Tuveri, Massimiliano and Veneziani, Alessandro},
+	journal={Computing and Visualization in Science},
+	volume={2},
+	number={4},
+	pages={163--197},
+	year={2000},
+	publisher={Springer-Verlag}
+}
+
+@article{rozza2005optimization,
+  title={On optimization, control and shape design of an arterial bypass},
+  author={Rozza, Gianluigi},
+  journal={International Journal for Numerical Methods in Fluids},
+  volume={47},
+  number={10-11},
+  pages={1411--1419},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+@article{ballarin2015supremizer,
+	title={Supremizer stabilization of {POD}--{G}alerkin approximation of parametrized steady incompressible {N}avier--{S}tokes equations},
+	author={Ballarin, Francesco and Manzoni, Andrea and Quarteroni, Alfio and Rozza, Gianluigi},
+	journal={International Journal for Numerical Methods in Engineering},
+	volume={102},
+	number={5},
+	pages={1136--1161},
+	year={2015},
+	publisher={Wiley Online Library}
+}
+
+@article{dalsanto2019hyper,
+	title={Hyper-reduced order models for parametrized unsteady {N}avier--{S}tokes equations on domains with variable shape},
+	author={Dal Santo, Niccol{\`o} and Manzoni, Andrea},
+	journal={Advances in Computational Mathematics},
+	volume={45},
+	number={5},
+	pages={2463--2501},
+	year={2019},
+	publisher={Springer}
+}
+
+@article{carlberg2017galerkin,
+  title={{G}alerkin v. least--squares {P}etrov--{G}alerkin projection in nonlinear model reduction},
+  author={Carlberg, Kevin and Barone, Matthew and Antil, Harbir},
+  journal={Journal of Computational Physics},
+  volume={330},
+  pages={693--734},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@article{lassila2013model, 
+	title = {Model order reduction in fluid dynamics: challenges and perspectives},
+	author = {T. Lassila and A. Manzoni and A. Quarteroni and G. Rozza},
+	journal = {MATHICSE-CMCS Modelling and Scientific Computing},
+	volume = {},
+	pages = {},
+	year = {2013},
+}
+
+@article{LASSILA20101583,
+title = {Parametric free-form shape design with PDE models and reduced basis method},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {199},
+number = {23},
+pages = {1583-1592},
+year = {2010},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2010.01.007},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782510000162},
+author = {Toni Lassila and Gianluigi Rozza},
+keywords = {Reduced basis methods, Free-form deformations, Empirical interpolation, Engineering design, Shape optimization}
+}
+
+@article{prudhomme:hal-00798326,
+  TITLE = {{Reliable Real-Time Solution of Parametrized Partial Differential Equations: Reduced-Basis Output Bound Methods}},
+  AUTHOR = {Prud'Homme, Christophe and Rovas, Dimitrios V. and Veroy, Karen and Machiels, Luc and Maday, Yvon and Patera, Anthony T. and Turinici, Gabriel},
+  URL = {https://hal.science/hal-00798326},
+  JOURNAL = {{Journal of Fluids Engineering}},
+  PUBLISHER = {{American Society of Mechanical Engineers}},
+  VOLUME = {124},
+  NUMBER = {1},
+  PAGES = {70-80},
+  YEAR = {2001},
+  MONTH = Nov,
+  DOI = {10.1115/1.1448332},
+  KEYWORDS = {Galerkin method ; partial differential equations ; computational fluid dynamics ; numerical analysis ; error analysis},
+  PDF = {https://hal.science/hal-00798326v1/file/70_1b.pdf},
+  HAL_ID = {hal-00798326},
+  HAL_VERSION = {v1},
+}
+
+@article{Prudhomme,
+author = {Prud'homme, Christophe and Rovas, Dimitrios and Veroy, Karen and Patera, Anthony},
+year = {2002},
+month = {09},
+pages = {747 - 771},
+title = {A Mathematical and Computational Framework for Reliable Real-Time Solution of Parametrized Partial Differential Equations},
+volume = {36},
+journal = {ESAIM: Mathematical Modelling and Numerical Analysis},
+doi = {10.1051/m2an:2002035}
+}
+
+@article{hinze2021space,
+	title={A space--time certified reduced basis method for quasilinear parabolic partial differential equations},
+	author={Hinze, Michael and Korolev, Denis},
+	journal={Advances in Computational mathematics},
+	volume={47},
+	number={3},
+	pages={1--26},
+	year={2021},
+	publisher={Springer}
+}
+
+@article{zhu1998modified,
+	title={A modified collocation method and a penalty formulation for enforcing the essential boundary conditions in the element free {G}alerkin method},
+	author={Zhu, T and Atluri, SN1633725},
+	journal={Computational Mechanics},
+	volume={21},
+	number={3},
+	pages={211--222},
+	year={1998},
+	publisher={Springer}
+}
+
+@article{babuvska1973finite,
+	title={The finite element method with penalty},
+	author={Babu{\v{s}}ka, Ivo},
+	journal={Mathematics of computation},
+	volume={27},
+	number={122},
+	pages={221--228},
+	year={1973}
+}
+
+@book{dunkl2014orthogonal,
+	title={Orthogonal polynomials of several variables},
+	author={Dunkl, Charles F and Xu, Yuan},
+	number={155},
+	year={2014},
+	publisher={Cambridge University Press}
+}
+
+@article{deparis2019coupling,
+	title={Coupling non-conforming discretizations of {PDE}s by spectral approximation of the {L}agrange multiplier space},
+	author={Deparis, Simone and Iubatti, Antonio and Pegolotti, Luca},
+	journal={ESAIM: Mathematical Modelling and Numerical Analysis},
+	volume={53},
+	number={5},
+	pages={1667--1694},
+	year={2019},
+	publisher={EDP Sciences}
+}
+
+@article{binev2011convergence,
+	title={Convergence rates for greedy algorithms in reduced basis methods},
+	author={Binev, Peter and Cohen, Albert and Dahmen, Wolfgang and DeVore, Ronald and Petrova, Guergana and Wojtaszczyk, Przemyslaw},
+	journal={SIAM journal on mathematical analysis},
+	volume={43},
+	number={3},
+	pages={1457--1472},
+	year={2011},
+	publisher={SIAM}
+}
+
+@article{hesthaven2014efficient,
+	title={Efficient greedy algorithms for high--dimensional parameter spaces with applications to empirical interpolation and reduced basis methods},
+	author={Hesthaven, Jan S and Stamm, Benjamin and Zhang, Shun},
+	journal={ESAIM: Mathematical Modelling and Numerical Analysis},
+	volume={48},
+	number={1},
+	pages={259--283},
+	year={2014},
+	publisher={EDP Sciences}
+}
+
+@article{kunisch2001galerkin,
+	title={Galerkin proper orthogonal decomposition methods for parabolic problems},
+	author={Kunisch, Karl and Volkwein, Stefan},
+	journal={Numerische mathematik},
+	volume={90},
+	number={1},
+	pages={117--148},
+	year={2001},
+	publisher={Springer}
+}
+
+@article{barrault2004empirical,
+	title={An ‘empirical interpolation’method: application to efficient reduced basis discretization of partial differential equations},
+	author={Barrault, Maxime and Maday, Yvon and Nguyen, Ngoc Cuong and Patera, Anthony T},
+	journal={Comptes Rendus Mathematique},
+	volume={339},
+	number={9},
+	pages={667--672},
+	year={2004},
+	publisher={Elsevier}
+}
+
+@article{deparis2008reduced,
+	title={Reduced basis error bound computation of parameter-dependent {N}avier--{S}tokes equations by the natural norm approach},
+	author={Deparis, Simone},
+	journal={SIAM journal on numerical analysis},
+	volume={46},
+	number={4},
+	pages={2039--2067},
+	year={2008},
+	publisher={SIAM}
+}
+
+@article{deparis2009reduced,
+	title={Reduced basis method for multi--parameter-dependent steady {N}avier--{S}tokes equations: applications to natural convection in a cavity},
+	author={Deparis, Simone and Rozza, Gianluigi},
+	journal={Journal of Computational Physics},
+	volume={228},
+	number={12},
+	pages={4359--4378},
+	year={2009},
+	publisher={Elsevier}
+}
+
+@article{negri2015reduced,
+	title={Reduced basis approximation of parametrized optimal flow control problems for the {S}tokes equations},
+	author={Negri, Federico and Manzoni, Andrea and Rozza, Gianluigi},
+	journal={Computers \& Mathematics with Applications},
+	volume={69},
+	number={4},
+	pages={319--336},
+	year={2015},
+	publisher={Elsevier}
+}
+
+@article{rozza2013reduced,
+	title={Reduced basis approximation and a posteriori error estimation for {S}tokes flows in parametrized geometries: roles of the inf--sup stability constants},
+	author={Rozza, Gianluigi and Huynh, DB and Manzoni, Andrea},
+	journal={Numerische Mathematik},
+	volume={125},
+	number={1},
+	pages={115--152},
+	year={2013},
+	publisher={Springer}
+}
+
+@article{shimizu2021windowed, 
+	author = {Y. S. Shimizu and E. J. Parish},
+	title = {Windowed space--time least--squares {P}etrov--{G}alerkin model order reduction for nonlinear dynamical systems},
+	journal = {Computer Methods in Applied Mechanics and Engineering},
+	volume = {386},
+	pages = {114050},
+	year = {2021},
+}
+
+@article{madhavan2018effect,
+	title={The effect of inlet and outlet boundary conditions in image-based {CFD} modeling of aortic flow},
+	author={Madhavan, Sudharsan and Kemmerling, Erica M Cherry},
+	journal={Biomedical engineering online},
+	volume={17},
+	number={1},
+	pages={1--20},
+	year={2018},
+	publisher={BioMed Central}
+}
+
+@article{liu2016three,
+	title={Three--dimensional hemodynamics analysis of the circle of {W}illis in the patient--specific non--integral arterial structures},
+	author={Liu, Xin and Gao, Zhifan and Xiong, Huahua and Ghista, Dhanjoo and Ren, Lijie and Zhang, Heye and Wu, Wanqing and Huang, Wenhua and Hau, William Kongto},
+	journal={Biomechanics and modeling in mechanobiology},
+	volume={15},
+	number={6},
+	pages={1439--1456},
+	year={2016},
+	publisher={Springer}
+}
+
+@book{quarteroni2016numerical,
+	title={Numerical Models for Differential Problems},
+	author={Quarteroni, Alfio},
+	volume={8},
+	year={2016},
+	publisher={Springer}
+}
+
+@book{quarteroni2015reduced,
+	title={Reduced basis methods for partial differential equations: an introduction},
+	author={Quarteroni, Alfio and Manzoni, Andrea and Negri, Federico},
+	volume={92},
+	year={2015},
+	publisher={Springer}
+}
+
+@book{quarteroni2008numerical,
+  title={Numerical approximation of partial differential equations},
+  author={Quarteroni, Alfio and Valli, Alberto},
+  volume={23},
+  year={2008},
+  publisher={Springer Science \& Business Media}
+}
+
+@book{salsa2016numerical,
+	title={Partial Differential Equations in Action},
+	author={Salsa, Sandro},
+	volume={99},
+	year={2016},
+	publisher={Springer}
+}
+
+@book{volker2016finite,
+	title={Finite element methods for incompressible flow problems},
+	author={John, Volker},
+	year={2016},
+	publisher={Springer}
+}
+
+@book{boffi2013mixed,
+	title={Mixed finite element methods and applications},
+	author={Boffi, Daniele and Brezzi, Franco and Fortin, Michel and others},
+	volume={44},
+	year={2013},
+	publisher={Springer}
+}
+
+@techreport{manzoni2012reduced,
+	title={Reduced models for optimal control, shape optimization and inverse problems in haemodynamics},
+	author={Manzoni, Andrea},
+	year={2012},
+	institution={EPFL}
+}
+
+@article{brezzi1974existence,
+  title={On the existence, uniqueness and approximation of saddle--point problems arising from {L}agrangian multipliers},
+  author={Brezzi, Franco},
+  journal={Publications math{\'e}matiques et informatique de Rennes},
+  number={S4},
+  pages={1--26},
+  year={1974}
+}
+
+
+@article{hood1974navier,
+  title={Navier-{S}tokes equations using mixed interpolation},
+  author={Hood, P and Taylor, C},
+  journal={Finite element methods in flow problems},
+  pages={121--132},
+  year={1974}
+}
+
+@article{urban2012new,
+  title={A new error bound for reduced basis approximation of parabolic partial differential equations},
+  author={Urban, Karsten and Patera, Anthony T},
+  journal={Comptes Rendus Mathematique},
+  volume={350},
+  number={3-4},
+  pages={203--207},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{urban2014improved,
+  title={An improved error bound for reduced basis approximation of linear parabolic problems},
+  author={Urban, Karsten and Patera, Anthony T},
+  journal={Mathematics of Computation},
+  volume={83},
+  number={288},
+  pages={1599--1615},
+  year={2014}
+}
+
+@article{yano2014space,
+  title={A space--time {P}etrov--{G}alerkin certified reduced basis method: application to the {B}oussinesq equations},
+  author={Yano, Masayuki},
+  journal={SIAM Journal on Scientific Computing},
+  volume={36},
+  number={1},
+  pages={A232--A266},
+  year={2014},
+  publisher={SIAM}
+}
+
+@article{yano2014space2,
+  title={A space--time hp--interpolation--based certified reduced basis method for {B}urgers' equation},
+  author={Yano, Masayuki and Patera, Anthony T and Urban, Karsten},
+  journal={Mathematical Models and Methods in Applied Sciences},
+  volume={24},
+  number={09},
+  pages={1903--1935},
+  year={2014},
+  publisher={World Scientific}
+}
+
+@article{abdulle2015petrov,
+	title={A {P}etrov--{G}alerkin reduced basis approximation of the {S}tokes equation in parametrized geometries},
+	author={Abdulle, Assyr and Bud{\'a}{\v{c}}, Ondrej},
+	journal={Comptes Rendus Mathematique},
+	volume={353},
+	number={7},
+	pages={641--645},
+	year={2015},
+	publisher={Elsevier}
+}
+
+@article{constantine2012residual,
+	title={Residual minimizing model interpolation for parametrized nonlinear dynamical systems},
+	author={Constantine, Paul G and Wang, Qiqi},
+	journal={SIAM Journal on Scientific Computing},
+	volume={34},
+	number={4},
+	pages={A2118--A2144},
+	year={2012},
+	publisher={SIAM}
+}
+
+@incollection{marchandise2012quality,
+	title={Quality open source mesh generation for cardiovascular flow simulations},
+	author={Marchandise, Emilie and Crosetto, Paolo and Geuzaine, Christophe and Remacle, Jean-Fran{\c{c}}ois and Sauvage, Emilie},
+	booktitle={Modeling of Physiological Flows},
+	pages={395--414},
+	year={2012},
+	publisher={Springer}
+}
+
+@article{krysl2001dimensional,
+	title={Dimensional model reduction in nonlinear finite element dynamics of solids and structures},
+	author={Krysl, Petr and Lall, Sanjay and Marsden, Jerrold E},
+	journal={International Journal for numerical methods in engineering},
+	volume={51},
+	number={4},
+	pages={479--504},
+	year={2001},
+	publisher={Wiley Online Library}
+}
+
+@article{lucia2004reduced,
+	title={Reduced--order modeling: new approaches for computational physics},
+	author={Lucia, David J and Beran, Philip S and Silva, Walter A},
+	journal={Progress in aerospace sciences},
+	volume={40},
+	number={1-2},
+	pages={51--117},
+	year={2004},
+	publisher={Elsevier}
+}
+
+@inproceedings{taylor2010real,
+	title={Real--time surgical simulation using reduced order finite element analysis},
+	author={Taylor, Zeike A and Crozier, Stuart and Ourselin, S{\'e}bastien},
+	booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+	pages={388--395},
+	year={2010},
+	organization={Springer}
+}
+
+@article{maday2002parareal,
+	title={A parareal in time procedure for the control of partial differential equations},
+	author={Maday, Yvon and Turinici, Gabriel},
+	journal={Comptes Rendus Mathematique},
+	volume={335},
+	number={4},
+	pages={387--392},
+	year={2002},
+	publisher={Elsevier}
+}
+
+@article{falgout2014parallel,
+	title={Parallel time integration with multigrid},
+	author={Falgout, Robert D and Friedhoff, Stephanie and Kolev, Tz V and MacLachlan, Scott P and Schroder, Jacob B},
+	journal={SIAM Journal on Scientific Computing},
+	volume={36},
+	number={6},
+	pages={C635--C661},
+	year={2014},
+	publisher={SIAM}
+}
+
+@article{farhat2003time,
+	title={Time--decomposed parallel time--integrators: theory and feasibility studies for fluid, structure, and fluid--structure applications},
+	author={Farhat, Charbel and Chandesris, Marion},
+	journal={International Journal for Numerical Methods in Engineering},
+	volume={58},
+	number={9},
+	pages={1397--1434},
+	year={2003},
+	publisher={Wiley Online Library}
+}
+
+
+@article{carlberg2019data,
+	title={Data--driven time parallelism via forecasting},
+	author={Carlberg, Kevin and Brencher, Lukas and Haasdonk, Bernard and Barth, Andrea},
+	journal={SIAM Journal on Scientific Computing},
+	volume={41},
+	number={3},
+	pages={B466--B496},
+	year={2019},
+	publisher={SIAM}
+}
+
+@article{CARLBERG2013623,
+title = {The GNAT method for nonlinear model reduction: Effective implementation and application to computational fluid dynamics and turbulent flows},
+journal = {Journal of Computational Physics},
+volume = {242},
+pages = {623-647},
+year = {2013},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2013.02.028},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999113001472},
+author = {Kevin Carlberg and Charbel Farhat and Julien Cortial and David Amsallem},
+keywords = {Nonlinear model reduction, GNAT, Gappy POD, Petrov–Galerkin, CFD, Mesh sampling},
+}
+
+@Inbook{Antil2014,
+author="Antil, Harbir
+and Heinkenschloss, Matthias
+and Sorensen, Danny C.",
+editor="Quarteroni, Alfio
+and Rozza, Gianluigi",
+title="Application of the Discrete Empirical Interpolation Method to Reduced Order Modeling of Nonlinear and Parametric Systems",
+bookTitle="Reduced Order Methods for Modeling and Computational Reduction",
+year="2014",
+publisher="Springer International Publishing",
+address="Cham",
+pages="101--136",
+isbn="978-3-319-02090-7",
+doi="10.1007/978-3-319-02090-7_4",
+url="https://doi.org/10.1007/978-3-319-02090-7_4"
+}
+
+@article{carlberg2015decreasing,
+	title={Decreasing the temporal complexity for nonlinear, implicit reduced--order models by forecasting},
+	author={Carlberg, Kevin and Ray, Jaideep and van Bloemen Waanders, Bart},
+	journal={Computer Methods in Applied Mechanics and Engineering},
+	volume={289},
+	pages={79--103},
+	year={2015},
+	publisher={Elsevier}
+}
+
+@article{figueroa2006coupled,
+	title={A coupled momentum method for modeling blood flow in three--dimensional deformable arteries},
+	author={Figueroa, C Alberto and Vignon-Clementel, Irene E and Jansen, Kenneth E and Hughes, Thomas JR and Taylor, Charles A},
+	journal={Computer methods in applied mechanics and engineering},
+	volume={195},
+	number={41-43},
+	pages={5685--5706},
+	year={2006},
+	publisher={Elsevier}
+}
+
+@article{colciago2014comparisons,
+  title={Comparisons between reduced order models and full 3{D} models for fluid--structure interaction problems in haemodynamics},
+  author={Colciago, Claudia Maria and Deparis, Simone and Quarteroni, Alfio},
+  journal={Journal of Computational and Applied Mathematics},
+  volume={265},
+  pages={120--138},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{colciago2018reduced,
+	title={Reduced numerical approximation of reduced fluid--structure interaction problems with applications in hemodynamics},
+	author={Colciago, Claudia M and Deparis, Simone},
+	journal={Frontiers in Applied Mathematics and Statistics},
+	volume={4},
+	pages={18},
+	year={2018},
+	publisher={Frontiers}
+}
+
+@article{vignon2006outflow,
+  title={Outflow boundary conditions for three--dimensional finite element modeling of blood flow and pressure in arteries},
+  author={Vignon-Clementel, Irene E and Figueroa, C Alberto and Jansen, Kenneth E and Taylor, Charles A},
+  journal={Computer methods in applied mechanics and engineering},
+  volume={195},
+  number={29-32},
+  pages={3776--3796},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@article{vignon2010outflow,
+  title={Outflow boundary conditions for 3{D} simulations of non--periodic blood flow and pressure fields in deformable arteries},
+  author={Vignon-Clementel, Irene E and Figueroa, CA and Jansen, KE and Taylor, CA},
+  journal={Computer methods in biomechanics and biomedical engineering},
+  volume={13},
+  number={5},
+  pages={625--640},
+  year={2010},
+  publisher={Taylor \& Francis}
+}
+
+@article{kim2010patient,
+  title={Patient--specific modeling of blood flow and pressure in human coronary arteries},
+  author={Kim, Hyun Jin and Vignon-Clementel, IE and Coogan, JS and Figueroa, CA and Jansen, KE and Taylor, CA},
+  journal={Annals of biomedical engineering},
+  volume={38},
+  number={10},
+  pages={3195--3209},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{gatica2008characterizing,
+	title={Characterizing the inf--sup condition on product spaces},
+	author={Gatica, Gabriel N and Sayas, Francisco-Javier},
+	journal={Numerische Mathematik},
+	volume={109},
+	number={2},
+	pages={209--231},
+	year={2008},
+	publisher={Springer}
+}
+
+@article{howell2011inf,
+	title={Inf--sup conditions for twofold saddle point problems},
+	author={Howell, Jason S and Walkington, Noel J},
+	journal={Numerische Mathematik},
+	volume={118},
+	number={4},
+	pages={663--693},
+	year={2011},
+	publisher={Springer}
+}
+
+@article{Rozza2005,
+      title = {Reduced basis methods for elliptic equations in sub--domains with a posteriori error bounds and adaptivity},
+      author = {Rozza, Gianluigi},
+      journal = {Applied Numerical Mathematics},
+      number = {4},
+      volume = {55},
+      pages = {403-24},
+      year = {2005},
+      url = {http://infoscience.epfl.ch/record/102988},
+      doi = {10.1016/j.apnum.2004.11.004},
+}
+
+@book{golub2013matrix,
+	title={Matrix computations},
+	author={Golub, Gene H and Van Loan, Charles F},
+	year={2013},
+	publisher={JHU press}
+}
+
+@article{halko2011finding,
+	title={Finding structure with randomness: probabilistic algorithms for constructing approximate matrix decompositions},
+	author={Halko, Nathan and Martinsson, Per-Gunnar and Tropp, Joel A},
+	journal={SIAM review},
+	volume={53},
+	number={2},
+	pages={217--288},
+	year={2011},
+	publisher={SIAM}
+}
+
+@article{chaturantabut2010nonlinear,
+	title={Nonlinear model reduction via discrete empirical interpolation},
+	author={Chaturantabut, Saifon and Sorensen, Danny C},
+	journal={SIAM Journal on Scientific Computing},
+	volume={32},
+	number={5},
+	pages={2737--2764},
+	year={2010},
+	publisher={SIAM}
+}
+
+@article{NEGRI2015431,
+title = {Efficient model reduction of parametrized systems by matrix discrete empirical interpolation},
+journal = {Journal of Computational Physics},
+volume = {303},
+pages = {431-454},
+year = {2015},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2015.09.046},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999115006543},
+author = {Federico Negri and Andrea Manzoni and David Amsallem},
+keywords = {Model order reduction, Discrete empirical interpolation, System approximation, Proper orthogonal decomposition, Reduced basis methods}
+}
+
+@article{refId0,
+	author = {{Grepl, Martin A.} and {Maday, Yvon} and {Nguyen, Ngoc C.} and {Patera, Anthony T.}},
+	title = {Efficient reduced-basis treatment of nonaffine  and nonlinear partial differential equations},
+	DOI= "10.1051/m2an:2007031",
+	url= "https://doi.org/10.1051/m2an:2007031",
+	journal = {ESAIM: M2AN},
+	year = 2007,
+	volume = 41,
+	number = 3,
+	pages = "575-605",
+}
+
+@article{https://doi.org/10.1002/nme.2309,
+author = {Nguyen, N. C. and Peraire, J.},
+title = {An efficient reduced-order modeling approach for non-linear parametrized partial differential equations},
+journal = {International Journal for Numerical Methods in Engineering},
+volume = {76},
+number = {1},
+pages = {27-55},
+keywords = {parametrized PDEs, reduced-order approximation, standard Galerkin reduced-order model, coefficient-function approximation, elliptic equations, convection–diffusion equations},
+doi = {https://doi.org/10.1002/nme.2309},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.2309},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.2309},
+year = {2008}
+}
+
+@article{BARRAULT2004667,
+title = {An ‘empirical interpolation’ method: application to efficient reduced-basis discretization of partial differential equations},
+journal = {Comptes Rendus Mathematique},
+volume = {339},
+number = {9},
+pages = {667-672},
+year = {2004},
+issn = {1631-073X},
+doi = {https://doi.org/10.1016/j.crma.2004.08.006},
+url = {https://www.sciencedirect.com/science/article/pii/S1631073X04004248},
+author = {Maxime Barrault and Yvon Maday and Ngoc Cuong Nguyen and Anthony T. Patera}
+}
+
+@article{doi:10.1137/140959602,
+author = {Carlberg, Kevin and Tuminaro, Ray and Boggs, Paul},
+title = {Preserving Lagrangian Structure in Nonlinear Model Reduction with Application to Structural Dynamics},
+journal = {SIAM Journal on Scientific Computing},
+volume = {37},
+number = {2},
+pages = {B153-B184},
+year = {2015},
+doi = {10.1137/140959602},
+URL = {https://doi.org/10.1137/140959602},
+eprint = {https://doi.org/10.1137/140959602}
+}
+
+@article{https://doi.org/10.1002/nme.3050,
+author = {Carlberg, Kevin and Bou-Mosleh, Charbel and Farhat, Charbel},
+title = {Efficient non-linear model reduction via a least-squares Petrov–Galerkin projection and compressive tensor approximations},
+journal = {International Journal for Numerical Methods in Engineering},
+volume = {86},
+number = {2},
+pages = {155-181},
+keywords = {non-linear model reduction, compressive approximation, discrete non-linear systems, gappy data, Petrov–Galerkin projection, proper orthogonal decomposition},
+doi = {https://doi.org/10.1002/nme.3050},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.3050},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.3050},
+year = {2011}
+}
+
+@article{https://doi.org/10.1002/fld.4260,
+author = {Ştefănescu, Răzvan and Sandu, Adrian},
+title = {Efficient approximation of Sparse Jacobians for time-implicit reduced order models},
+journal = {International Journal for Numerical Methods in Fluids},
+volume = {83},
+number = {2},
+pages = {175-204},
+keywords = {POD, DEIM, implicit reduced order modeling, shallow water equations, finite difference},
+doi = {https://doi.org/10.1002/fld.4260},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/fld.4260},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/fld.4260},
+year = {2017}
+}
+
+@article{doi:10.1137/120899042,
+author = {Wirtz, D. and Sorensen, D. C. and Haasdonk, B.},
+title = {A Posteriori Error Estimation for DEIM Reduced Nonlinear Dynamical Systems},
+journal = {SIAM Journal on Scientific Computing},
+volume = {36},
+number = {2},
+pages = {A311-A338},
+year = {2014},
+doi = {10.1137/120899042},
+URL = {https://doi.org/10.1137/120899042},
+eprint = {https://doi.org/10.1137/120899042}
+}
+
+@article{doi:10.1137/130932715,
+author = {Benner, Peter and Gugercin, Serkan and Willcox, Karen},
+title = {A Survey of Projection-Based Model Reduction Methods for Parametric Dynamical Systems},
+journal = {SIAM Review},
+volume = {57},
+number = {4},
+pages = {483-531},
+year = {2015},
+doi = {10.1137/130932715},
+URL = {https://doi.org/10.1137/130932715},
+eprint = {https://doi.org/10.1137/130932715}
+}
+
+@article{doi:10.1137/22M1509114,
+author = {Tenderini, Riccardo and Mueller, Nicholas and Deparis, Simone},
+title = {Space-Time Reduced Basis Methods for Parametrized Unsteady Stokes Equations},
+journal = {SIAM Journal on Scientific Computing},
+volume = {46},
+number = {1},
+pages = {B1-B32},
+year = {2024},
+doi = {10.1137/22M1509114},
+URL = {https://doi.org/10.1137/22M1509114},
+eprint = {https://doi.org/10.1137/22M1509114},
+abstract = {Abstract. In this work, we analyze space-time reduced basis methods for the efficient numerical simulation of hæmodynamics in arteries. The classical formulation of the reduced basis (RB) method features dimensionality reduction in space, while finite difference schemes are employed for the time integration of the resulting ordinary differential equation (ODE). Space-time reduced basis (ST–RB) methods extend the dimensionality reduction paradigm to the temporal dimension, projecting the full-order problem onto a low-dimensional spatio-temporal subspace. Our goal is to investigate the application of ST–RB methods to the unsteady incompressible Stokes equations, with a particular focus on stability. High-fidelity simulations are performed using the finite element (FE) method and BDF2 as a time marching scheme. We consider two different ST–RB methods. In the first one—called ST–GRB—space-time model order reduction is achieved by means of a Galerkin projection; a spatio-temporal velocity basis enrichment procedure is introduced to guarantee stability. The second method—called ST–PGRB—is characterized by a Petrov–Galerkin projection, stemming from a suitable minimization of the FOM residual, that allows us to automatically attain stability. The classical RB method—denoted as SRB–TFO—serves as a baseline for the theoretical development. Numerical tests have been conducted on an idealized symmetric bifurcation geometry and on the patient-specific one of a femoropopliteal bypass. The results show that both ST–RB methods provide accurate approximations of the high-fidelity solutions, while considerably reducing the computational cost. In particular, the ST–PGRB method exhibits the best performance, as it features a better computational efficiency while retaining accuracies in accordance with theoretical expectations. }
+}
+
+@misc{mueller2025tensortrainreducedbasissolver,
+      title={A tensor-train reduced basis solver for parameterized partial differential equations on Cartesian grids}, 
+      author={Nicholas Mueller and Yiran Zhao and Santiago Badia and Tiangang Cui},
+      year={2025},
+      eprint={2412.14460},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/2412.14460}, 
+}
+
+@book{Trefethen1997Bau,
+	title={Numerical Linear Algebra},
+	author={Lloyd N. Trefethen and D. Bau},
+	year={1997},
+	publisher={SIAM: Society for Industrial and Applied Mathematics}
+}
+
+@article{Unger_2019,
+	doi = {10.1007/s10444-019-09701-0},
+	url = {https://doi.org/10.10072Fs10444-019-09701-0},
+  	year = 2019,
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {45},
+	number = {5-6},
+	pages = {2273--2286},
+	author = {Benjamin Unger and Serkan Gugercin},
+	title = {Kolmogorov n-widths for linear dynamical systems},
+	journal = {Advances in Computational Mathematics}
+}
+
+@article{Astrid2008Weiland,
+    author = {P. Astrid, S. Weiland, K. Willcox and T. Backx},
+    title = {Missing Point Estimation in Models Described by Proper Orthogonal Decomposition},
+    journal = {IEEE Transactions on Automatic Control},
+    volume = {53},
+    number = {10},
+    pages = {2237-2251},
+    year = {2008},
+    doi = {10.1109/TAC.2008.2006102}
+}
+
+@article{Legresley2006Alonso,
+author = {Legresley, Patrick and Alonso, Juan},
+year = {2006},
+title = {Application of proper orthogonal decomposition (POD) to design decomposition methods}
+}
+
+@article{RYCKELYNCK2005346,
+title = {A priori hyperreduction method: an adaptive approach},
+journal = {Journal of Computational Physics},
+volume = {202},
+number = {1},
+pages = {346-366},
+year = {2005},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2004.07.015},
+url = {https://www.sciencedirect.com/science/article/pii/S002199910400289X},
+author = {D. Ryckelynck},
+keywords = {Model reduction, Karhunen–{Loève} expansion, Proper orthogonal decomposition, Krylov subspace, Adaptive strategy, Singular value decomposition, Learning strategy, Hyperreduction},
+}
+
+@article{Mirsky1960,
+    author = {MIRSKY, L.},
+    title = {SYMMETRIC GAUGE FUNCTIONS AND UNITARILY INVARIANT NORMS},
+    journal = {The Quarterly Journal of Mathematics},
+    volume = {11},
+    number = {1},
+    pages = {50-59},
+    year = {1960},
+    month = {01},
+    issn = {0033-5606},
+    doi = {10.1093/qmath/11.1.50},
+    url = {https://doi.org/10.1093/qmath/11.1.50},
+    eprint = {https://academic.oup.com/qjmath/article-pdf/11/1/50/7295335/11-1-50.pdf},
+}
+
+@article{Eckart_Young_1936, 
+    title={The Approximation of One Matrix by Another of Lower Rank}, 
+    volume={1}, 
+    DOI={10.1007/BF02288367}, 
+    number={3}, 
+    journal={Psychometrika}, 
+    author={Eckart, Carl and Young, Gale}, 
+    year={1936}, 
+    pages={211–218}
+}
+
+@article{Everson:95,
+author = {R. Everson and L. Sirovich},
+journal = {Journal of the Optical Society of America},
+keywords = {Face recognition; Image analysis; Image compression; Projection systems; Turbulence},
+number = {8},
+pages = {1657--1664},
+publisher = {Optica Publishing Group},
+title = {Karhunen--{Loève} procedure for gappy data},
+volume = {12},
+year = {1995},
+url = {https://opg.optica.org/josaa/abstract.cfm?URI=josaa-12-8-1657},
+doi = {10.1364/JOSAA.12.001657},
+}
+
+@article{Schillinger2014,
+author = {Schillinger, Dominik and Ruess, Martin},
+year = {2014},
+month = {05},
+pages = {},
+title = {The Finite Cell Method: A Review in the Context of Higher-Order Structural Analysis of CAD and Image-Based Geometric Models},
+volume = {22},
+journal = {Archives of Computational Methods in Engineering},
+doi = {10.1007/s11831-014-9115-y}
+}
+
+@article{DEPRENTER2017297,
+title = {Condition number analysis and preconditioning of the finite cell method},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {316},
+pages = {297-327},
+year = {2017},
+note = {Special Issue on Isogeometric Analysis: Progress and Challenges},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2016.07.006},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782516307277},
+author = {F. {de Prenter} and C.V. Verhoosel and G.J. {van Zwieten} and E.H. {van Brummelen}},
+keywords = {Finite Cell Method, Isogeometric Analysis, Condition number, Preconditioning, Immersed/fictitious domain methods, Iterative solvers},
+abstract = {The (Isogeometric) Finite Cell Method–in which a domain is immersed in a structured background mesh–suffers from conditioning problems when cells with small volume fractions occur. In this contribution, we establish a rigorous scaling relation between the condition number of (I)FCM system matrices and the smallest cell volume fraction. Ill-conditioning stems either from basis functions being small on cells with small volume fractions, or from basis functions being nearly linearly dependent on such cells. Based on these two sources of ill-conditioning, an algebraic preconditioning technique is developed, which is referred to as Symmetric Incomplete Permuted Inverse Cholesky (SIPIC). A detailed numerical investigation of the effectivity of the SIPIC preconditioner in improving (I)FCM condition numbers and in improving the convergence speed and accuracy of iterative solvers is presented for the Poisson problem and for two- and three-dimensional problems in linear elasticity, in which Nitche’s method is applied in either the normal or tangential direction. The accuracy of the preconditioned iterative solver enables mesh convergence studies of the finite cell method.}
+}
+
+@article{BADIA2018740,
+title = {Robust and scalable domain decomposition solvers for unfitted finite element methods},
+journal = {Journal of Computational and Applied Mathematics},
+volume = {344},
+pages = {740-759},
+year = {2018},
+issn = {0377-0427},
+doi = {https://doi.org/10.1016/j.cam.2017.09.034},
+url = {https://www.sciencedirect.com/science/article/pii/S037704271730465X},
+author = {Santiago Badia and Francesc Verdugo},
+keywords = {Unfitted finite elements, Embedded boundary methods, Linear solvers, Parallel computing, Domain decomposition},
+abstract = {Unfitted finite element methods, e.g., extended finite element techniques or the so-called finite cell method, have a great potential for large scale simulations, since they avoid the generation of body-fitted meshes and the use of graph partitioning techniques, two main bottlenecks for problems with non-trivial geometries. However, the linear systems that arise from these discretizations can be much more ill-conditioned, due to the so-called small cut cell problem. The state-of-the-art approach is to rely on sparse direct methods, which have quadratic complexity and are thus not well suited for large scale simulations. In order to solve this situation, in this work we investigate the use of domain decomposition preconditioners (balancing domain decomposition by constraints) for unfitted methods. We observe that a straightforward application of these preconditioners to the unfitted case has a very poor behavior. As a result, we propose a customization of the classical BDDC methods based on the stiffness weighting operator and an improved definition of the coarse degrees of freedom in the definition of the preconditioner. These changes lead to a robust and algorithmically scalable solver able to deal with unfitted grids. A complete set of complex 3D numerical experiments shows the good performance of the proposed preconditioners.}
+}
+
+@misc{burman2011penaltyfreenonsymmetricnitsche,
+      title={A penalty free non-symmetric Nitsche type method for the weak imposition of boundary conditions}, 
+      author={Erik Burman},
+      year={2011},
+      eprint={1106.5612},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/1106.5612}, 
+}
+
+@article{ELZOHERY2022109396,
+title = {Application of model-order reduction of non-linear time-dependent neutronics via POD-Galerkin projection and matrix discrete empirical interpolation},
+journal = {Annals of Nuclear Energy},
+volume = {179},
+pages = {109396},
+year = {2022},
+issn = {0306-4549},
+doi = {https://doi.org/10.1016/j.anucene.2022.109396},
+url = {https://www.sciencedirect.com/science/article/pii/S0306454922004273},
+author = {Rabab Elzohery and Jeremy Roberts},
+keywords = {Reduced-order models, POD-Galerkin projection, Discrete empirical interpolation method, Non-linear neutronic transients},
+}
+
+@article{https://doi.org/10.1002/gamm.201310004,
+author = {Grasedyck, Lars and Kressner, Daniel and Tobler, Christine},
+title = {A literature survey of low-rank tensor approximation techniques},
+journal = {GAMM-Mitteilungen},
+volume = {36},
+number = {1},
+pages = {53-78},
+keywords = {tensor, low rank, multivariate functions, linear systems, eigenvalue problems},
+doi = {https://doi.org/10.1002/gamm.201310004},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/gamm.201310004},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/gamm.201310004},
+abstract = {Abstract During the last years, low-rank tensor approximation has been established as a new tool in scientific computing to address large-scale linear and multilinear algebra problems, which would be intractable by classical techniques. This survey attempts to give a literature overview of current developments in this area, with an emphasis on function-related tensors. (© 2013 WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim)},
+year = {2013}
+}
+
+@article{Volkwein2012,
+author = {Volkwein, Stefan},
+year = {2012},
+month = {01},
+pages = {},
+title = {Proper Orthogonal Decomposition: Theory and Reduced-Order Modelling},
+journal = {Lecture Notes, University of Konstanz}
+}
+
+@article{https://doi.org/10.1002/fld.2712,
+author = {Manzoni, Andrea and Quarteroni, Alfio and Rozza, Gianluigi},
+title = {Shape optimization for viscous flows by reduced basis methods and free-form deformation},
+journal = {International Journal for Numerical Methods in Fluids},
+volume = {70},
+number = {5},
+pages = {646-670},
+keywords = {model order reduction, reduced basis methods, free-form deformation, shape optimization, hemodynamics, Stokes equations},
+doi = {https://doi.org/10.1002/fld.2712},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/fld.2712},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/fld.2712},
+year = {2012}
+}
+
+@article{Badia2020,
+  doi = {10.21105/joss.02520},
+  url = {https://doi.org/10.21105/joss.02520},
+  year = {2020},
+  publisher = {The Open Journal},
+  volume = {5},
+  number = {52},
+  pages = {2520},
+  author = {Santiago Badia and Francesc Verdugo},
+  title = {Gridap: An extensible {F}inite {E}lement toolbox in {J}ulia},
+  journal = {Journal of Open Source Software}
+}
+
+@article{Verdugo2022,
+  doi = {10.1016/j.cpc.2022.108341},
+  url = {https://doi.org/10.1016/j.cpc.2022.108341},
+  year = {2022},
+  publisher = {Elsevier {BV}},
+  volume = {276},
+  pages = {108341},
+  author = {Francesc Verdugo and Santiago Badia},
+  title = {The software design of {G}ridap: a {F}inite {E}lement package based on the {J}ulia {JIT} compiler},
+  journal = {Computer Physics Communications}
+}
+
+@misc{Cicci2022Fresca,
+  doi = {10.48550/ARXIV.2202.02658},
+  url = {https://arxiv.org/abs/2202.02658},
+  author = {Cicci, Ludovica and Fresca, Stefania and Manzoni, Andrea},
+  keywords = {Numerical Analysis (math.NA), Machine Learning (cs.LG), FOS: Mathematics, FOS: Mathematics, FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Deep-HyROMnet: A deep learning-based operator approximation for hyper-reduction of nonlinear parametrized PDEs},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{Nonino2019Ballarin,
+  doi = {10.48550/ARXIV.1911.06598},
+  url = {https://arxiv.org/abs/1911.06598},
+  author = {Nonino, Monica and Ballarin, Francesco and Rozza, Gianluigi and Maday, Yvon},
+  keywords = {Numerical Analysis (math.NA), FOS: Mathematics, FOS: Mathematics},
+  title = {Overcoming slowly decaying Kolmogorov n-width by transport maps: application to model order reduction of fluid dynamics and fluid--structure interaction problems},
+  publisher = {arXiv},
+  year = {2019},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{Rui2019Kashinath,
+  doi = {10.48550/ARXIV.1911.08655},
+  url = {https://arxiv.org/abs/1911.08655},
+  author = {Wang, Rui and Kashinath, Karthik and Mustafa, Mustafa and Albert, Adrian and Yu, Rose},
+  keywords = {Computational Physics (physics.comp-ph), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Physical sciences, FOS: Physical sciences, FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Towards Physics-informed Deep Learning for Turbulent Flow Prediction},
+  publisher = {arXiv},
+  year = {2019},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@article{Drma__2016,
+	doi = {10.1137/15m1019271},
+	url = {https://doi.org/10.1137%2F15m1019271},
+	year = 2016,
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	volume = {38},
+	number = {2},
+	pages = {A631--A648},
+	author = {Zlatko Drma{\v{c}} and Serkan Gugercin},
+	title = {A New Selection Operator for the Discrete Empirical Interpolation Method---Improved A Priori Error Bound and Extensions},
+	journal = {{SIAM} Journal on Scientific Computing}
+}
+
+@misc{otto2019discrete,
+	title={A Discrete Empirical Interpolation Method for Interpretable Immersion and Embedding of Nonlinear Manifolds}, 
+	author={Samuel E. Otto and Clarence W. Rowley},
+	year={2019},
+	eprint={1905.07619},
+	archivePrefix={arXiv},
+	primaryClass={cs.NA}
+}
+
+@article{FOSASDEPANDO2016194,
+	title = {Nonlinear model-order reduction for compressible flow solvers using the Discrete Empirical Interpolation Method},
+	journal = {Journal of Computational Physics},
+	volume = {324},
+	pages = {194-209},
+	year = {2016},
+	issn = {0021-9991},
+	doi = {https://doi.org/10.1016/j.jcp.2016.08.004},
+	url = {https://www.sciencedirect.com/science/article/pii/S0021999116303448},
+	author = {Miguel {Fosas de Pando} and Peter J. Schmid and Denis Sipp}
+}
+
+@article{doi:10.1137/10081157X,
+author = {Drohmann, Martin and Haasdonk, Bernard and Ohlberger, Mario},
+title = {Reduced Basis Approximation for Nonlinear Parametrized Evolution Equations based on Empirical Operator Interpolation},
+journal = {SIAM Journal on Scientific Computing},
+volume = {34},
+number = {2},
+pages = {A937-A969},
+year = {2012},
+doi = {10.1137/10081157X},
+URL = {https://doi.org/10.1137/10081157X},
+eprint = {https://doi.org/10.1137/10081157X}}
+
+#####################################################################
+###################### TENSOR TRAIN REFERENCES ######################
+#####################################################################
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  tensor
+
+@article{cui2023self,
+  title={Self-reinforced polynomial approximation methods for concentrated probability densities},
+  author={Cui, Tiangang and Dolgov, Sergey and Zahm, Olivier},
+  journal={arXiv preprint: 2303.02554},
+  year={2023}
+}
+
+@article{rohrbach2022rank,
+  title={Rank bounds for approximating gaussian densities in the tensor-train format},
+  author={Rohrbach, Paul B and Dolgov, Sergey and Grasedyck, Lars and Scheichl, Robert},
+  journal={SIAM/ASA Journal on Uncertainty Quantification},
+  volume={10},
+  number={3},
+  pages={1191--1224},
+  year={2022},
+  publisher={SIAM}
+}
+
+@article{griebel2021analysis,
+  title={Analysis of tensor approximation schemes for continuous functions},
+  author={Griebel, Michael and Harbrecht, Helmut},
+  journal={Foundations of Computational Mathematics},
+  pages={1--22},
+  year={2021},
+  publisher={Springer}
+}
+
+@article{cui2021deep,
+  title={Deep composition of Tensor-Trains using squared inverse Rosenblatt transports},
+  author={Cui, Tiangang and Dolgov, Sergey},
+  journal={Foundations of Computational Mathematics},
+  pages={1--60},
+  year={2021},
+  publisher={Springer}
+}
+
+@article{gorodetsky2019continuous,
+  title={A continuous analogue of the tensor-train decomposition},
+  author={Gorodetsky, Alex and Karaman, Sertac and Marzouk, Youssef M},
+  journal={Computer Methods in Applied Mechanics and Engineering},
+  volume={347},
+  pages={59--84},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@article{dolgov2018approximation,
+  title={Approximation and sampling of multivariate probability distributions in the tensor train decomposition},
+  author={Dolgov, Sergey and Anaya-Izquierdo, Karim and Fox, Colin and Scheichl, Robert},
+  journal={arXiv preprint arXiv:1810.01212},
+  year={2018}
+}
+
+@article{bigoni2016spectral,
+	title={Spectral tensor-train decomposition},
+	author={Bigoni, Daniele and Engsig-Karup, Allan P and Marzouk, Youssef M},
+	journal={SIAM Journal on Scientific Computing},
+	volume={38},
+	number={4},
+	pages={A2405--A2439},
+	year={2016},
+	publisher={SIAM}
+}
+
+@article{Hansbo,
+author = {Hansbo, Peter},
+year = {2005},
+month = {11},
+pages = {},
+title = {Nitsche’s method for interface problems in computational mechanics},
+volume = {28},
+journal = {GAMM-Mitteilungen},
+doi = {10.1002/gamm.201490018}
+}
+
+@article{BurmanHansbo,
+author = {Burman, Erik and Hansbo, Peter},
+year = {2014},
+month = {05},
+pages = {},
+title = {Fictitious domain methods using cut elements: III. A stabilized Nitsche method for Stokes’ problem},
+volume = {48},
+journal = {European Series in Applied and Industrial Mathematics (ESAIM): Mathematical Modelling and Numerical Analysis},
+doi = {10.1051/m2an/2013123}
+}
+
+@article{hackbusch2014numerical,
+  title={Numerical tensor calculus},
+  author={Hackbusch, Wolfgang},
+  journal={Acta numerica},
+  volume={23},
+  pages={651--742},
+  year={2014},
+  publisher={Cambridge University Press}
+}
+
+@article{comon2014tensors,
+  title={Tensors: a brief introduction},
+  author={Comon, Pierre},
+  journal={IEEE Signal Processing Magazine},
+  volume={31},
+  number={3},
+  pages={44--53},
+  year={2014},
+  publisher={IEEE}
+}
+
+@article{dolgov2014alternating,
+  title={Alternating minimal energy methods for linear systems in higher dimensions},
+  author={Dolgov, Sergey V and Savostyanov, Dmitry V},
+  journal={SIAM Journal on Scientific Computing},
+  volume={36},
+  number={5},
+  pages={A2248--A2271},
+  year={2014},
+  publisher={SIAM}
+}
+
+@book{hackbusch2012tensor,
+  title={Tensor spaces and numerical tensor calculus},
+  author={Hackbusch, Wolfgang},
+  volume={42},
+  year={2012},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{oseledets2011tensor,
+  title={Tensor-train decomposition},
+  author={Oseledets, Ivan V},
+  journal={SIAM Journal on Scientific Computing},
+  volume={33},
+  number={5},
+  pages={2295--2317},
+  year={2011},
+  publisher={SIAM}
+}
+
+
+@article{oseledets2010tt,
+  title={TT-cross approximation for multidimensional arrays},
+  author={Oseledets, Ivan and Tyrtyshnikov, Eugene},
+  journal={Linear Algebra and its Applications},
+  volume={432},
+  number={1},
+  pages={70--88},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@unknown{Shi2024,
+author = {Shi, Tianyi and Hayes, Daniel and Qiu, Jing-Mei},
+year = {2024},
+month = {07},
+pages = {},
+title = {Distributed memory parallel adaptive tensor-train cross approximation},
+doi = {10.48550/arXiv.2407.11290}
+}
+
+@article{kolda2009tensor,
+  title={Tensor decompositions and applications},
+  author={Kolda, Tamara G and Bader, Brett W},
+  journal={SIAM review},
+  volume={51},
+  number={3},
+  pages={455--500},
+  year={2009},
+  publisher={SIAM}
+}
+
+@book{bowen2008introduction,
+  title={Introduction to vectors and tensors},
+  author={Bowen, Ray M and Wang, Chao-Cheng},
+  volume={2},
+  year={2008},
+  publisher={Courier Corporation}
+}
+
+@inproceedings{govindu2005tensor,
+  title={A tensor decomposition for geometric grouping and segmentation},
+  author={Govindu, Venu Madhav},
+  booktitle={2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)},
+  volume={1},
+  pages={1150--1157},
+  year={2005},
+  organization={IEEE}
+}
+
+
+@article{faber2003recent,
+  title={Recent developments in CANDECOMP/PARAFAC algorithms: a critical review},
+  author={Faber, Nicolaas Klaas M and Bro, Rasmus and Hopke, Philip K},
+  journal={Chemometrics and Intelligent Laboratory Systems},
+  volume={65},
+  number={1},
+  pages={119--137},
+  year={2003},
+  publisher={Elsevier}
+}
+
+@article{de2001independent,
+  title={Independent component analysis and (simultaneous) third-order tensor diagonalization},
+  author={De Lathauwer, Lieven and De Moor, Bart and Vandewalle, Joos},
+  journal={IEEE Transactions on Signal Processing},
+  volume={49},
+  number={10},
+  pages={2262--2271},
+  year={2001},
+  publisher={IEEE}
+}
+
+@article{kolda2001orthogonal,
+  title={Orthogonal tensor decompositions},
+  author={Kolda, Tamara G},
+  journal={SIAM Journal on Matrix Analysis and Applications},
+  volume={23},
+  number={1},
+  pages={243--255},
+  year={2001},
+  publisher={SIAM}
+}
+
+@article{de2000multilinear,
+  title={A multilinear singular value decomposition},
+  author={De Lathauwer, Lieven and De Moor, Bart and Vandewalle, Joos},
+  journal={SIAM journal on Matrix Analysis and Applications},
+  volume={21},
+  number={4},
+  pages={1253--1278},
+  year={2000},
+  publisher={SIAM}
+}
+
+@article{kalman1996singularly,
+  title={A singularly valuable decomposition: the SVD of a matrix},
+  author={Kalman, Dan},
+  journal={The college mathematics journal},
+  volume={27},
+  number={1},
+  pages={2--23},
+  year={1996},
+  publisher={Taylor \& Francis}
+}
+
+@article{kiers1992tuckals,
+  title={TUCKALS core rotations and constrained TUCKALS modelling},
+  author={Kiers, Henk AL},
+  journal={Statistica Applicata},
+  volume={4},
+  number={4},
+  pages={659--667},
+  year={1992}
+}
+
+@article{haastad1990tensor,
+  title={Tensor rank is NP-complete},
+  author={H{\aa}stad, Johan},
+  journal={Journal of Algorithms},
+  volume={11},
+  number={4},
+  pages={644--654},
+  year={1990},
+  publisher={Elsevier}
+}
+
+@article{kapteyn1986approach,
+  title={An approach ton-mode components analysis},
+  author={Kapteyn, Arie and Neudecker, Heinz and Wansbeek, Tom},
+  journal={Psychometrika},
+  volume={51},
+  number={2},
+  pages={269--275},
+  year={1986},
+  publisher={Springer}
+}
+
+@article{kroonenberg1980principal,
+  title={Principal component analysis of three-mode data by means of alternating least squares algorithms},
+  author={Kroonenberg, Pieter M and De Leeuw, Jan},
+  journal={Psychometrika},
+  volume={45},
+  number={1},
+  pages={69--97},
+  year={1980},
+  publisher={Springer}
+}
+
+@article{douglas1980candelinc,
+  title={CANDELINC: A general approach to multidimensional analysis of many-way arrays with linear constraints on parameters},
+  author={Douglas Carroll, J and Pruzansky, Sandra and Kruskal, Joseph B},
+  journal={Psychometrika},
+  volume={45},
+  number={1},
+  pages={3--24},
+  year={1980},
+  publisher={Springer}
+}
+
+@article{harshman1970foundations,
+  title={Foundations of the PARAFAC procedure: Models and conditions for an" explanatory" multimodal factor analysis},
+  author={Harshman, Richard A and others},
+  year={1970},
+  publisher={University of California at Los Angeles Los Angeles}
+}
+
+@article{carroll1970analysis,
+  title={Analysis of individual differences in multidimensional scaling via an N-way generalization of “Eckart-Young” decomposition},
+  author={Carroll, J Douglas and Chang, Jih-Jie},
+  journal={Psychometrika},
+  volume={35},
+  number={3},
+  pages={283--319},
+  year={1970},
+  publisher={Springer}
+}
+
+@article{tucker1966some,
+  title={Some mathematical notes on three-mode factor analysis},
+  author={Tucker, Ledyard R},
+  journal={Psychometrika},
+  volume={31},
+  number={3},
+  pages={279--311},
+  year={1966},
+  publisher={Springer}
+}
+
+@article{hitchcock1928multiple,
+  title={Multiple invariants and generalized rank of a p-way matrix or tensor},
+  author={Hitchcock, Frank L},
+  journal={Journal of Mathematics and Physics},
+  volume={7},
+  number={1-4},
+  pages={39--79},
+  year={1928},
+  publisher={Wiley Online Library}
+}
+
+@article{hitchcock1927expression,
+  title={The expression of a tensor or a polyadic as a sum of products},
+  author={Hitchcock, Frank L},
+  journal={Journal of Mathematics and Physics},
+  volume={6},
+  number={1-4},
+  pages={164--189},
+  year={1927},
+  publisher={Wiley Online Library}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% matrix approximation
+@book{trefethen2022numerical,
+  title={Numerical linear algebra},
+  author={Trefethen, Lloyd N and Bau, David},
+  volume={181},
+  year={2022},
+  publisher={Siam}
+}
+
+@article{sorensen2016deim,
+  title={A deim induced cur factorization},
+  author={Sorensen, Danny C and Embree, Mark},
+  journal={SIAM Journal on Scientific Computing},
+  volume={38},
+  number={3},
+  pages={A1454--A1482},
+  year={2016},
+  publisher={SIAM}
+}
+
+@article{townsend2015continuous,
+  title={Continuous analogues of matrix factorizations},
+  author={Townsend, Alex and Trefethen, Lloyd N},
+  journal={Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences},
+  volume={471},
+  number={2173},
+  pages={20140585},
+  year={2015},
+  publisher={The Royal Society Publishing}
+}
+
+@article{halko2011finding,
+  title={Finding structure with randomness: Probabilistic algorithms for constructing approximate matrix decompositions},
+  author={Halko, Nathan and Martinsson, Per-Gunnar and Tropp, Joel A},
+  journal={SIAM review},
+  volume={53},
+  number={2},
+  pages={217--288},
+  year={2011},
+  publisher={SIAM}
+}
+
+@incollection{goreinov2010find,
+  title={How to find a good submatrix},
+  author={Goreinov, Sergei A and Oseledets, Ivan V and Savostyanov, Dimitry V and Tyrtyshnikov, Eugene E and Zamarashkin, Nikolay L},
+  booktitle={Matrix Methods: Theory, Algorithms And Applications: Dedicated to the Memory of Gene Golub},
+  pages={247--256},
+  year={2010},
+  publisher={World Scientific}
+}
+
+
+@article{mahoney2009cur,
+  title={CUR matrix decompositions for improved data analysis},
+  author={Mahoney, Michael W and Drineas, Petros},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={106},
+  number={3},
+  pages={697--702},
+  year={2009},
+  publisher={National Acad Sciences}
+}
+
+@article{Holtz2011,
+author = {Holtz, Sebastian and Rohwedder, Thorsten and Schneider, Reinhold},
+year = {2011},
+month = {01},
+pages = {},
+title = {The Alternating Linear Scheme for Tensor Optimization in the Tensor Train Format},
+journal = {SIAM Journal on Scientific Computing},
+doi = {10.1137/100818893}
+}
+
+@article{doi:10.1137/110833142,
+author = {Oseledets, I. V. and Dolgov, S. V.},
+title = {Solution of Linear Systems and Matrix Inversion in the TT-Format},
+journal = {SIAM Journal on Scientific Computing},
+volume = {34},
+number = {5},
+pages = {A2718-A2739},
+year = {2012},
+doi = {10.1137/110833142},
+URL = {https://doi.org/10.1137/110833142},
+eprint = {https://doi.org/10.1137/110833142}
+}
+
+@software{ken_ho_2022_6394438,
+  author       = {Ken Ho and
+                  Sheehan Olver and
+                  Tony Kelman and
+                  Elias Jarlebring and
+                  Julia TagBot and
+                  BambOoxX and
+                  Mikael Slevinsky},
+  title        = {JuliaMatrices/LowRankApprox.jl: v0.5.2},
+  month        = mar,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {v0.5.2},
+  doi          = {10.5281/zenodo.6394438},
+  url          = {https://doi.org/10.5281/zenodo.6394438}
+}
+
+
+@inbook{doi:https://doi.org/10.1002/0471249718.ch1,
+publisher = {John Wiley \& Sons, Ltd},
+isbn = {9780471249719},
+title = {Gaussian Elimination and Its Variants},
+booktitle = {Fundamentals of Matrix Computations},
+chapter = {1},
+pages = {1-110},
+doi = {https://doi.org/10.1002/0471249718.ch1},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/0471249718.ch1},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/0471249718.ch1},
+year = {2002},
+keywords = {Gaussian elimination, flop counts, threshold pivoting option},
+abstract = {Summary This chapter contains sections titled: Matrix Multiplication Systems of Linear Equations Triangular Systems Positive Definite Systems; Cholesky Decomposition Banded Positive Definite Systems Sparse Positive Definite Systems Gaussian Elimination and the LU Decomposition Gaussian Elimination with Pivoting Sparse Gaussian Elimination}
+}
+
+@article{drineas2008relative,
+  title={Relative-error CUR matrix decompositions},
+  author={Drineas, Petros and Mahoney, Michael W and Muthukrishnan, Shan},
+  journal={SIAM Journal on Matrix Analysis and Applications},
+  volume={30},
+  number={2},
+  pages={844--881},
+  year={2008},
+  publisher={SIAM}
+}
+
+@article{goreinov1997pseudo,
+  title={Pseudo-skeleton approximations by matrices of maximal volume},
+  author={Goreinov, Sergei A and Zamarashkin, Nikolai Leonidovich and Tyrtyshnikov, Eugene E},
+  journal={Mathematical Notes},
+  volume={62},
+  number={4},
+  pages={515--519},
+  year={1997},
+  publisher={Springer}
+}
+
+@article{goreinov1997theory,
+  title={A theory of pseudoskeleton approximations},
+  author={Goreinov, Sergei A and Tyrtyshnikov, Eugene E and Zamarashkin, Nickolai L},
+  journal={Linear algebra and its applications},
+  volume={261},
+  number={1-3},
+  pages={1--21},
+  year={1997},
+  publisher={Elsevier}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SMC and MCMC
+@article{herbst2019tempered,
+  title={Tempered particle filtering},
+  author={Herbst, Edward and Schorfheide, Frank},
+  journal={Journal of Econometrics},
+  volume={210},
+  number={1},
+  pages={26--44},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@article{betancourt2017conceptual,
+  title={A conceptual introduction to Hamiltonian Monte Carlo},
+  author={Betancourt, Michael},
+  journal={arXiv preprint arXiv:1701.02434},
+  year={2017}
+}
+
+@book{mcbook,
+   author = {Art B. Owen},
+   year = 2013,
+   title = {Monte Carlo theory, methods and examples}
+}
+
+@article{chopin2013smc2,
+  title={SMC2: an efficient algorithm for sequential analysis of state space models},
+  author={Chopin, Nicolas and Jacob, Pierre E and Papaspiliopoulos, Omiros},
+  journal={Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  volume={75},
+  number={3},
+  pages={397--426},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+@book{brooks2011handbook,
+  title={Handbook of markov chain monte carlo},
+  author={Brooks, Steve and Gelman, Andrew and Jones, Galin and Meng, Xiao-Li},
+  year={2011},
+  publisher={CRC press}
+}
+
+@article{tokdar2010importance,
+  title={Importance sampling: a review},
+  author={Tokdar, Surya T and Kass, Robert E},
+  journal={Wiley Interdisciplinary Reviews: Computational Statistics},
+  volume={2},
+  number={1},
+  pages={54--60},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{andrieu2010particle,
+  title={Particle markov chain monte carlo methods},
+  author={Andrieu, Christophe and Doucet, Arnaud and Holenstein, Roman},
+  journal={Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  volume={72},
+  number={3},
+  pages={269--342},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+
+@article{kantas2009overview,
+  title={An overview of sequential Monte Carlo methods for parameter estimation in general state-space models},
+  author={Kantas, Nicholas and Doucet, Arnaud and Singh, Sumeetpal Sindhu and Maciejowski, Jan Marian},
+  journal={IFAC Proceedings Volumes},
+  volume={42},
+  number={10},
+  pages={774--785},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@article{chopin2007inference,
+  title={Inference and model choice for sequentially ordered hidden Markov models},
+  author={Chopin, Nicolas},
+  journal={Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  volume={69},
+  number={2},
+  pages={269--284},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{douc2005comparison,
+  title={Comparison of resampling schemes for particle filtering},
+  author={Douc, Randal and Capp{\'e}, Olivier},
+  booktitle={ISPA 2005. Proceedings of the 4th International Symposium on Image and Signal Processing and Analysis, 2005.},
+  pages={64--69},
+  year={2005},
+  organization={IEEE}
+}
+
+@article{chopin2004central,
+  title={Central limit theorem for sequential Monte Carlo methods and its application to Bayesian inference},
+  author={Chopin, Nicolas},
+  year={2004}
+}
+
+@book{del2004feynman,
+  title={Feynman--Kac formulae},
+  author={Del Moral, Pierre},
+  year={2004},
+  publisher={Springer}
+}
+
+@article{chopin2002sequential,
+  title={A sequential particle filter method for static models},
+  author={Chopin, Nicolas},
+  journal={Biometrika},
+  volume={89},
+  number={3},
+  pages={539--552},
+  year={2002},
+  publisher={Oxford University Press}
+}
+
+@article{maskell2002tutorial,
+  title={A tutorial on particle filters for on-line nonlinear/non-Gaussian Bayesian tracking},
+  author={Maskell, Simon and Gordon, Neil},
+  journal={IEE Target Tracking: Algorithms and Applications (Ref. No. 2001/174)},
+  pages={2--1},
+  year={2002},
+  publisher={IET}
+}
+
+@article{gilks2001following,
+  title={Following a moving target—Monte Carlo inference for dynamic Bayesian models},
+  author={Gilks, Walter R and Berzuini, Carlo},
+  journal={Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  volume={63},
+  number={1},
+  pages={127--146},
+  year={2001},
+  publisher={Wiley Online Library}
+}
+
+@incollection{doucet2001introduction,
+  title={An introduction to sequential Monte Carlo methods},
+  author={Doucet, Arnaud and Freitas, Nando de and Gordon, Neil},
+  booktitle={Sequential Monte Carlo methods in practice},
+  pages={3--14},
+  year={2001},
+  publisher={Springer}
+}
+
+@book{liu2001monte,
+  title={Monte Carlo strategies in scientific computing},
+  author={Liu, Jun S and Liu, Jun S},
+  volume={10},
+  year={2001},
+  publisher={Springer}
+}
+
+@incollection{liu2001theoretical,
+  title={A theoretical framework for sequential importance sampling with resampling},
+  author={Liu, Jun S and Chen, Rong and Logvinenko, Tanya},
+  booktitle={Sequential Monte Carlo methods in practice},
+  pages={225--246},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{pitt1999filtering,
+  title={Filtering via simulation: Auxiliary particle filters},
+  author={Pitt, Michael K and Shephard, Neil},
+  journal={Journal of the American statistical association},
+  volume={94},
+  number={446},
+  pages={590--599},
+  year={1999},
+  publisher={Taylor \& Francis}
+}
+
+@article{liu1998sequential,
+  title={Sequential Monte Carlo methods for dynamic systems},
+  author={Liu, Jun S and Chen, Rong},
+  journal={Journal of the American statistical association},
+  volume={93},
+  number={443},
+  pages={1032--1044},
+  year={1998},
+  publisher={Taylor \& Francis}
+}
+
+@article{cowles1996markov,
+  title={Markov chain Monte Carlo convergence diagnostics: a comparative review},
+  author={Cowles, Mary Kathryn and Carlin, Bradley P},
+  journal={Journal of the American Statistical Association},
+  volume={91},
+  number={434},
+  pages={883--904},
+  year={1996},
+  publisher={Taylor \& Francis}
+}
+
+@article{kong1994sequential,
+  title={Sequential imputations and Bayesian missing data problems},
+  author={Kong, Augustine and Liu, Jun S and Wong, Wing Hung},
+  journal={Journal of the American statistical association},
+  volume={89},
+  number={425},
+  pages={278--288},
+  year={1994},
+  publisher={Taylor \& Francis}
+}
+
+@inproceedings{gordon1993novel,
+  title={Novel approach to nonlinear/non-Gaussian Bayesian state estimation},
+  author={Gordon, Neil J and Salmond, David J and Smith, Adrian FM},
+  booktitle={IEE proceedings F (radar and signal processing)},
+  volume={140},
+  number={2},
+  pages={107--113},
+  year={1993},
+  organization={IET}
+}
+
+@article{geman1984stochastic,
+  title={Stochastic relaxation, Gibbs distributions, and the Bayesian restoration of images},
+  author={Geman, Stuart and Geman, Donald},
+  journal={IEEE Transactions on pattern analysis and machine intelligence},
+  number={6},
+  pages={721--741},
+  year={1984},
+  publisher={IEEE}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% conditional Gaussian
+
+@incollection{chen2023conditional,
+  title={Conditional {G}aussian Nonlinear Systems},
+  author={Chen, Nan},
+  booktitle={Stochastic Methods for Modeling and Predicting Complex Dynamical Systems: Uncertainty Quantification, State Estimation, and Reduced-Order Models},
+  pages={119--142},
+  year={2023},
+  publisher={Springer}
+}
+
+% conditional {G}aussian
+@article{chen2022conditional,
+  title={Conditional {G}aussian nonlinear system: A fast preconditioner and a cheap surrogate model for complex nonlinear systems},
+  author={Chen, Nan and Li, Yingda and Liu, Honghu},
+  journal={Chaos: An Interdisciplinary Journal of Nonlinear Science},
+  volume={32},
+  number={5},
+  pages={053122},
+  year={2022},
+  publisher={AIP Publishing LLC}
+}
+
+@article{chen2018rigorous,
+  title={Rigorous analysis for efficient statistically accurate algorithms for solving {F}okker--{P}lanck equations in large dimensions},
+  author={Chen, Nan and Majda, Andrew J and Tong, Xin T},
+  journal={SIAM/ASA Journal on Uncertainty Quantification},
+  volume={6},
+  number={3},
+  pages={1198--1223},
+  year={2018},
+  publisher={SIAM}
+}
+
+@article{chen2018conditional,
+  title={Conditional Gaussian systems for multiscale nonlinear stochastic systems: Prediction, state estimation and uncertainty quantification},
+  author={Chen, Nan and Majda, Andrew J},
+  journal={Entropy},
+  volume={20},
+  number={7},
+  pages={509},
+  year={2018},
+  publisher={MDPI}
+}
+
+
+@book{liptser2013statistics,
+  title={Statistics of random processes II: Applications},
+  author={Liptser, Robert S and Shiryaev, Albert N},
+  volume={6},
+  year={2013},
+  publisher={Springer Science \& Business Media}
+}
+
+
+
+@article{tong2012ergodicity,
+  title={Ergodicity and stability of the conditional distributions of nondegenerate Markov chains},
+  author={Tong, Xin Thomson and Van Handel, Ramon},
+  journal={The Annals of Applied Probability},
+  volume={22},
+  number={4},
+  pages={1495--1540},
+  year={2012},
+  publisher={Institute of Mathematical Statistics}
+}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% transport method
+@article{spantini2022coupling,
+  title={Coupling techniques for nonlinear ensemble filtering},
+  author={Spantini, Alessio and Baptista, Ricardo and Marzouk, Youssef},
+  journal={SIAM Review},
+  volume={64},
+  number={4},
+  pages={921--953},
+  year={2022},
+  publisher={SIAM}
+}
+
+
+
+@article{spantini2019coupling,
+  title={Coupling techniques for nonlinear ensemble filtering},
+  author={Spantini, Alessio and Baptista, Ricardo and Marzouk, Youssef},
+  journal={arXiv preprint arXiv:1907.00389},
+  year={2019}
+}
+
+
+@article{spantini2018inference,
+  title={Inference via low-dimensional couplings},
+  author={Spantini, Alessio and Bigoni, Daniele and Marzouk, Youssef},
+  journal={The Journal of Machine Learning Research},
+  volume={19},
+  number={1},
+  pages={2639--2709},
+  year={2018},
+  publisher={JMLR. org}
+}
+
+@article{bogachev2005triangular,
+  title={Triangular transformations of measures},
+  author={Bogachev, Vladimir Igorevich and Kolesnikov, Aleksandr Viktorovich and Medvedev, Kirill Vladimirovich},
+  journal={Sbornik: Mathematics},
+  volume={196},
+  number={3},
+  pages={309--335},
+  year={2005},
+  publisher={Turpion Ltd}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% state space model, hidden markov model
+
+@book{reich2015probabilistic,
+  title={Probabilistic forecasting and Bayesian data assimilation},
+  author={Reich, Sebastian and Cotter, Colin},
+  year={2015},
+  publisher={Cambridge University Press}
+}
+
+@book{sarkka2013bayesian,
+  title={Bayesian filtering and smoothing},
+  author={S{\"a}rkk{\"a}, Simo},
+  number={3},
+  year={2013},
+  publisher={Cambridge university press}
+}
+
+
+@article{cappe2011online,
+  title={Online EM algorithm for hidden {M}arkov models},
+  author={Capp{\'e}, Olivier},
+  journal={Journal of Computational and Graphical Statistics},
+  volume={20},
+  number={3},
+  pages={728--749},
+  year={2011},
+  publisher={Taylor \& Francis}
+}
+
+@article{malik2011particle,
+  title={Particle filters for continuous likelihood evaluation and maximisation},
+  author={Malik, Sheheryar and Pitt, Michael K},
+  journal={Journal of Econometrics},
+  volume={165},
+  number={2},
+  pages={190--209},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@article{fearnhead2010sequential,
+  title={A sequential smoothing algorithm with linear computational cost},
+  author={Fearnhead, Paul and Wyncoll, David and Tawn, Jonathan},
+  journal={Biometrika},
+  volume={97},
+  number={2},
+  pages={447--464},
+  year={2010},
+  publisher={Oxford University Press}
+}
+
+@article{briers2010smoothing,
+  title={Smoothing algorithms for state--space models},
+  author={Briers, Mark and Doucet, Arnaud and Maskell, Simon},
+  journal={Annals of the Institute of Statistical Mathematics},
+  volume={62},
+  pages={61--89},
+  year={2010},
+  publisher={Springer}
+}
+
+@inproceedings{cappe2009inference,
+  title={Inference in hidden markov models},
+  author={Capp{\'e}, Olivier and Moulines, Eric and Ryd{\'e}n, Tobias},
+  booktitle={Proceedings of EUSFLAT conference},
+  pages={14--16},
+  year={2009}
+}
+
+@article{doucet2009tutorial,
+  title={A tutorial on particle filtering and smoothing: Fifteen years later},
+  author={Doucet, Arnaud and Johansen, Adam M},
+  journal={Handbook of nonlinear filtering},
+  volume={12},
+  number={656-704},
+  pages={3},
+  year={2009}
+}
+
+@book{elliott2008hidden,
+  title={Hidden {M}arkov models: estimation and control},
+  author={Elliott, Robert J and Aggoun, Lakhdar and Moore, John B},
+  volume={29},
+  year={2008},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{snyder2008obstacles,
+  title={Obstacles to high-dimensional particle filtering},
+  author={Snyder, Chris and Bengtsson, Thomas and Bickel, Peter and Anderson, Jeff},
+  journal={Monthly Weather Review},
+  volume={136},
+  number={12},
+  pages={4629--4640},
+  year={2008},
+  publisher={American Meteorological Society}
+}
+
+@inproceedings{klaas2006fast,
+  title={Fast particle smoothing: If I had a million particles},
+  author={Klaas, Mike and Briers, Mark and De Freitas, Nando and Doucet, Arnaud and Maskell, Simon and Lang, Dustin},
+  booktitle={Proceedings of the 23rd international conference on Machine learning},
+  pages={481--488},
+  year={2006},
+  organization={ACM}
+}
+
+@article{godsill2004monte,
+  title={{M}onte {C}arlo smoothing for nonlinear time series},
+  author={Godsill, Simon J and Doucet, Arnaud and West, Mike},
+  journal={Journal of the American Statistical Association},
+  volume={99},
+  number={465},
+  pages={156--168},
+  year={2004},
+  publisher={Taylor \& Francis}
+}
+
+
+
+@article{kitagawa2001monte,
+  title={{M}onte {C}arlo smoothing and self-organising state-space model},
+  author={Kitagawa, Genshiro and Sato, Seisho},
+  journal={Sequential {M}onte {C}arlo methods in practice},
+  pages={177--195},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{pitt2001auxiliary,
+  title={Auxiliary variable based particle filters},
+  author={Pitt, Michael K and Shephard, Neil},
+  journal={Sequential {M}onte {C}arlo methods in practice},
+  pages={273--293},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{carpenter1999improved,
+  title={Improved particle filter for nonlinear problems},
+  author={Carpenter, James and Clifford, Peter and Fearnhead, Paul},
+  journal={IEE Proceedings-Radar, Sonar and Navigation},
+  volume={146},
+  number={1},
+  pages={2--7},
+  year={1999},
+  publisher={IET}
+}
+
+
+
+@article{kitagawa1987non,
+  title={Non-gaussian state—space modeling of nonstationary time series},
+  author={Kitagawa, Genshiro},
+  journal={Journal of the American statistical association},
+  volume={82},
+  number={400},
+  pages={1032--1041},
+  year={1987},
+  publisher={Taylor \& Francis}
+}
+
+@article{dempster1977maximum,
+  title={Maximum likelihood from incomplete data via the EM algorithm},
+  author={Dempster, Arthur P and Laird, Nan M and Rubin, Donald B},
+  journal={Journal of the royal statistical society: series B (methodological)},
+  volume={39},
+  number={1},
+  pages={1--22},
+  year={1977},
+  publisher={Wiley Online Library}
+}
+
+@article{kitagawa1996monte,
+  title={{M}onte {C}arlo filter and smoother for non-{G}aussian nonlinear state space models},
+  author={Kitagawa, Genshiro},
+  journal={Journal of Computational and Graphical Statistics},
+  volume={5},
+  number={1},
+  pages={1--25},
+  year={1996},
+  publisher={Taylor \& Francis}
+}
+
+
+
+
+@article{kitagawa1994two,
+  title={The two-filter formula for smoothing and an implementation of the Gaussian-sum smoother},
+  author={Kitagawa, Genshiro},
+  journal={Annals of the Institute of Statistical Mathematics},
+  volume={46},
+  pages={605--623},
+  year={1994},
+  publisher={Springer}
+}
+
+@article{bresler1986two,
+  title={Two-filter formulae for discrete-time non-linear {B}ayesian smoothing},
+  author={Bresler, Yoram},
+  journal={International Journal of Control},
+  volume={43},
+  number={2},
+  pages={629--641},
+  year={1986},
+  publisher={Taylor \& Francis}
+}
+
+@techreport{fearnhead1983improved,
+  title={An improved particle filter for non-linear problems},
+  author={Carpenter, James and Fearnhead, Paul and Clifford, Peter},
+  year={1983},
+  institution={Technical Report}
+}
+
+@article{falb1967infinite,
+  title={Infinite-dimensional filtering: The Kalman-Bucy filter in Hilbert space},
+  author={Falb, Peter L},
+  year={1967},
+  publisher={Elsevier}
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Kalman filter
+
+@book{chui2017kalman,
+  title={Kalman filtering},
+  author={Chui, Charles K and Chen, Guanrong and others},
+  year={2017},
+  publisher={Springer}
+}
+
+@article{frei2012sequential,
+  title={Sequential state and observation noise covariance estimation using combined ensemble Kalman and particle filters},
+  author={Frei, Marco and K{\"u}nsch, Hans R},
+  journal={Monthly Weather Review},
+  volume={140},
+  number={5},
+  pages={1476--1495},
+  year={2012},
+  publisher={American Meteorological Society}
+}
+
+@book{anderson2012optimal,
+  title={Optimal filtering},
+  author={Anderson, Brian D~O and Moore, John B},
+  year={2012},
+  publisher={Courier Corporation}
+}
+
+@book{evensen2009data,
+  title={Data assimilation: the ensemble Kalman filter},
+  author={Evensen, Geir and others},
+  volume={2},
+  year={2009},
+  publisher={Springer}
+}
+
+@article{furrer2007estimation,
+  title={Estimation of high-dimensional prior and posterior covariance matrices in Kalman filter variants},
+  author={Furrer, Reinhard and Bengtsson, Thomas},
+  journal={Journal of Multivariate Analysis},
+  volume={98},
+  number={2},
+  pages={227--255},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{anderson2007exploring,
+  title={Exploring the need for localization in ensemble data assimilation using a hierarchical ensemble filter},
+  author={Anderson, Jeffrey L},
+  journal={Physica D: Nonlinear Phenomena},
+  volume={230},
+  number={1-2},
+  pages={99--111},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{anderson2007adaptive,
+  title={An adaptive covariance inflation error correction algorithm for ensemble filters},
+  author={Anderson, Jeffrey L},
+  journal={Tellus A: Dynamic meteorology and oceanography},
+  volume={59},
+  number={2},
+  pages={210--224},
+  year={2007},
+  publisher={Taylor \& Francis}
+}
+
+@book{mandel2006efficient,
+  title={Efficient implementation of the ensemble Kalman filter},
+  author={Mandel, Jan},
+  year={2006},
+  publisher={Citeseer}
+}
+
+@book{bierman2006factorization,
+  title={Factorization methods for discrete sequential estimation},
+  author={Bierman, Gerald J},
+  year={2006},
+  publisher={Courier Corporation}
+}
+
+@book{simon2006optimal,
+  title={Optimal state estimation: Kalman, H infinity, and nonlinear approaches},
+  author={Simon, Dan},
+  year={2006},
+  publisher={John Wiley \& Sons}
+}
+
+@article{houtekamer2005ensemble,
+  title={Ensemble kalman filtering},
+  author={Houtekamer, Peter L and Mitchell, Herschel L},
+  journal={Quarterly Journal of the Royal Meteorological Society: A journal of the atmospheric sciences, applied meteorology and physical oceanography},
+  volume={131},
+  number={613},
+  pages={3269--3289},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+@article{julier2004unscented,
+  title={Unscented filtering and nonlinear estimation},
+  author={Julier, Simon J and Uhlmann, Jeffrey K},
+  journal={Proceedings of the IEEE},
+  volume={92},
+  number={3},
+  pages={401--422},
+  year={2004},
+  publisher={IEEE}
+}
+
+@article{evensen2003ensemble,
+  title={The ensemble Kalman filter: Theoretical formulation and practical implementation},
+  author={Evensen, Geir},
+  journal={Ocean dynamics},
+  volume={53},
+  number={4},
+  pages={343--367},
+  year={2003},
+  publisher={Springer}
+}
+
+@inproceedings{julier2002scaled,
+  title={The scaled unscented transformation},
+  author={Julier, Simon J},
+  booktitle={Proceedings of the 2002 American Control Conference (IEEE Cat. No. CH37301)},
+  volume={6},
+  pages={4555--4559},
+  year={2002},
+  organization={IEEE}
+}
+
+@article{wan2001unscented,
+  title={The unscented Kalman filter},
+  author={Wan, Eric A and Van Der Merwe, Rudolph},
+  journal={Kalman filtering and neural networks},
+  pages={221--280},
+  year={2001},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{wan2000unscented,
+  title={The unscented Kalman filter for nonlinear estimation},
+  author={Wan, Eric A and Van Der Merwe, Rudolph},
+  booktitle={Proceedings of the IEEE 2000 Adaptive Systems for Signal Processing, Communications, and Control Symposium (Cat. No. 00EX373)},
+  pages={153--158},
+  year={2000},
+  organization={Ieee}
+}
+
+@article{miller1999data,
+  title={Data assimilation into nonlinear stochastic models},
+  author={Miller, Robert N and Carter Jr, Everett F and Blue, Sally T},
+  journal={Tellus A},
+  volume={51},
+  number={2},
+  pages={167--194},
+  year={1999},
+  publisher={Wiley Online Library}
+}
+
+@article{madsen1999comparison,
+  title={Comparison of extended and ensemble Kalman filters for data assimilation in coastal area modelling},
+  author={Madsen, H and Canizares, R},
+  journal={International Journal for Numerical Methods in Fluids},
+  volume={31},
+  number={6},
+  pages={961--981},
+  year={1999},
+  publisher={Wiley Online Library}
+}
+
+@article{einicke1999robust,
+  title={Robust extended {K}alman filtering},
+  author={Einicke, Garry A and White, Langford B},
+  journal={IEEE Transactions on Signal Processing},
+  volume={47},
+  number={9},
+  pages={2596--2599},
+  year={1999},
+  publisher={IEEE}
+}
+
+@inproceedings{julier1997new,
+  title={New extension of the Kalman filter to nonlinear systems},
+  author={Julier, Simon J and Uhlmann, Jeffrey K},
+  booktitle={Signal processing, sensor fusion, and target recognition VI},
+  volume={3068},
+  pages={182--193},
+  year={1997},
+  organization={Spie}
+}
+
+@inproceedings{julier1995new,
+  title={A new approach for filtering nonlinear systems},
+  author={Julier, Simon J and Uhlmann, Jeffrey K and Durrant-Whyte, Hugh F},
+  booktitle={Proceedings of 1995 American Control Conference-ACC'95},
+  volume={3},
+  pages={1628--1632},
+  year={1995},
+  organization={IEEE}
+}
+
+@article{welch1995introduction,
+  title={An introduction to the Kalman filter},
+  author={Welch, Greg and Bishop, Gary and others},
+  year={1995},
+  publisher={Los Angeles, CA}
+}
+
+@article{evensen1994sequential,
+  title={Sequential data assimilation with a nonlinear quasi-geostrophic model using Monte Carlo methods to forecast error statistics},
+  author={Evensen, Geir},
+  journal={Journal of Geophysical Research: Oceans},
+  volume={99},
+  number={C5},
+  pages={10143--10162},
+  year={1994},
+  publisher={Wiley Online Library}
+}
+
+@book{maybeck1982stochastic,
+  title={Stochastic models, estimation, and control},
+  author={Maybeck, Peter S},
+  year={1982},
+  publisher={Academic press}
+}
+
+
+@article{kalman1960new,
+  title={A new approach to linear filtering and prediction problems},
+  author={Kalman, Rudolph Emil},
+  year={1960}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ODE and PDE
+
+
+@article{chen2018neural,
+  title={Neural ordinary differential equations},
+  author={Chen, Ricky TQ and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David K},
+  journal={Advances in neural information processing systems},
+  volume={31},
+  year={2018}
+}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% function approximation
+
+@book{boyd2001chebyshev,
+  title={Chebyshev and Fourier spectral methods},
+  author={Boyd, John P},
+  year={2001},
+  publisher={Courier Corporation}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Leverage effect
+
+@article{yu2005leverage,
+  title={On leverage in a stochastic volatility model},
+  author={Yu, Jun},
+  journal={Journal of Econometrics},
+  volume={127},
+  number={2},
+  pages={165--178},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@article{jacquier2004bayesian,
+  title={Bayesian analysis of stochastic volatility models with fat-tails and correlated errors},
+  author={Jacquier, Eric and Polson, Nicholas G and Rossi, Peter E},
+  journal={Journal of Econometrics},
+  volume={122},
+  number={1},
+  pages={185--212},
+  year={2004},
+  publisher={Elsevier}
+}
+
+@article{harvey1996estimation,
+  title={Estimation of an asymmetric stochastic volatility model for asset returns},
+  author={Harvey, Andrew C and Shephard, Neil},
+  journal={Journal of Business \& Economic Statistics},
+  volume={14},
+  number={4},
+  pages={429--434},
+  year={1996},
+  publisher={Taylor \& Francis}
+}
+
+@article{engle1993measuring,
+  title={Measuring and testing the impact of news on volatility},
+  author={Engle, Robert F and Ng, Victor K},
+  journal={The journal of finance},
+  volume={48},
+  number={5},
+  pages={1749--1778},
+  year={1993},
+  publisher={Wiley Online Library}
+}
+
+@article{chirstie1982stochastic,
+  title={The stochastic behavior of common stock variances},
+  author={Chirstie, A},
+  journal={Journal of Financial Economics},
+  volume={10},
+  number={4},
+  pages={407--432},
+  year={1982}
+}
+
+@article{black1976studies,
+  title={Studies of stock market volatility changes},
+  author={Black, Fischer},
+  journal={Proceedings of the American Statistical Association, Business \& Economic Statistics Section, 1976},
+  year={1976}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%tools
+@article{duan2022faster,
+  title={Faster matrix multiplication via asymmetric hashing},
+  author={Duan, Ran and Wu, Hongxun and Zhou, Renfei},
+  journal={arXiv preprint arXiv:2210.10173},
+  year={2022}
+}
+
+@inproceedings{alman2021refined,
+  title={A refined laser method and faster matrix multiplication},
+  author={Alman, Josh and Williams, Virginia Vassilevska},
+  booktitle={Proceedings of the 2021 ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+  pages={522--539},
+  year={2021},
+  organization={SIAM}
+}
+
+@article{kerin2020lorenz,
+  title={On the Lorenz'96 model and some generalizations},
+  author={Kerin, John and Engler, Hans},
+  journal={arXiv preprint arXiv:2005.07767},
+  year={2020}
+}
+
+@article{ghojogh2019eigenvalue,
+  title={Eigenvalue and generalized eigenvalue problems: Tutorial},
+  author={Ghojogh, Benyamin and Karray, Fakhri and Crowley, Mark},
+  journal={arXiv preprint arXiv:1903.11240},
+  year={2019}
+}
+
+@inproceedings{ge2016efficient,
+  title={Efficient algorithms for large-scale generalized eigenvector computation and canonical correlation analysis},
+  author={Ge, Rong and Jin, Chi and Netrapalli, Praneeth and Sidford, Aaron and others},
+  booktitle={International Conference on Machine Learning},
+  pages={2741--2750},
+  year={2016},
+  organization={PMLR}
+}
+
+@article{khadr2016forecasting,
+  title={Forecasting of meteorological drought using Hidden Markov Model (case study: The upper Blue Nile river basin, Ethiopia)},
+  author={Khadr, Mosaad},
+  journal={Ain Shams Engineering Journal},
+  volume={7},
+  number={1},
+  pages={47--56},
+  year={2016},
+  publisher={Elsevier}
+}
+
+
+@article{shields2015refined,
+  title={Refined stratified sampling for efficient Monte Carlo based uncertainty quantification},
+  author={Shields, Michael D and Teferra, Kirubel and Hapij, Adam and Daddazio, Raymond P},
+  journal={Reliability Engineering \& System Safety},
+  volume={142},
+  pages={310--325},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@book{horn2012matrix,
+  title={Matrix analysis},
+  author={Horn, Roger A and Johnson, Charles R},
+  year={2012},
+  publisher={Cambridge university press}
+}
+
+@article{grant2014theory,
+  title={Theory of ordinary differential equations},
+  author={Grant, Christopher P},
+  journal={Brigham Young University},
+  year={2014}
+}
+
+@article{zhang2008box,
+  title={Box-Cox stochastic volatility models with heavy-tails and correlated errors},
+  author={Zhang, Xibin and King, Maxwell L},
+  journal={Journal of Empirical Finance},
+  volume={15},
+  number={3},
+  pages={549--566},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@article{yu2006class,
+  title={A class of nonlinear stochastic volatility models and its implications for pricing currency options},
+  author={Yu, Jun and Yang, Zhenlin and Zhang, Xibin},
+  journal={Computational Statistics \& Data Analysis},
+  volume={51},
+  number={4},
+  pages={2218--2231},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@inproceedings{glynn2002some,
+  title={Some new perspectives on the method of control variates},
+  author={Glynn, Peter W and Szechtman, Roberto},
+  booktitle={Monte Carlo and Quasi-Monte Carlo Methods 2000: Proceedings of a Conference held at Hong Kong Baptist University, Hong Kong SAR, China, November 27--December 1, 2000},
+  pages={27--49},
+  year={2002},
+  organization={Springer}
+}
+
+@article{medsker2001recurrent,
+  title={Recurrent neural networks},
+  author={Medsker, Larry R and Jain, LC},
+  journal={Design and Applications},
+  volume={5},
+  number={64-67},
+  pages={2},
+  year={2001}
+}
+
+@article{rogic2001evaluation,
+  title={Evaluation of gene-finding programs on mammalian sequences},
+  author={Rogic, Sanja and Mackworth, Alan K and Ouellette, Francis BF},
+  journal={Genome research},
+  volume={11},
+  number={5},
+  pages={817--832},
+  year={2001},
+  publisher={Cold Spring Harbor Lab}
+}
+
+@article{constantine1996multivariate,
+  title={A multivariate {F}aa di {B}runo formula with applications},
+  author={Constantine, Gregory~M and Savits, Thomas~H},
+  journal={Transactions of the American Mathematical Society},
+  volume={348},
+  number={2},
+  pages={503--520},
+  year={1996}
+}
+
+@book{gelman1995bayesian,
+  title={Bayesian data analysis},
+  author={Gelman, Andrew and Carlin, John B and Stern, Hal S and Rubin, Donald B},
+  year={1995},
+  publisher={Chapman and Hall/CRC}
+}
+
+
+@article{taylor1994modeling,
+  title={Modeling stochastic volatility: A review and comparative study},
+  author={Taylor, Stephen J},
+  journal={Mathematical finance},
+  volume={4},
+  number={2},
+  pages={183--204},
+  year={1994},
+  publisher={Wiley Online Library}
+}
+
+
+@book{silverman1986density,
+  title={Density estimation for statistics and data analysis},
+  author={Silverman, Bernard W},
+  volume={26},
+  year={1986},
+  publisher={CRC press}
+}
+
+
+@article{peter1985kernel,
+  title={Kernel estimation of a distribution function},
+  author={Peter D, Hill},
+  journal={Communications in Statistics-Theory and Methods},
+  volume={14},
+  number={3},
+  pages={605--620},
+  year={1985},
+  publisher={Taylor \& Francis}
+}
+
+@article{rubinstein1985efficiency,
+  title={Efficiency of multivariate control variates in Monte Carlo simulation},
+  author={Rubinstein, Reuven Y and Marcus, Ruth},
+  journal={Operations Research},
+  volume={33},
+  number={3},
+  pages={661--677},
+  year={1985},
+  publisher={INFORMS}
+}
+
+@article{strassen1969gaussian,
+  title={Gaussian elimination is not optimal},
+  author={Strassen, Volker and others},
+  journal={Numerische mathematik},
+  volume={13},
+  number={4},
+  pages={354--356},
+  year={1969}
+}
+
+
+@article{metropolis1953equation,
+  title={Equation of state calculations by fast computing machines},
+  author={Metropolis, Nicholas and Rosenbluth, Arianna W and Rosenbluth, Marshall N and Teller, Augusta H and Teller, Edward},
+  journal={The journal of chemical physics},
+  volume={21},
+  number={6},
+  pages={1087--1092},
+  year={1953},
+  publisher={American Institute of Physics}
+}
