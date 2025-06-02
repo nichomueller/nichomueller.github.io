@@ -12,4 +12,4 @@
 ## Preprints
 
 1. **N. Mueller**, Y.Zhao, S. Badia, T. Cui. A tensor-train reduced basis solver for parameterized partial differential equations on Cartesian grids, 2025. Accepted at: *Journal of Computational and Applied Mathematics*. Available as ArXiv pre-print at: [http://arxiv.org/abs/2501.17438](http://arxiv.org/abs/2501.17438)
-1. **N. Mueller**, S. Badia. GridapROMs.jl: Efficient reduced order modelling in the Julia programming language. Submitted. Available as ArXiv pre-print at: [https://arxiv.org/abs/2503.15994](https://arxiv.org/abs/2503.15994)
+1. **N. Mueller**, S. Badia. GridapROMs.jl: Efficient reduced order modeling in the Julia programming language. Submitted. Available as ArXiv pre-print at: [https://arxiv.org/abs/2503.15994](https://arxiv.org/abs/2503.15994)
