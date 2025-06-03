@@ -21,7 +21,7 @@ rss = "Curriculum vitae by N. Mueller"
 ## Researcher Identification
 
 - **ORCID**: [0000-0002-7798-0858](https://orcid.org/0000-0002-7798-0858)
-- **Google Scholar**:  [https://scholar.google.com/citations?user=PXLbDdYAAAAJ&hl=en](https://scholar.google.com/citations?user=PXLbDdYAAAAJ&hl=en)
+- **Google Scholar**:  [PXLbDdYAAAAJ](https://scholar.google.com/citations?user=PXLbDdYAAAAJ&hl=en)
 
 ## Academic degrees
 
