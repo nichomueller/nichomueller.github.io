@@ -59,7 +59,7 @@ As part of a 6-month internship at [CSEM](https://www.csem.ch/en/), I developed 
  
 During my Masters at [EPFL](https://www.epfl.ch/en/), I successfully implemented an $h$-adaptive solver for the Stokes equations, discretized using hierarchical B-splines. Unlike standard global refinement strategies, the adaptivity loop ensures that the mesh remains hierarchical at every step, leading to enhanced convergence rates.
 
-@@im-100
+@@im-50
 ![](/assets/mesh.png) ![](/assets/convergence.png)
 *Figure 6: From left to right: adaptive hierarchical mesh at the final refinement step, alongside a comparison between the convergence of the novel error estimator and the traditional one. Results are presented for different polynomial degrees used in the discretization of the pressure field.*
 @@

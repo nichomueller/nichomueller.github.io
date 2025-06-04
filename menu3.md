@@ -4,7 +4,7 @@
 
 ## GridapROMs.jl (Role: Author)
 
-@@im-100
+@@im-50
 ![](/assets/gridaproms.png)
 @@
 
