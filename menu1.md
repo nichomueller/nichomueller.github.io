@@ -11,7 +11,7 @@ rss = "Curriculum vitae by N. Mueller"
 
 \toc
 
-## Personal/Contact information
+## Personal information
 
 - **Surname**, **Name**: Mueller, Nicholas
 - **Birth place**: Milan (Italy)
