@@ -2,6 +2,8 @@
 
 # My Five Achievements
 
+\toc
+
 ## A comprehensive library for reduced order modeling in Julia
 
 I am the author of [GridapROM.jl](https://github.com/gridap/GridapROMs.jl), a Julia-based library for the numerical approximation of parameterized partial differential equations using a broad range of reduced order modeling techniques. The library is designed to be both extensible and user-friendly, featuring a high-level, expressive API that promotes rapid prototyping without sacrificing performance. Thanks to Julia's just-in-time (JIT) compilation and advanced lazy evaluation strategies, GridapROMs delivers high efficiency while remaining fully written in Julia. The framework is PDE-agnostic and supports a wide spectrum of applications, including linear and nonlinear problems, single- and multi-field systems, and both steady-state and time-dependent formulations.
