@@ -23,7 +23,7 @@ One of the key innovations of the library lies in the efficient generation of hi
 
 @@im-100
 ![](/assets/errors_Julia.png)
-*Figure 3: Pointwise error between the finite element solution and the corresponding reduced-order approximations computed with GridapROMs.jl, for a fixed parameter and time instance in an unsteady, parameterized Navier–Stokes problem. The top row displays the velocity magnitude error for varying accuracy tolerances $\varepsilon = {10^{-i}}_{i=3}^{5}$, while the bottom row shows the corresponding pressure field error. These results illustrate the effect of the tolerance parameter on the accuracy of the reduced-order solution.*
+*Figure 3: Pointwise error between the finite element solution and the corresponding reduced-order approximations computed with GridapROMs.jl, for a fixed parameter and time instance in an unsteady, parameterized Navier–Stokes problem. The top row displays the velocity magnitude error for varying accuracy tolerances $\varepsilon = \{10^{-i}\}_{i=3}^{5}$, while the bottom row shows the corresponding pressure field error. These results illustrate the effect of the tolerance parameter on the accuracy of the reduced-order solution.*
 @@
 
 ## The successful integration of tensor-train decompositions with reduced basis methods
@@ -45,7 +45,7 @@ I contributed to the development of advanced reduced order models for the soluti
 
 @@im-100
 ![](/assets/errors_Stokes.png)
-*Figure 5: Pointwise error between the finite element solution at a fixed parameter and time for an unsteady, parameterized Stokes equation solved in a Femoropopliteal Bypass, and the corresponding reduced-order solutions computed using a space-time Galerkin reduced basis method (left) and a space-time Petrov-Galerkin reduced basis method (right), across various accuracy tolerances. The first row reports the velocity magnitude errors for tolerances $\varepsilon = {10^{-i}}_{i=3}^{5}$, while the second row displays the corresponding pressure field errors.*
+*Figure 5: Pointwise error between the finite element solution at a fixed parameter and time for an unsteady, parameterized Stokes equation solved in a Femoropopliteal Bypass, and the corresponding reduced-order solutions computed using a space-time Galerkin reduced basis method (left) and a space-time Petrov-Galerkin reduced basis method (right), across various accuracy tolerances. The first row reports the velocity magnitude errors for tolerances $\varepsilon = \{10^{-i}\}_{i=3}^{5}$, while the second row displays the corresponding pressure field errors.*
 @@
 
 ## A topology optimization library for generating compliant mechanisms in Matlab
