@@ -13,3 +13,5 @@
 ## Preprints
 
 1. **N. Mueller**, S. Badia. GridapROMs.jl: Efficient reduced order modeling in the Julia programming language. Submitted. Available as ArXiv pre-print at: [https://arxiv.org/abs/2503.15994](https://arxiv.org/abs/2503.15994)
+
+2. **N. Mueller**, S. Badia, Y.Zhao. Reduced basis solvers for unfitted methods on parameterized domains. Submitted. Available as ArXiv pre-print at: [http://arxiv.org/abs/2508.15320](http://arxiv.org/abs/2508.15320)

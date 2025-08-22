@@ -26,13 +26,30 @@ One of the key innovations of the library lies in the efficient generation of hi
 *Figure 3: Pointwise error between the finite element solution and the corresponding reduced-order approximations computed with GridapROMs.jl, for a fixed parameter and time instance in an unsteady, parameterized Navier–Stokes problem. The top row displays the velocity magnitude error for varying accuracy tolerances $\varepsilon = \{10^{-i}\}_{i=3}^{5}$, while the bottom row shows the corresponding pressure field error. These results illustrate the effect of the tolerance parameter on the accuracy of the reduced-order solution.*
 @@
 
+## Cutting-edge advancements in reduced basis methods for problems defined on parameterized domains
+
+Parameterized domains make solving partial differential equations (PDEs) especially challenging: geometric variations complicate traditional reduced-order models, remeshing is often required for each new configuration, and advanced tensor-based methods struggle on non-Cartesian grids. To tackle these issues, I designed a unified framework that combines unfitted finite element methods -- where geometries are embedded in a background Cartesian mesh -- with deformation-based mappings that transport a reference configuration to any parametrized domain. This innovation ensures that all solution data remain in a fixed-dimensional space, enabling the effective use of both classical and tensor-based reduced basis techniques.
+
+I further enhanced the framework with a localization strategy that builds dictionaries of reduced subspaces and compressed operators, significantly boosting both accuracy and efficiency. I extended the methodology to complex saddle-point problems, including the Stokes and Navier-Stokes equations, through a tailored stabilization procedure. Extensive numerical experiments on benchmark fluid dynamics problems confirm that the approach delivers high accuracy and dramatic computational savings, even for complex parametrized geometries.
+
+@@im-100
+![](/assets/unfitted_stokes.png)
+*Figure 4: Results for the Stokes equation, on a 3D rectangular geometry with a moving cylindrical hole. Top row: finite element velocity magnitude (left), reduced basis velocity magnitude (centre-left), finite element pressure (centre-right), and reduced basis pressure (right); the reduced basis velocity and pressure are obtained with an error tolerance $\varepsilon = 10^{-4}$. Bottom row: point-wise velocity error magnitude (left, with a tolerance $\varepsilon = 10^{-3}$, and centre-left, with a tolerance $\varepsilon = 10^{-4}$), and point-wise pressure error (centre-right, with a tolerance $\varepsilon = 10^{-3}$, and right, with a tolerance $\varepsilon = 10^{-4}$). Value of the test parameter: $\bm{\mu} = (0.63, 0.81)^T$.*
+@@
+
+
+@@im-100
+![](/assets/unfitted_nstokes.png)
+*Figure 5: Results for the Navier-Stokes equation benchmark, on a 3D rectangular geometry with a moving cylindrical hole. Top row: finite element velocity magnitude (left), reduced basis velocity magnitude (centre-left), finite element pressure (centre-right), and reduced basis pressure (right); the reduced basis velocity and pressure are obtained with an error tolerance $\varepsilon = 10^{-4}$. Bottom row: point-wise velocity error magnitude (left, with a tolerance $\varepsilon = 10^{-3}$, and centre-left, with a tolerance $\varepsilon = 10^{-4}$), and point-wise pressure error (centre-right, with a tolerance $\varepsilon = 10^{-3}$, and right, with a tolerance $\varepsilon = 10^{-4}$). Value of the test parameter: $\bm{\mu} = (0.62, 0.73)^T$.*
+@@
+
 ## The successful integration of tensor-train decompositions with reduced basis methods
 
 I developed a novel reduced basis solver for efficiently solving parameterized partial differential equations by leveraging the tensor-train format to compactly represent high-dimensional finite element data. This approach yields several key benefits: a substantially more efficient construction of reduced subspaces, a cost-effective hyper-reduction technique for assembling full-order residuals and Jacobians, and a lower-dimensional projection space for a given target accuracy. The method is robust and exhibits convergence rates comparable to those of classical reduced basis methods. It has recently been integrated into [GridapROM.jl](https://github.com/gridap/GridapROMs.jl).
 
 @@im-100
 ![](/assets/table_TT.png)
-*Figure 4: From top to bottom: wall time (WT) and memory allocations (MEM) for constructing an $H^1$-orthogonal basis using both truncated POD and the tensor-train SVD, applied to a Poisson equation. From left to right: results are shown for 2D and 3D geometries across varying mesh sizes $h$, with a fixed accuracy tolerance of $\varepsilon = 10^{-4}$. The results highlight the superior computational efficiency of the tensor-train approach in both runtime and memory usage, compared to the traditional POD-based method.*
+*Figure 6: From top to bottom: wall time (WT) and memory allocations (MEM) for constructing an $H^1$-orthogonal basis using both truncated POD and the tensor-train SVD, applied to a Poisson equation. From left to right: results are shown for 2D and 3D geometries across varying mesh sizes $h$, with a fixed accuracy tolerance of $\varepsilon = 10^{-4}$. The results highlight the superior computational efficiency of the tensor-train approach in both runtime and memory usage, compared to the traditional POD-based method.*
 @@
 
 ## Cutting-edge advancements in reduced order models for space-time problems 
@@ -45,7 +62,7 @@ I contributed to the development of advanced reduced order models for the soluti
 
 @@im-100
 ![](/assets/errors_Stokes.png)
-*Figure 5: Pointwise error between the finite element solution at a fixed parameter and time for an unsteady, parameterized Stokes equation solved in a Femoropopliteal Bypass, and the corresponding reduced-order solutions computed using a space-time Galerkin reduced basis method (left) and a space-time Petrov-Galerkin reduced basis method (right), across various accuracy tolerances. The first row reports the velocity magnitude errors for tolerances $\varepsilon = \{10^{-i}\}_{i=3}^{5}$, while the second row displays the corresponding pressure field errors.*
+*Figure 7: Pointwise error between the finite element solution at a fixed parameter and time for an unsteady, parameterized Stokes equation solved in a Femoropopliteal Bypass, and the corresponding reduced-order solutions computed using a space-time Galerkin reduced basis method (left) and a space-time Petrov-Galerkin reduced basis method (right), across various accuracy tolerances. The first row reports the velocity magnitude errors for tolerances $\varepsilon = \{10^{-i}\}_{i=3}^{5}$, while the second row displays the corresponding pressure field errors.*
 @@
 
 ## A topology optimization library for generating compliant mechanisms in Matlab
@@ -54,14 +71,14 @@ As part of a 6-month internship at [CSEM](https://www.csem.ch/en/), I developed 
 
 @@im-100
 ![](/assets/topopt.png)
-*Figure 6: A compliant mechanism generated with topology optimization.*
+*Figure 8: A compliant mechanism generated with topology optimization.*
 @@
 
-## A novel adaptive, divergence-free discretization for the Stokes equations
+<!-- ## A novel adaptive, divergence-free discretization for the Stokes equations
  
 During my Masters at [EPFL](https://www.epfl.ch/en/), I successfully implemented an $h$-adaptive solver for the Stokes equations, discretized using hierarchical B-splines. Unlike standard global refinement strategies, the adaptivity loop ensures that the mesh remains hierarchical at every step, leading to enhanced convergence rates.
 
 @@im-50
 ![](/assets/mesh.png) ![](/assets/mesh_conv.png)
 *Figure 6: From left to right: adaptive hierarchical mesh at the final refinement step, alongside a comparison between the convergence of the novel error estimator and the traditional one. Results are presented for different polynomial degrees used in the discretization of the pressure field.*
-@@
+@@ -->
