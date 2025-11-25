@@ -16,7 +16,7 @@ rss = "Curriculum vitae by N. Mueller"
 - **Surname**, **Name**: Mueller, Nicholas
 - **Birth place**: Milan (Italy)
 - **Citizenship**: Italy, United States of America
-- **Address**: 7/635 Inkerman Road, 3161 Caulfield North, Australia
+- **Address**: 635 Inkerman Road, 3161 Caulfield North, Australia
 
 ## Researcher Identification
 
@@ -33,9 +33,10 @@ rss = "Curriculum vitae by N. Mueller"
 
 * Computational Mathematics. 
 * Computational Science and Engineering. 
-* Parameterized Partial Differential Equations. Finite Elements. 
+* Parameterized Partial Differential Equations. 
+* Finite Elements. 
 * Reduced Order Modeling. 
-* Low-Rank Tensor Decompositions.  
+* Data Assimilation for Weather Forecasting.  
 * Open Source Scientific Software.
 * High Performance Scientific Computing. 
 * Scientific Machine Learning.
@@ -46,7 +47,7 @@ After completing my Masters in Applied Mathematics at [EPFL](https://www.epfl.ch
 
 ### Previous positions
 
-- September, 2020 -- February, 2021: *Intern* at [CSEM](https://www.csem.ch/en/), Neuch$\hat{a}$tel, Switzerland.
+- September, 2020 -- February, 2021: *Intern* at [CSEM](https://www.csem.ch/en/), Neuchatel, Switzerland.
 
     Worked as an intern at an R&D company on the development of a topology optimization solver for the generation of novel compliant mechanisms tailored to aerospace applications. The internship was highly research-oriented, involving an extensive literature review in the areas of topology optimization and solid mechanics, along with both theoretical and practical validation of the numerical results. Here, I also gained valuable experience using advanced software tools for stress analysis of mechanical components with Comsol Multiphysics.
 
@@ -54,6 +55,7 @@ After completing my Masters in Applied Mathematics at [EPFL](https://www.epfl.ch
 ## Grants, Honors and Awards
 
 1. PhD. fellowship awarded annually by Monash University, 2022 - 2025.
+2. [PhD. thesis](https://doi.org/10.26180/30632843.v1) formally recommended for awards by independent examiners, 2025.
 
 ## Publications
 See publications [here](https://nichomueller.github.io/menu2/).
@@ -70,7 +72,7 @@ Author of [GridapROMs.jl](https://github.com/gridap/GridapROMs.jl), a Julia pack
 
 ## Programming Skills
 
-- Programming languages: Julia, Python, Matlab, C/C++, Git.
+- Programming languages: Julia, Python, Matlab, C/C++, R.
 - Parallel programming: [Julia multi-threading](https://docs.julialang.org/en/v1/manual/multi-threading/), [Julia Distributed](https://docs.julialang.org/en/v1/manual/distributed-computing/).
 - Favourite IDE: VSCode.
 - Other software: Comsol Multiphysics, Paraview, Gmsh.

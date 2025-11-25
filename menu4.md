@@ -71,7 +71,7 @@ As part of a 6-month internship at [CSEM](https://www.csem.ch/en/), I developed 
 
 @@im-100
 ![](/assets/topopt.png)
-*Figure 8: A compliant mechanism generated with topology optimization.*
+*Figure 8: A compliant mechanism generated with a topology optimization solver.*
 @@
 
 <!-- ## A novel adaptive, divergence-free discretization for the Stokes equations
