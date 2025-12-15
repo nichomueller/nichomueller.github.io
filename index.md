@@ -1,4 +1,4 @@
-@def title = "PhD. Nicholas Mueller"
+@def title = "PhD Nicholas Mueller"
 @def tags = ["syntax", "code"]
 
 # Overview
