@@ -17,11 +17,11 @@ I am the main author of GridapROMs.jl, a free and open-source reduced order mode
 
 ## MeteoModels.jl (Role: Author)
 
-I am the main author of MeteoModels.jl, a Julia package that provides a collection of tools for data assimilation and uncertainty quantification in real-world dynamical systems, with a particular emphasis on geophysical and weather-related applications. The package currently supports several widely used filtering techniques, including the Kalman Filter (KF) for linear systems, its nonlinear extensions such as the Extended Kalman Filter (EKF) and the Unscented Kalman Filter (UKF), as well as ensemble-based methods like the Ensemble Kalman Filter (EnKF) and its deterministic variant (DEnKF), which reduces sampling noise and mitigates ensemble collapse. Future development is aimed at extending the package with a reduced-basis Ensemble Kalman Filter (RB-EnKF), designed to lower computational costs through projection-based model reduction and enable efficient application to large-scale problems.
-
 @@im-50
 ![](/assets/meteomodels.png)
 @@
+
+I am the main author of MeteoModels.jl, a Julia package that provides a collection of tools for data assimilation and uncertainty quantification in real-world dynamical systems, with a particular emphasis on geophysical and weather-related applications. The package currently supports several widely used filtering techniques, including the Kalman Filter (KF) for linear systems, its nonlinear extensions such as the Extended Kalman Filter (EKF) and the Unscented Kalman Filter (UKF), as well as ensemble-based methods like the Ensemble Kalman Filter (EnKF) and its deterministic variant (DEnKF), which reduces sampling noise and mitigates ensemble collapse. Future development is aimed at extending the package with a reduced-basis Ensemble Kalman Filter (RB-EnKF), designed to lower computational costs through projection-based model reduction and enable efficient application to large-scale problems.
 
 > More info:
 > - Visit the official [Github repository](https://github.com/nichomueller/MeteoModels.jl).

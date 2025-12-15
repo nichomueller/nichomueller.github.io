@@ -13,4 +13,4 @@
 
 ## Preprints
 
-2. **N. Mueller**, S. Badia, Y.Zhao. Reduced basis solvers for unfitted methods on parameterized domains. Submitted. Available as ArXiv pre-print at: [http://arxiv.org/abs/2508.15320](http://arxiv.org/abs/2508.15320)
+2. **N. Mueller**, S. Badia, Y.Zhao. Reduced basis solvers for unfitted methods on parameterized domains. Accepted at *Computer Methods in Applied Mechanics and Engineering*. Available as ArXiv pre-print at: [http://arxiv.org/abs/2508.15320](http://arxiv.org/abs/2508.15320)

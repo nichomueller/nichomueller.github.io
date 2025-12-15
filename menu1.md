@@ -30,17 +30,14 @@ rss = "Curriculum vitae by N. Mueller"
 - Oct, 2016 - Jul, 2019: *Bachelor in Mathematical Engineering* at [Politecnico di Milano](https://www.polimi.it/), Milan, Italy.
 
 ## Research Interests
-
-* Computational Mathematics. 
-* Computational Science and Engineering. 
+ 
 * Parameterized Partial Differential Equations. 
 * Surrogate Models, esp. Reduced Order Modeling. 
 * Forward/Inverse problems.
 * Uncertainty Quantification.
-* Finite Element Method. 
 * Unfitted Finite Elements.
 * Computational Fluid Dynamics. 
-* Data Assimilation for Weather Forecasting.  
+* Data Assimilation.  
 * High Performance Computing. 
 * Scientific Machine Learning.
 * Open Source Scientific Software.
