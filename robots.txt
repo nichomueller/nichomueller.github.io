@@ -1,4 +1,0 @@
-Sitemap: https://nichomueller.github.io/sitemap.xml
-
-User-agent: *
-Disallow:

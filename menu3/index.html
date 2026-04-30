@@ -1,1 +1,108 @@
-<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/jtd.css"> <link rel=icon  href="/assets/favicon.png"> <title>Software</title> <script async src="https://www.googletagmanager.com/gtag/js?id=G-0WPLMCS5HK"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-0WPLMCS5HK'); </script> <div class=page-wrap > <div class=side-bar > <div class=header > <a href="/" class=title > Nicholas Mueller </a> <div class=author__avatar > <a href="/"><img src="/assets/avatar.png" alt="Nicholas Mueller" itemprop=image ></a> </div> </div> <label for=show-menu  class=show-menu >MENU</label> <input type=checkbox  id=show-menu  role=button > <div class=menu  id=side-menu > <ul class=menu-list > <li class="menu-list-item "><a href="/" class="menu-list-link ">Home</a> <li class="menu-list-item "><a href="/menu1/" class="menu-list-link ">Curriculum Vitae</a> <li class="menu-list-item "><a href="/menu4/" class="menu-list-link ">Achievements</a> <li class="menu-list-item active"><a href="/menu3/" class="menu-list-link active">Software</a> <li class="menu-list-item "><a href="/menu2/" class="menu-list-link ">Publications</a> <li class="menu-list-item "><a href="/contact/" class="menu-list-link ">Contact</a> <!-- <ul class="menu-list-child-list "> <li class="menu-list-item "><a href="#" class=menu-list-link >Submenu</a> </ul> --> </ul> </div> <div class=footer > <div class=author__urls-wrapper > </div> </div> </div> <div class=main-content-wrap > <div class=main-content > <div class=main-header > <a id=github  href="https://github.com/nichomueller">GitHub</a> <span style="width:30px; text-align: center;color:lightgray;">|</span> <a id=GoogleScholar  href="https://scholar.google.com/citations?user=PXLbDdYAAAAJ&hl=en">Google Scholar</a> <span style="width:30px; text-align: center;color:lightgray;">|</span> <a id=LinkedIn  href="https://www.linkedin.com/in/nicholas-mueller-braden">LinkedIn</a> <span style="width:30px; text-align: center;color:lightgray;">|</span> </div> <div class=franklin-content ><h1 id=software ><a href="#software" class=header-anchor >Software</a></h1> <h2 id=gridapromsjl_role_author ><a href="#gridapromsjl_role_author" class=header-anchor >GridapROMs.jl &#40;Role: Author&#41;</a></h2> <div class=im-50 ><img src="/assets/gridaproms.png" alt="" /></div> <p>I am the main author of GridapROMs.jl, a free and open-source reduced order modeling package written entirely in Julia. Its goal is to enable the efficient solution of parameterized partial differential equations using a range of state-of-the-art techniques from the reduced order modeling literature. The library includes multiple strategies for compressing full-order finite element manifolds to construct reduced approximation spaces, such as proper orthogonal decomposition, Tucker decomposition, tensor-train decomposition, discrete interpolation methods, and local subspace techniques. It supports a broad spectrum of applications, including linear and nonlinear problems, single- and multi-field systems, coupled equations, as well as steady and transient ones. Distributed-in-memory parallelism is also available for the efficient computation of &#40;expensive&#41; offline operations, such as the generation of snapshots. The package offers a user-friendly, high-level API that is highly interpretable and is easily extensible by users.</p> <blockquote> <p>More info:</p> <ul> <li><p>Visit the official <a href="https://github.com/gridap/GridapROMs.jl">Github repository</a>.</p> <li><p>To get started, take a look at the <a href="https://gridap.github.io/GridapROMs.jl/dev/">documentation</a>.</p> </ul> </blockquote> <h2 id=meteomodelsjl_role_author ><a href="#meteomodelsjl_role_author" class=header-anchor >MeteoModels.jl &#40;Role: Author&#41;</a></h2> <div class=im-50 ><img src="/assets/meteomodels.png" alt="" /></div> <p>I am the main author of MeteoModels.jl, a Julia package that provides a collection of tools for data assimilation and uncertainty quantification in real-world dynamical systems, with a particular emphasis on geophysical and weather-related applications. The package currently supports several widely used filtering techniques, including the Kalman Filter &#40;KF&#41; for linear systems, its nonlinear extensions such as the Extended Kalman Filter &#40;EKF&#41; and the Unscented Kalman Filter &#40;UKF&#41;, as well as ensemble-based methods like the Ensemble Kalman Filter &#40;EnKF&#41; and its deterministic variant &#40;DEnKF&#41;, which reduces sampling noise and mitigates ensemble collapse. Future development is aimed at extending the package with a reduced-basis Ensemble Kalman Filter &#40;RB-EnKF&#41;, designed to lower computational costs through projection-based model reduction and enable efficient application to large-scale problems.</p> <blockquote> <p>More info:</p> <ul> <li><p>Visit the official <a href="https://github.com/nichomueller/MeteoModels.jl">Github repository</a>.</p> <li><p>To get started, take a look at the <a href="https://nichomueller.github.io/MeteoModels.jl/dev/">documentation</a>.</p> </ul> </blockquote> <div class=page-foot > <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Nicholas Mueller. Last modified: December 31, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> </div> </div> <!-- end of class page-wrap-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software | Nicholas Mueller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <span class="brand__name">Nicholas Mueller</span>
+        <span class="brand__tag">Applied mathematics, forecasting systems, and scientific software</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../menu1/">CV</a>
+        <a href="../menu4/">Achievements</a>
+        <a class="active" href="./">Software</a>
+        <a href="../menu2/">Publications</a>
+        <a href="../notes/">Notes</a>
+        <a href="../contact/">Contact</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <img class="sidebar__avatar" src="../assets/avatar.jpeg" alt="Nicholas Mueller">
+        <p class="eyebrow" style="margin-top:16px;">Software Focus</p>
+        <p>I build research software that is intended to be extended, benchmarked, and used by other people, not just to support one-off experiments.</p>
+        <div class="chip-row">
+          <span class="chip">Julia</span>
+          <span class="chip">HPC</span>
+          <span class="chip">APIs</span>
+          <span class="chip">Reproducibility</span>
+        </div>
+      </aside>
+
+      <main class="panel">
+        <div class="panel__inner">
+          <p class="eyebrow">Software</p>
+          <h1 class="page-title">Open-source tools built for computational work that needs to scale.</h1>
+          <p class="page-lead">My software work is shaped by a simple requirement: the methods need to survive contact with real models, real data volumes, and real users. That means balancing algorithmic ambition with interface design, testing, and performance engineering.</p>
+
+          <section class="section">
+            <div class="media-grid">
+              <article class="project-card">
+                <img src="../assets/gridaproms.png" alt="GridapROMs.jl screenshot">
+                <p class="card-kicker">Author</p>
+                <h2 class="card-title">GridapROMs.jl</h2>
+                <p>A Julia package for efficient reduced-order modeling of parameterized PDEs, designed for flexible use across steady, transient, linear, nonlinear, single-field, and multi-field systems.</p>
+                <ul class="detail-list">
+                  <li>Includes POD, Tucker, tensor-train, interpolation, and localized subspace strategies.</li>
+                  <li>Supports distributed-memory snapshot generation for expensive offline stages.</li>
+                  <li>Designed around a high-level API that stays readable and extensible.</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/gridap/GridapROMs.jl">Repository</a>
+                  <a href="https://gridap.github.io/GridapROMs.jl/dev/">Documentation</a>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <img src="../assets/meteomodels.png" alt="MeteoModels.jl screenshot">
+                <p class="card-kicker">Author</p>
+                <h2 class="card-title">MeteoModels.jl</h2>
+                <p>A Julia package for data assimilation and uncertainty quantification in dynamical systems, with particular emphasis on weather and geophysical workflows.</p>
+                <ul class="detail-list">
+                  <li>Supports KF, EKF, UKF, EnKF, and DEnKF workflows.</li>
+                  <li>Targets interpretable, modular forecasting pipelines rather than opaque wrappers.</li>
+                  <li>Future work extends toward reduced-basis and large-scale assimilation strategies.</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/nichomueller/MeteoModels.jl">Repository</a>
+                  <a href="https://nichomueller.github.io/MeteoModels.jl/dev/">Documentation</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section split-grid">
+            <article class="info-card">
+              <p class="card-kicker">How I design software</p>
+              <ul class="detail-list">
+                <li>Interfaces should expose mathematical structure clearly enough that users can reason about them.</li>
+                <li>Performance work should be measurable, so profiling and benchmarking are part of normal development.</li>
+                <li>Reproducibility matters: environment management, tested examples, and documented workflows reduce friction for collaborators.</li>
+                <li>Packages should be useful both to researchers prototyping methods and to engineers integrating them into bigger pipelines.</li>
+              </ul>
+            </article>
+            <article class="quote-card">
+              <p class="card-kicker">Why software matters</p>
+              <blockquote>For computational methods, software quality is not presentation. It is part of the method itself, because it determines whether the idea can be trusted, reused, and scaled.</blockquote>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer">Nicholas Mueller. Software and open-source projects.</footer>
+  </div>
+</body>
+</html>
