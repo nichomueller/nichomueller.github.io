@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicholas Mueller</title>
+  <meta name="description" content="Applied mathematician and engineer building simulation, forecasting, and scientific software systems for environmental and energy applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand__name">Nicholas Mueller</span>
+        <span class="brand__tag">Applied mathematics, forecasting systems, and scientific software</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="active" href="index.html">Home</a>
+        <a href="menu1/">CV</a>
+        <a href="menu4/">Achievements</a>
+        <a href="menu3/">Software</a>
+        <a href="menu2/">Publications</a>
+        <a href="notes/">Notes</a>
+        <a href="contact/">Contact</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <img class="sidebar__avatar" src="assets/avatar.png" alt="Nicholas Mueller">
+        <p class="eyebrow" style="margin-top:16px;">Currently</p>
+        <p>Research Fellow at TU Delft developing digital-twin, multiphysics simulation, and uncertainty-aware forecasting workflows for offshore floating solar systems.</p>
+        <div class="chip-row">
+          <span class="chip">Simulation</span>
+          <span class="chip">Forecasting</span>
+          <span class="chip">HPC</span>
+          <span class="chip">Scientific ML</span>
+        </div>
+        <div class="sidebar__links">
+          <a href="https://github.com/nichomueller">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=PXLbDdYAAAAJ&hl=en">Scholar</a>
+          <a href="https://www.linkedin.com/in/nicholas-mueller-braden">LinkedIn</a>
+        </div>
+      </aside>
+
+      <main class="panel">
+        <div class="panel__inner">
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="eyebrow">Applied R&amp;D</p>
+              <h1 class="hero__title">Building simulation and forecasting systems for real physical environments.</h1>
+              <p class="hero__lead">I am an applied mathematician and engineer specializing in data-driven simulation of complex physical systems, scientific software, and high-performance computing. My work combines reduced-order models, data assimilation, and machine learning with physics-based solvers to produce tools that are fast enough to deploy, interpretable enough to trust, and rigorous enough to use in environmental and energy settings.</p>
+              <div class="cta-row">
+                <a class="button" href="menu1/">View CV</a>
+                <a class="button--ghost" href="menu3/">Explore Software</a>
+                <a class="button--ghost" href="contact/">Get in touch</a>
+              </div>
+            </div>
+            <div class="hero__visual">
+              <div class="visual-banner">
+                <h2>Digital twins for offshore renewable energy.</h2>
+                <p class="section-intro">Current work focuses on scalable multiphysics and uncertainty pipelines that support environmental risk assessment and robust design decisions.</p>
+              </div>
+              <div class="stat-grid">
+                <div class="stat-card feature-card">
+                  <strong>3</strong>
+                  <span>core operating modes</span>
+                  <p>simulation, inference, and deployment-oriented software engineering</p>
+                </div>
+                <div class="stat-card feature-card">
+                  <strong>2</strong>
+                  <span>open-source packages</span>
+                  <p>focused on reduced-order modelling and data assimilation workflows</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Capabilities</p>
+                <h2 class="section-title">Where I create value</h2>
+              </div>
+                <p class="section-intro">The focus is on turning strong research into tools that can support engineering decisions, forecasting workflows, and operational modeling.</p>
+            </div>
+            <div class="card-grid">
+              <article class="feature-card">
+                <p class="card-kicker">Simulation Systems</p>
+                <h3 class="card-title">Fast surrogate and reduced-order models for expensive PDE workflows</h3>
+                <p>From finite element solvers to deployable low-dimensional approximations, I build simulation pipelines that preserve physical structure while reducing turnaround time enough for calibration, design, and forecasting.</p>
+              </article>
+              <article class="feature-card">
+                <p class="card-kicker">Forecasting Pipelines</p>
+                <h3 class="card-title">Data assimilation and uncertainty quantification for operational settings</h3>
+                <p>I use Kalman-type methods, variational ideas, and multi-fidelity algorithms to combine sparse observations with physical models and produce calibrated predictions under uncertainty.</p>
+              </article>
+              <article class="feature-card">
+                <p class="card-kicker">Scientific Software</p>
+                <h3 class="card-title">Research code that behaves like engineering software</h3>
+                <p>I treat software architecture, testing, profiling, documentation, and reproducibility as first-class work, not afterthoughts. That is what makes methods usable outside a paper.</p>
+              </article>
+              <article class="feature-card">
+                <p class="card-kicker">Compute Strategy</p>
+                <h3 class="card-title">HPC-aware implementations for large-scale models</h3>
+                <p>My workflow includes MPI, GPU-aware design, distributed snapshot generation, and Slurm-based deployment, with a constant focus on throughput and maintainability together.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section split-grid">
+            <div>
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow">Selected Work</p>
+                  <h2 class="section-title">Software I use to push methods into practice</h2>
+                </div>
+              </div>
+              <div class="media-grid">
+                <article class="project-card">
+                  <img src="assets/gridaproms.png" alt="GridapROMs.jl">
+                  <p class="card-kicker">GridapROMs.jl</p>
+                  <h3 class="card-title">Reduced-order modeling toolkit for parameterized PDEs</h3>
+                  <p>Built to make high-performance reduced models usable in real computational workflows, including nonlinear, transient, and multi-field systems.</p>
+                  <div class="project-links">
+                    <a href="menu3/">Details</a>
+                    <a href="https://github.com/gridap/GridapROMs.jl">Repository</a>
+                  </div>
+                </article>
+                <article class="project-card">
+                  <img src="assets/meteomodels.png" alt="MeteoModels.jl">
+                  <p class="card-kicker">MeteoModels.jl</p>
+                  <h3 class="card-title">Data assimilation tools for weather and geophysical systems</h3>
+                  <p>Designed to support scalable forecasting workflows where observations, model error, and uncertainty all need to be handled without excessive complexity.</p>
+                  <div class="project-links">
+                    <a href="menu3/">Details</a>
+                    <a href="https://github.com/nichomueller/MeteoModels.jl">Repository</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <aside class="quote-card">
+              <p class="card-kicker">Working Style</p>
+              <blockquote>
+                I focus on the part of scientific computing that is hardest to fake: making advanced methods robust enough, fast enough, and legible enough to be used by other people on real problems.
+              </blockquote>
+              <div class="meta-list">
+                <div>
+                  <strong>Current domain</strong>
+                  Offshore renewable energy and environmental risk
+                </div>
+                <div>
+                  <strong>Core methods</strong>
+                  Reduced-order modelling, filtering, UQ, scientific ML
+                </div>
+                <div>
+                  <strong>Main languages</strong>
+                  Julia, Python, C++, MATLAB
+                </div>
+                <div>
+                  <strong>Output style</strong>
+                  Open-source libraries, papers, reproducible workflows
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <section class="section">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Highlights</p>
+                <h2 class="section-title">Recent trajectory</h2>
+              </div>
+            </div>
+            <div class="timeline">
+              <article class="timeline-card">
+                <div class="timeline-meta">2026 - present</div>
+                <h3 class="card-title">TU Delft, DigiOcean4Solar</h3>
+                <p>Developing digital-twin and large-scale multiphysics frameworks for offshore floating solar systems, with forecasting and UQ workflows for reliable design and environmental risk assessment.</p>
+              </article>
+              <article class="timeline-card">
+                <div class="timeline-meta">2022 - 2025</div>
+                <h3 class="card-title">PhD in Applied Mathematics, Monash University</h3>
+                <p>Built reduced-order methods, tensor compression workflows, unfitted finite element techniques, and scientific software for parameterized PDEs and computational fluid dynamics.</p>
+              </article>
+              <article class="timeline-card">
+                <div class="timeline-meta">2020 - 2021</div>
+                <h3 class="card-title">R&amp;D internship at CSEM</h3>
+                <p>Worked on topology optimization for compliant aerospace mechanisms under manufacturing and stress constraints, connecting numerical methods to engineering requirements.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section split-grid">
+            <div>
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow">Notes</p>
+                  <h2 class="section-title">Short writing on methods, software, and modeling practice</h2>
+                </div>
+                <a class="button--ghost" href="notes/">See all notes</a>
+              </div>
+              <div class="card-grid">
+                <article class="info-card note-card">
+                  <p class="card-kicker">Project note</p>
+                  <h3 class="card-title">What makes a scientific codebase usable beyond its first paper</h3>
+                  <p>On why interfaces, tests, benchmarking, and documentation are not polish work but part of the technical result.</p>
+                </article>
+                <article class="info-card note-card">
+                  <p class="card-kicker">Modeling note</p>
+                  <h3 class="card-title">Why reduced-order models fail in deployment even when they look good offline</h3>
+                  <p>A short view on mismatch, regime coverage, observability, and the difference between compression and reliable prediction.</p>
+                </article>
+                <article class="info-card note-card">
+                  <p class="card-kicker">Forecasting note</p>
+                  <h3 class="card-title">Data assimilation as engineering infrastructure, not just inference</h3>
+                  <p>How filtering pipelines become operational components when uncertainty needs to drive decisions rather than just estimates.</p>
+                </article>
+                <article class="info-card note-card note-card--cta">
+                  <p class="card-kicker">Practice</p>
+                  <h3 class="card-title">A place for compact technical writing</h3>
+                  <p>This section is meant for brief, high-signal notes about simulation systems, software architecture, and forecasting workflows.</p>
+                  <div class="project-links">
+                    <a href="notes/">Open notes</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <aside class="quote-card">
+              <p class="card-kicker">Orientation</p>
+              <blockquote>
+                I work across the full path from mathematical modeling to software delivery, with the goal of producing tools that remain reliable when used in real engineering and environmental contexts.
+              </blockquote>
+            </aside>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      Nicholas Mueller. Applied mathematics, forecasting systems, and scientific software.
+    </footer>
+  </div>
+</body>
+</html>

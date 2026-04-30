@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software | Nicholas Mueller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <span class="brand__name">Nicholas Mueller</span>
+        <span class="brand__tag">Applied mathematics, forecasting systems, and scientific software</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../menu1/">CV</a>
+        <a href="../menu4/">Achievements</a>
+        <a class="active" href="./">Software</a>
+        <a href="../menu2/">Publications</a>
+        <a href="../notes/">Notes</a>
+        <a href="../contact/">Contact</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <img class="sidebar__avatar" src="../assets/avatar.png" alt="Nicholas Mueller">
+        <p class="eyebrow" style="margin-top:16px;">Software Focus</p>
+        <p>I build research software that is intended to be extended, benchmarked, and used by other people, not just to support one-off experiments.</p>
+        <div class="chip-row">
+          <span class="chip">Julia</span>
+          <span class="chip">HPC</span>
+          <span class="chip">APIs</span>
+          <span class="chip">Reproducibility</span>
+        </div>
+      </aside>
+
+      <main class="panel">
+        <div class="panel__inner">
+          <p class="eyebrow">Software</p>
+          <h1 class="page-title">Open-source tools built for computational work that needs to scale.</h1>
+          <p class="page-lead">My software work is shaped by a simple requirement: the methods need to survive contact with real models, real data volumes, and real users. That means balancing algorithmic ambition with interface design, testing, and performance engineering.</p>
+
+          <section class="section">
+            <div class="media-grid">
+              <article class="project-card">
+                <img src="../assets/gridaproms.png" alt="GridapROMs.jl screenshot">
+                <p class="card-kicker">Author</p>
+                <h2 class="card-title">GridapROMs.jl</h2>
+                <p>A Julia package for efficient reduced-order modeling of parameterized PDEs, designed for flexible use across steady, transient, linear, nonlinear, single-field, and multi-field systems.</p>
+                <ul class="detail-list">
+                  <li>Includes POD, Tucker, tensor-train, interpolation, and localized subspace strategies.</li>
+                  <li>Supports distributed-memory snapshot generation for expensive offline stages.</li>
+                  <li>Designed around a high-level API that stays readable and extensible.</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/gridap/GridapROMs.jl">Repository</a>
+                  <a href="https://gridap.github.io/GridapROMs.jl/dev/">Documentation</a>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <img src="../assets/meteomodels.png" alt="MeteoModels.jl screenshot">
+                <p class="card-kicker">Author</p>
+                <h2 class="card-title">MeteoModels.jl</h2>
+                <p>A Julia package for data assimilation and uncertainty quantification in dynamical systems, with particular emphasis on weather and geophysical workflows.</p>
+                <ul class="detail-list">
+                  <li>Supports KF, EKF, UKF, EnKF, and DEnKF workflows.</li>
+                  <li>Targets interpretable, modular forecasting pipelines rather than opaque wrappers.</li>
+                  <li>Future work extends toward reduced-basis and large-scale assimilation strategies.</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/nichomueller/MeteoModels.jl">Repository</a>
+                  <a href="https://nichomueller.github.io/MeteoModels.jl/dev/">Documentation</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section split-grid">
+            <article class="info-card">
+              <p class="card-kicker">How I design software</p>
+              <ul class="detail-list">
+                <li>Interfaces should expose mathematical structure clearly enough that users can reason about them.</li>
+                <li>Performance work should be measurable, so profiling and benchmarking are part of normal development.</li>
+                <li>Reproducibility matters: environment management, tested examples, and documented workflows reduce friction for collaborators.</li>
+                <li>Packages should be useful both to researchers prototyping methods and to engineers integrating them into bigger pipelines.</li>
+              </ul>
+            </article>
+            <article class="quote-card">
+              <p class="card-kicker">Why software matters</p>
+              <blockquote>For computational methods, software quality is not presentation. It is part of the method itself, because it determines whether the idea can be trusted, reused, and scaled.</blockquote>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer">Nicholas Mueller. Software and open-source projects.</footer>
+  </div>
+</body>
+</html>

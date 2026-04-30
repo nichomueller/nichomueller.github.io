@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes | Nicholas Mueller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <span class="brand__name">Nicholas Mueller</span>
+        <span class="brand__tag">Applied mathematics, forecasting systems, and scientific software</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../menu1/">CV</a>
+        <a href="../menu4/">Achievements</a>
+        <a href="../menu3/">Software</a>
+        <a href="../menu2/">Publications</a>
+        <a class="active" href="./">Notes</a>
+        <a href="../contact/">Contact</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <img class="sidebar__avatar" src="../assets/avatar.png" alt="Nicholas Mueller">
+        <p class="eyebrow" style="margin-top:16px;">Notes</p>
+        <p>Short technical writing on simulation systems, scientific software, forecasting workflows, and the engineering decisions that sit around them.</p>
+        <div class="chip-row">
+          <span class="chip">Methods</span>
+          <span class="chip">Software</span>
+          <span class="chip">Forecasting</span>
+          <span class="chip">Practice</span>
+        </div>
+      </aside>
+
+      <main class="panel">
+        <div class="panel__inner">
+          <p class="eyebrow">Project notes</p>
+          <h1 class="page-title">Compact writing from the research-engineering edge of the work.</h1>
+          <p class="page-lead">These notes capture practical choices behind simulation pipelines, scientific software design, and forecasting workflows. They are written for people who care about getting methods to work outside controlled examples.</p>
+
+          <section class="section publication-list publication-list--stack">
+            <article class="publication-card publication-card--wide">
+              <div>
+                <p class="card-kicker">Software practice</p>
+                <h2 class="card-title">What makes a scientific codebase usable beyond its first paper</h2>
+                <p class="publication-meta">Most scientific repositories begin as research vehicles: enough code to test an idea, produce plots, and support a manuscript. That is a valid starting point, but it is not enough for durable reuse. Code becomes reusable when four things are present together: a stable abstraction boundary, executable examples, measurable performance behavior, and clear failure modes.</p>
+                <p class="publication-meta">A stable abstraction boundary means users can locate where model assumptions live and where numerical choices live, without digging through the entire codebase. Executable examples are not decorative tutorials; they are contracts that protect expected behavior through future refactors. Performance profiling and benchmarking turn optimization from anecdote into evidence. Clear failure modes are equally important: when a method degrades, users should know whether the issue is data regime, conditioning, discretization, or implementation limits.</p>
+                <p class="publication-meta">In practice, this is why I treat API design, tests, and benchmarks as method work, not maintenance work. They are what make a result portable from one project to another and from one team to another.</p>
+              </div>
+              <div class="publication-actions">
+                <span class="mini-chip">Code quality</span>
+                <span class="mini-chip">Reusability</span>
+              </div>
+            </article>
+            <article class="publication-card publication-card--wide">
+              <div>
+                <p class="card-kicker">Model deployment</p>
+                <h2 class="card-title">Why reduced-order models fail in deployment even when they look good offline</h2>
+                <p class="publication-meta">Offline accuracy is often measured on data generated from the same assumptions used to build the reduced model. Deployment does not offer that luxury. Inputs drift, forcing terms move outside the sampled regime, sensor quality changes, and operating constraints introduce new behaviors. A model that is excellent at compression can still be fragile in these settings.</p>
+                <p class="publication-meta">Three patterns show up repeatedly. First, regime coverage is too narrow: the reduced space is faithful where training was dense, then unreliable near boundaries that matter operationally. Second, observation mismatch appears: deployment data resolves different quantities or scales than those prioritized in offline metrics. Third, operator drift accumulates: assumptions hidden in precomputed operators no longer match the active system after environmental or boundary changes.</p>
+                <p class="publication-meta">The fix is not one algorithmic trick. It is a deployment loop: monitor residual indicators, track uncertainty growth, detect out-of-regime behavior early, and refresh reduced objects when needed. A robust reduced model behaves less like a frozen artifact and more like a maintained component in a larger forecasting system.</p>
+              </div>
+              <div class="publication-actions">
+                <span class="mini-chip">ROMs</span>
+                <span class="mini-chip">Reliability</span>
+              </div>
+            </article>
+            <article class="publication-card publication-card--wide">
+              <div>
+                <p class="card-kicker">Forecasting systems</p>
+                <h2 class="card-title">Data assimilation as engineering infrastructure</h2>
+                <p class="publication-meta">Data assimilation is often introduced as an estimation task, but in deployed settings it behaves more like infrastructure. It is the layer that continuously reconciles model predictions with observations, quantifies confidence, and feeds downstream actions such as alarms, control updates, or planning scenarios.</p>
+                <p class="publication-meta">Treating assimilation as infrastructure changes implementation priorities. Reliability and observability become as important as estimator optimality. Pipelines need explicit health checks, latency budgets, and fallback behavior when sensor streams degrade. Uncertainty outputs must be interpretable by systems that consume them, not just mathematically consistent in isolation.</p>
+                <p class="publication-meta">This view is especially relevant in environmental and energy applications, where forecast products are consumed by multidisciplinary teams. The operational value comes from continuity: assimilation pipelines that run predictably, surface uncertainty clearly, and remain adaptable as models and sensing configurations evolve.</p>
+              </div>
+              <div class="publication-actions">
+                <span class="mini-chip">Assimilation</span>
+                <span class="mini-chip">Operations</span>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer">Nicholas Mueller. Notes.</footer>
+  </div>
+</body>
+</html>
