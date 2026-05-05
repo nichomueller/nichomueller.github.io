@@ -257,10 +257,7 @@ img {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
-  gap: 24px;
-  align-items: stretch;
+  display: block;
 }
 
 .hero__copy {
@@ -309,6 +306,7 @@ img {
   display: grid;
   gap: 14px;
   padding: 18px;
+  margin: 6px 0 22px;
 }
 
 .visual-banner {
@@ -324,7 +322,8 @@ img {
 .visual-banner h2 {
   max-width: 11ch;
   margin: 0 0 14px;
-  font-family: "Fraunces", serif;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.05;
 }
