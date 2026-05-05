@@ -22,10 +22,10 @@ jobs:
         cp site.css __site/
         cp -r assets __site/assets
         cp -r contact __site/contact
-        cp -r menu1 __site/menu1
-        cp -r menu2 __site/menu2
-        cp -r menu3 __site/menu3
-        cp -r menu4 __site/menu4
+        cp -r cv __site/cv
+        cp -r publications __site/publications
+        cp -r software __site/software
+        cp -r achievements __site/achievements
         cp -r notes __site/notes
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@v4
