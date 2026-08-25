@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../site.css">
+  <link rel="icon" href="../assets/favicon.png">
 </head>
 <body>
   <div class="site-shell">
@@ -31,50 +32,68 @@
       <aside class="sidebar">
         <img class="sidebar__avatar" src="../assets/avatar.jpeg" alt="Nicholas Mueller">
         <p class="eyebrow" style="margin-top:16px;">Selected results</p>
-        <p>This page focuses on outcomes that changed what was computationally feasible, easier to deploy, or more useful in application settings.</p>
+        <p>A few results that made something faster, cheaper, or possible at all, rather than just a bit more accurate on paper.</p>
       </aside>
 
       <main class="panel">
         <div class="panel__inner">
           <p class="eyebrow">Achievements</p>
-          <h1 class="page-title">A selection of work with practical computational impact</h1>
+          <h1 class="page-title">A few things worth pointing to</h1>
 
           <section class="section media-grid">
             <article class="achievement-card">
               <img src="../assets/scheme_Julia.png" alt="GridapROMs architecture">
               <p class="card-kicker">Software platform</p>
               <h2 class="card-title">A full reduced-order modelling library in Julia</h2>
-              <p>Designed and implemented GridapROMs.jl to make advanced reduced-order methods accessible within a performance-oriented but readable framework.</p>
+              <p>GridapROMs.jl — reduced-order methods that stay fast without turning the codebase into something only I can read.</p>
             </article>
             <article class="achievement-card">
               <img src="../assets/cost_Julia.png" alt="Performance benchmarks">
               <p class="card-kicker">Performance engineering</p>
               <h2 class="card-title">Lowering the cost of high-fidelity data generation</h2>
-              <p>Used lazy evaluation and distributed workflows to reduce one of the main practical bottlenecks in reduced-order modelling: building training data at scale.</p>
+              <p>Building the training data for a reduced model is usually the slow part. Lazy evaluation and distributed workflows brought that cost down significantly.</p>
             </article>
             <article class="achievement-card">
               <img src="../assets/unfitted_stokes.png" alt="Unfitted Stokes results">
               <p class="card-kicker">Geometric flexibility</p>
               <h2 class="card-title">Reduced basis methods on parameterized domains</h2>
-              <p>Built a framework combining unfitted finite elements and reference-domain mappings so geometric variation can be handled without repeated remeshing.</p>
+              <p>Combined unfitted finite elements with reference-domain mappings so a changing geometry doesn't force a remesh every time.</p>
             </article>
             <article class="achievement-card">
               <img src="../assets/table_TT.png" alt="Tensor train results">
               <p class="card-kicker">Compression strategy</p>
               <h2 class="card-title">Tensor-train integration for faster reduced solvers</h2>
-              <p>Developed tensor-based workflows that reduce both runtime and memory cost for constructing reduced spaces and hyper-reduced operators.</p>
+              <p>Tensor-based workflows that cut both runtime and memory when building reduced spaces and hyper-reduced operators.</p>
             </article>
             <article class="achievement-card">
               <img src="../assets/errors_Stokes.png" alt="Space-time reduced models">
               <p class="card-kicker">Transient problems</p>
               <h2 class="card-title">Space-time reduced-order methods for unsteady systems</h2>
-              <p>Contributed methods that improve efficiency for unsteady PDE problems without sacrificing the fidelity needed for engineering interpretation.</p>
+              <p>Methods for unsteady PDE problems that are cheaper to run without giving up the accuracy an engineer would actually need.</p>
             </article>
             <article class="achievement-card">
               <img src="../assets/topopt.png" alt="Topology optimization result">
               <p class="card-kicker">Industrial R&amp;D</p>
               <h2 class="card-title">Topology optimization for aerospace mechanisms</h2>
-              <p>Developed a Matlab code for compliant mechanisms aimed at satellite applications, with constraints driven by actual mechanical testing requirements.</p>
+              <p>A Matlab code for compliant mechanisms in satellite hardware, built around constraints that came from actual mechanical testing, not just theory.</p>
+            </article>
+            <article class="achievement-card">
+              <img src="../assets/opals_rc_accuracy.png" alt="Opals.jl reservoir computing accuracy comparison">
+              <p class="card-kicker">Reservoir computing</p>
+              <h2 class="card-title">A reservoir-computing module that beats ReservoirComputing.jl</h2>
+              <p>Wrote the echo-state network for Opals.jl's bias correction from scratch instead of depending on ReservoirComputing.jl, the usual go-to in Julia. With recycle-validation training it comes out both more accurate and cheaper to train — which is the kind of result that matters if you care about RC as more than a footnote to deep learning.</p>
+            </article>
+            <article class="achievement-card">
+              <img src="../assets/opals_navier_stokes.png" alt="Reynolds number discovery in a turbulent flow">
+              <p class="card-kicker">Data assimilation</p>
+              <h2 class="card-title">Finding the hidden Reynolds number of a turbulent flow</h2>
+              <p>An ensemble Kalman filter recovers the inflow velocity and viscosity of a turbulent Navier-Stokes flow (~6500 DOFs) from sparse, noisy sensors — and the innovation statistics come out looking exactly as Gaussian as the filter assumes they should.</p>
+            </article>
+            <article class="achievement-card">
+              <img src="../assets/opals_heateq.png" alt="Kriging-calibrated ROM surrogate in a data assimilation loop">
+              <p class="card-kicker">ROM-accelerated forecasting</p>
+              <h2 class="card-title">Swapping a full-order PDE solver for a reduced-order one, mid-pipeline</h2>
+              <p>A GridapROMs.jl surrogate drops into an Opals.jl assimilation loop in place of the full finite-element solver with no change to the driver code — roughly 15x less memory, with kriging calibration clawing back most of the accuracy that would otherwise be lost.</p>
             </article>
           </section>
         </div>

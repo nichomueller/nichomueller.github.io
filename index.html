@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="assets/favicon.png">
 </head>
 <body>
   <div class="site-shell">
@@ -32,7 +33,7 @@
       <aside class="sidebar">
         <img class="sidebar__avatar" src="assets/avatar.jpeg" alt="Nicholas Mueller">
         <p class="eyebrow" style="margin-top:16px;">Currently</p>
-        <p>Research Fellow at TU Delft developing digital-twin, multiphysics simulation, and uncertainty-aware forecasting workflows for offshore floating solar systems.</p>
+        <p>Research Fellow at TU Delft, working on digital-twin simulation and forecasting for offshore floating solar.</p>
         <div class="chip-row">
           <span class="chip">Simulation</span>
           <span class="chip">Forecasting</span>
@@ -50,8 +51,8 @@
         <div class="panel__inner">
           <section class="hero">
             <div class="hero__copy">
-              <p class="eyebrow">Applied R&amp;D</p>
-              <p class="hero__lead">I am an applied mathematician and engineer specializing in data-driven simulation of complex physical systems, scientific software, and high-performance computing. My work combines reduced-order models, data assimilation, and machine learning with physics-based solvers to produce tools that are fast enough to deploy, interpretable enough to trust, and rigorous enough to use in environmental and energy settings.</p>
+              <p class="eyebrow">About</p>
+              <p class="hero__lead">I'm an applied mathematician and engineer working on data-driven simulation of physical systems: reduced-order models, data assimilation, and machine learning, built on top of physics-based solvers. Most of what I do is aimed at one thing — making those methods fast and trustworthy enough to actually use, not just publish.</p>
               <div class="cta-row">
                 <a class="button" href="cv/">View CV</a>
                 <a class="button--ghost" href="software/">Explore Software</a>
@@ -63,31 +64,31 @@
           <section class="section">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Capabilities</p>
-                <h2 class="section-title">Where I create value</h2>
+                <p class="eyebrow">What I do</p>
+                <h2 class="section-title">Where the time actually goes</h2>
               </div>
-                <p class="section-intro">The focus is on turning strong research into tools that can support engineering decisions, forecasting workflows, and operational modeling.</p>
+                <p class="section-intro">Mostly: turning research methods into things that hold up outside the paper they came from.</p>
             </div>
             <div class="card-grid">
               <article class="feature-card">
                 <p class="card-kicker">Simulation Systems</p>
-                <h3 class="card-title">Fast surrogate and reduced-order models for expensive PDE workflows</h3>
-                <p>From finite element solvers to deployable low-dimensional approximations, I build simulation pipelines that preserve physical structure while reducing turnaround time enough for calibration, design, and forecasting.</p>
+                <h3 class="card-title">Reduced-order models for PDE workflows that are otherwise too slow to iterate on</h3>
+                <p>I build simulation pipelines that go from a full finite element solver down to a low-dimensional approximation, without throwing away the physics, so calibration and design loops that used to take hours run in seconds.</p>
               </article>
               <article class="feature-card">
                 <p class="card-kicker">Forecasting Pipelines</p>
                 <h3 class="card-title">Data assimilation and uncertainty quantification for operational settings</h3>
-                <p>I use Kalman-type methods, variational ideas, and multi-fidelity algorithms to combine sparse observations with physical models and produce calibrated predictions under uncertainty.</p>
+                <p>Kalman-type filters, variational methods, multi-fidelity algorithms — the common thread is combining sparse, noisy observations with a physical model to get a prediction you can actually put a confidence interval on.</p>
               </article>
               <article class="feature-card">
                 <p class="card-kicker">Scientific Software</p>
                 <h3 class="card-title">Research code that behaves like engineering software</h3>
-                <p>I treat software architecture, testing, profiling, documentation, and reproducibility as first-class work, not afterthoughts. That is what makes methods usable outside a paper.</p>
+                <p>Testing, profiling, documentation, a sane API — I don't bolt these on at the end. They're the difference between a method that works on my laptop and one someone else can pick up and use.</p>
               </article>
               <article class="feature-card">
                 <p class="card-kicker">Compute Strategy</p>
                 <h3 class="card-title">HPC-aware implementations for large-scale models</h3>
-                <p>My workflow includes MPI, GPU-aware design, distributed snapshot generation, and Slurm-based deployment, with a constant focus on throughput and maintainability together.</p>
+                <p>MPI, GPU-aware code, distributed snapshot generation, Slurm deployment — the usual toolkit for making sure a method that works on a toy problem still works at the scale people actually care about.</p>
               </article>
             </div>
           </section>
@@ -96,7 +97,7 @@
             <article class="current-work-sticker">
               <p class="card-kicker">Current work</p>
               <h2 class="section-title">Digital twins for offshore renewable energy</h2>
-              <p class="section-intro">Current work focuses on scalable multiphysics and uncertainty pipelines that support environmental risk assessment and robust design decisions.</p>
+              <p class="section-intro">Right now that means multiphysics and uncertainty pipelines for offshore floating solar — the kind of thing that feeds directly into environmental risk assessment and design decisions, not just a research demo.</p>
             </article>
           </section>
 
@@ -105,7 +106,7 @@
               <div class="section-head">
                 <div>
                   <p class="eyebrow">Selected Work</p>
-                  <h2 class="section-title">Software I use to push methods into practice</h2>
+                  <h2 class="section-title">Software I actually use</h2>
                 </div>
               </div>
               <div class="media-grid">
@@ -113,20 +114,20 @@
                   <img src="assets/gridaproms.png" alt="GridapROMs.jl">
                   <p class="card-kicker">GridapROMs.jl</p>
                   <h3 class="card-title">Reduced-order modeling toolkit for parameterized PDEs</h3>
-                  <p>Built to make high-performance reduced models usable in real computational workflows, including nonlinear, transient, and multi-field systems.</p>
+                  <p>Handles nonlinear, transient, and multi-field problems, with an eye toward reduced models that hold up in a real workflow rather than a single benchmark.</p>
                   <div class="project-links">
                     <a href="software/">Details</a>
                     <a href="https://github.com/gridap/GridapROMs.jl">Repository</a>
                   </div>
                 </article>
                 <article class="project-card">
-                  <img src="assets/meteomodels.png" alt="MeteoModels.jl">
-                  <p class="card-kicker">MeteoModels.jl</p>
-                  <h3 class="card-title">Data assimilation tools for weather and geophysical systems</h3>
-                  <p>Designed to support scalable forecasting workflows where observations, model error, and uncertainty all need to be handled without excessive complexity.</p>
+                  <img src="assets/opals.png" alt="Opals.jl">
+                  <p class="card-kicker">Opals.jl</p>
+                  <h3 class="card-title">Data assimilation across ODEs, PDEs, and reduced-order surrogates</h3>
+                  <p>Kalman, particle, and variational filters behind one interface, with add-ons for localization, inflation, RC-based bias correction, and ROM calibration bolted on as needed. Replaces MeteoModels.jl, an earlier package of mine that's no longer maintained.</p>
                   <div class="project-links">
                     <a href="software/">Details</a>
-                    <a href="https://github.com/nichomueller/MeteoModels.jl">Repository</a>
+                    <a href="https://github.com/nichomueller/Opals.jl">Repository</a>
                   </div>
                 </article>
               </div>
@@ -134,7 +135,7 @@
             <aside class="quote-card">
               <p class="card-kicker">Working Style</p>
               <blockquote>
-                I focus on the part of scientific computing that is hardest to fake: making advanced methods robust enough, fast enough, and legible enough to be used by other people on real problems
+                The hard part usually isn't the method — it's making it solid enough that someone other than me can pick it up and run with it
               </blockquote>
               <div class="meta-list">
                 <div>
@@ -196,22 +197,22 @@
                 <article class="info-card note-card">
                   <p class="card-kicker">Project note</p>
                   <h3 class="card-title">What makes a scientific codebase usable beyond its first paper</h3>
-                  <p>On why interfaces, tests, benchmarking, and documentation are not polish work but part of the technical result.</p>
+                  <p>Interfaces, tests, and benchmarks aren't polish — skip them and the code dies with the paper.</p>
                 </article>
                 <article class="info-card note-card">
                   <p class="card-kicker">Modeling note</p>
                   <h3 class="card-title">Why reduced-order models fail in deployment even when they look good offline</h3>
-                  <p>A short view on mismatch, regime coverage, observability, and the difference between compression and reliable prediction.</p>
+                  <p>A model can compress the data beautifully and still be the wrong tool once it hits the real world. Some thoughts on why.</p>
                 </article>
                 <article class="info-card note-card">
                   <p class="card-kicker">Forecasting note</p>
-                  <h3 class="card-title">Data assimilation as engineering infrastructure, not just inference</h3>
-                  <p>How filtering pipelines become operational components when uncertainty needs to drive decisions rather than just estimates.</p>
+                  <h3 class="card-title">Data assimilation as engineering infrastructure</h3>
+                  <p>Once uncertainty has to drive an actual decision, a filtering pipeline stops being a math exercise and starts being infrastructure.</p>
                 </article>
                 <article class="info-card note-card note-card--cta">
                   <p class="card-kicker">Practice</p>
                   <h3 class="card-title">A place for compact technical writing</h3>
-                  <p>This section is meant for brief, high-signal notes about simulation systems, software architecture, and forecasting workflows.</p>
+                  <p>Short notes on simulation, software, and forecasting — I add one when I have something worth saying, not on a schedule.</p>
                   <div class="project-links">
                     <a href="notes/">Open notes</a>
                   </div>
@@ -221,7 +222,7 @@
             <aside class="quote-card">
               <p class="card-kicker">Orientation</p>
               <blockquote>
-                I work across the full path from mathematical modeling to software delivery, with the goal of producing tools that remain reliable when used in real engineering and environmental contexts
+                From the math to the last line of code — the point is a tool that still works once it's out of my hands
               </blockquote>
             </aside>
           </section>
