@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../site.css">
+  <link rel="icon" href="../assets/favicon.png">
 </head>
 <body>
   <div class="site-shell">
@@ -31,7 +32,7 @@
       <aside class="sidebar">
         <img class="sidebar__avatar" src="../assets/avatar.jpeg" alt="Nicholas Mueller">
         <p class="eyebrow" style="margin-top:16px;">Software Focus</p>
-        <p>I build research software that is intended to be extended, benchmarked, and used by other people, not just to support one-off experiments.</p>
+        <p>I write research code expecting other people to read it, extend it, and benchmark it against theirs — not just run it once for a paper.</p>
         <div class="chip-row">
           <span class="chip">Julia</span>
           <span class="chip">HPC</span>
@@ -44,7 +45,7 @@
         <div class="panel__inner">
           <p class="eyebrow">Software</p>
           <h1 class="page-title">Open-source tools built for computational work that needs to scale</h1>
-          <p class="page-lead">My software work is shaped by a simple requirement: the methods need to survive contact with real models, real data volumes, and real users. That means balancing algorithmic ambition with interface design, testing, and performance engineering.</p>
+          <p class="page-lead">A method that only works in a controlled benchmark isn't done yet. Getting it to survive real models, real data, and real users is most of the actual engineering — interface design, testing, and performance work included.</p>
 
           <section class="section">
             <div class="media-grid">
@@ -52,11 +53,11 @@
                 <img src="../assets/gridaproms.png" alt="GridapROMs.jl screenshot">
                 <p class="card-kicker">Author</p>
                 <h2 class="card-title">GridapROMs.jl</h2>
-                <p>A Julia package for efficient reduced-order modeling of parameterized PDEs, designed for flexible use across steady, transient, linear, nonlinear, single-field, and multi-field systems.</p>
+                <p>A Julia package for reduced-order modeling of parameterized PDEs — steady or transient, linear or nonlinear, single- or multi-field.</p>
                 <ul class="detail-list">
-                  <li>Includes POD, Tucker, tensor-train, interpolation, and localized subspace strategies.</li>
-                  <li>Supports distributed-memory snapshot generation for expensive offline stages.</li>
-                  <li>Designed around a high-level API that stays readable and extensible.</li>
+                  <li>POD, Tucker, tensor-train, interpolation, and localized subspace strategies, all behind the same interface.</li>
+                  <li>Distributed-memory snapshot generation, because the offline stage is usually the bottleneck.</li>
+                  <li>A high-level API I've kept readable on purpose, even as the internals got more complicated.</li>
                 </ul>
                 <div class="project-links">
                   <a href="https://github.com/gridap/GridapROMs.jl">Repository</a>
@@ -65,18 +66,19 @@
               </article>
 
               <article class="project-card">
-                <img src="../assets/meteomodels.png" alt="MeteoModels.jl screenshot">
+                <img src="../assets/opals.png" alt="Opals.jl icon">
                 <p class="card-kicker">Author</p>
-                <h2 class="card-title">MeteoModels.jl</h2>
-                <p>A Julia package for data assimilation and uncertainty quantification in dynamical systems, with particular emphasis on weather and geophysical workflows.</p>
+                <h2 class="card-title">Opals.jl</h2>
+                <p>A Julia package for data assimilation and inverse modelling. It replaces MeteoModels.jl, an earlier package of mine that's no longer maintained — same idea, sequential filters and variational estimators behind one interface, rebuilt with a design I actually trust.</p>
                 <ul class="detail-list">
-                  <li>Supports KF, EKF, UKF, EnKF, and DEnKF workflows.</li>
-                  <li>Targets interpretable, modular forecasting pipelines rather than opaque wrappers.</li>
-                  <li>Future work extends toward reduced-basis and large-scale assimilation strategies.</li>
+                  <li>Kalman, extended/unscented Kalman, ensemble Kalman, and particle filters, plus 3D-/4D-Var, all sharing the same execution and diagnostics.</li>
+                  <li>Things like covariance localization/inflation, adaptive noise estimation, and bias-aware correction are wrappers around a common filter interface, so you compose what you need instead of picking a monolithic implementation off a shelf.</li>
+                  <li>A reservoir-computing (echo state network) module I wrote from scratch for the bias correction, which turned out more accurate and cheaper to train than ReservoirComputing.jl on the benchmarks I ran.</li>
+                  <li>Talks natively to SciML for ODEs and to Gridap/GridapROMs for full- and reduced-order PDE models, so a reduced-order surrogate can drop in for a full-order solver without touching the assimilation code.</li>
                 </ul>
                 <div class="project-links">
-                  <a href="https://github.com/nichomueller/MeteoModels.jl">Repository</a>
-                  <a href="https://nichomueller.github.io/MeteoModels.jl/dev/">Documentation</a>
+                  <a href="https://github.com/nichomueller/Opals.jl">Repository</a>
+                  <a href="../assets/opals-paper.pdf">Paper</a>
                 </div>
               </article>
             </div>
@@ -86,15 +88,15 @@
             <article class="info-card">
               <p class="card-kicker">How I design software</p>
               <ul class="detail-list">
-                <li>Interfaces should expose mathematical structure clearly enough that users can reason about them.</li>
-                <li>Performance work should be measurable, so profiling and benchmarking are part of normal development.</li>
-                <li>Reproducibility matters: environment management, tested examples, and documented workflows reduce friction for collaborators.</li>
-                <li>Packages should be useful both to researchers prototyping methods and to engineers integrating them into bigger pipelines.</li>
+                <li>An interface should expose the underlying math, not hide it behind abstraction for its own sake.</li>
+                <li>If I can't measure a performance claim, I don't trust it, so profiling and benchmarking happen as I go, not after.</li>
+                <li>Environment management, tested examples, documented workflows — boring, and the reason a collaborator doesn't have to email me to get something running.</li>
+                <li>A package should work equally well for someone prototyping a new method and someone bolting it into a bigger pipeline.</li>
               </ul>
             </article>
             <article class="quote-card">
               <p class="card-kicker">Why software matters</p>
-              <blockquote>For computational methods, software quality is not presentation. It is part of the method itself, because it determines whether the idea can be trusted, reused, and scaled</blockquote>
+              <blockquote>Code quality isn't presentation. It's what decides whether the idea behind it can be trusted by anyone but you</blockquote>
             </article>
           </section>
         </div>

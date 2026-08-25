@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../site.css">
+  <link rel="icon" href="../assets/favicon.png">
 </head>
 <body>
   <div class="site-shell">
@@ -31,7 +32,7 @@
       <aside class="sidebar">
         <img class="sidebar__avatar" src="../assets/avatar.jpeg" alt="Nicholas Mueller">
         <p class="eyebrow" style="margin-top:16px;">Profile</p>
-        <p>Applied mathematician and engineer specializing in data-driven simulation, forecasting, high-performance computing, and scientific software for physical and environmental systems.</p>
+        <p>Applied mathematician and engineer. I work on data-driven simulation, forecasting, and the software and compute infrastructure that makes both usable on real physical and environmental systems.</p>
         <div class="sidebar__links">
           <a href="mailto:n.mueller@tudelft.nl">Email</a>
           <a href="https://github.com/nichomueller">GitHub</a>
@@ -42,8 +43,8 @@
       <main class="panel">
         <div class="panel__inner">
           <p class="eyebrow">Curriculum Vitae</p>
-          <h1 class="page-title">Engineering-oriented scientific computing for high-impact physical systems</h1>
-          <p class="page-lead">My work sits at the intersection of numerical simulation, data assimilation, scientific machine learning, and software engineering. The consistent objective is to translate advanced methods into reliable computational tools that can support prediction, design, and decision-making.</p>
+          <h1 class="page-title">Scientific computing for physical systems, from the math to the deployed tool</h1>
+          <p class="page-lead">Numerical simulation, data assimilation, scientific ML, software engineering — in practice a project usually touches all four, since getting a method reliable enough to actually inform a prediction or a design decision is most of the work.</p>
 
           <section class="section">
             <div class="meta-list">
@@ -68,15 +69,16 @@
                   <h3 class="card-title">Research Fellow, TU Delft</h3>
                   <p>Developing digital-twin and large-scale multiphysics simulation frameworks for offshore floating solar energy systems.</p>
                   <ul class="detail-list">
-                    <li>Implementing scalable forecasting and uncertainty quantification pipelines for environmental risk assessment.</li>
-                    <li>Supporting robust and sustainable design decisions for offshore renewable energy infrastructure.</li>
+                    <li>Building forecasting and uncertainty quantification pipelines for environmental risk assessment.</li>
+                    <li>Feeding directly into design decisions for offshore renewable energy infrastructure.</li>
                     <li>Competitive research fellowship within DigiOcean4Solar, supported by the VIDI scheme.</li>
+                    <li>Built Opals.jl, an open-source data assimilation package spanning Kalman/particle filters and 4D-Var across SciML and Gridap/GridapROMs backends. Its reservoir-computing module for bias correction beats ReservoirComputing.jl, the standard Julia RC library, on both accuracy and training time.</li>
                   </ul>
                 </article>
                 <article class="timeline-card">
                   <div class="timeline-meta">2022 - 2025</div>
                   <h3 class="card-title">PhD Researcher, Monash University</h3>
-                  <p>Developed reduced-order methods and scientific software for parameterized PDEs, with emphasis on computational efficiency and large-scale use.</p>
+                  <p>Reduced-order methods and scientific software for parameterized PDEs, mostly aimed at problems too large for the textbook approach to survive.</p>
                   <ul class="detail-list">
                     <li>Built methods spanning space-time reduction, tensor decompositions, unfitted finite elements, and scalable HPC workflows.</li>
                     <li>Authored open-source Julia software aimed at broader research and engineering use.</li>
@@ -85,7 +87,7 @@
                 <article class="timeline-card">
                   <div class="timeline-meta">2020 - 2021</div>
                   <h3 class="card-title">R&amp;D Intern, CSEM</h3>
-                  <p>Worked on topology optimization software for compliant aerospace mechanisms, designed under real compliance and stress constraints.</p>
+                  <p>Topology optimization software for compliant aerospace mechanisms, built against real compliance and stress constraints from the manufacturing side.</p>
                 </article>
               </div>
             </div>
