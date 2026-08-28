@@ -32,7 +32,7 @@
       <aside class="sidebar">
         <img class="sidebar__avatar" src="../assets/avatar.jpeg" alt="Nicholas Mueller">
         <p class="eyebrow" style="margin-top:16px;">Software Focus</p>
-        <p>I write research code expecting other people to read it, extend it, and benchmark it against theirs — not just run it once for a paper.</p>
+        <p>I write research code assuming someone else will read it, extend it, and benchmark it against their own. Code that only ever gets run once, for one paper, isn't much use to anyone.</p>
         <div class="chip-row">
           <span class="chip">Julia</span>
           <span class="chip">HPC</span>
@@ -45,7 +45,7 @@
         <div class="panel__inner">
           <p class="eyebrow">Software</p>
           <h1 class="page-title">Open-source tools built for computational work that needs to scale</h1>
-          <p class="page-lead">A method that only works in a controlled benchmark isn't done yet. Getting it to survive real models, real data, and real users is most of the actual engineering — interface design, testing, and performance work included.</p>
+          <p class="page-lead">A method that only works in a controlled benchmark isn't finished. Most of the actual engineering happens afterward, in the interface design, testing, and performance work it takes to get it to survive real models, real data, and real users.</p>
 
           <section class="section">
             <div class="media-grid">
@@ -53,7 +53,7 @@
                 <img src="../assets/gridaproms.png" alt="GridapROMs.jl screenshot">
                 <p class="card-kicker">Author</p>
                 <h2 class="card-title">GridapROMs.jl</h2>
-                <p>A Julia package for reduced-order modeling of parameterized PDEs — steady or transient, linear or nonlinear, single- or multi-field.</p>
+                <p>A Julia package for reduced-order modeling of parameterized PDEs, covering steady or transient, linear or nonlinear, single- or multi-field problems.</p>
                 <ul class="detail-list">
                   <li>POD, Tucker, tensor-train, interpolation, and localized subspace strategies, all behind the same interface.</li>
                   <li>Distributed-memory snapshot generation, because the offline stage is usually the bottleneck.</li>
@@ -69,7 +69,7 @@
                 <img src="../assets/opals.png" alt="Opals.jl icon">
                 <p class="card-kicker">Author</p>
                 <h2 class="card-title">Opals.jl</h2>
-                <p>A Julia package for data assimilation and inverse modelling. It replaces MeteoModels.jl, an earlier package of mine that's no longer maintained — same idea, sequential filters and variational estimators behind one interface, rebuilt with a design I actually trust.</p>
+                <p>A Julia package for data assimilation and inverse modelling. It replaces MeteoModels.jl, an earlier package of mine that's no longer maintained. The idea is the same, sequential filters and variational estimators behind one interface, but the design underneath is one I trust a lot more.</p>
                 <ul class="detail-list">
                   <li>Kalman, extended/unscented Kalman, ensemble Kalman, and particle filters, plus 3D-/4D-Var, all sharing the same execution and diagnostics.</li>
                   <li>Things like covariance localization/inflation, adaptive noise estimation, and bias-aware correction are wrappers around a common filter interface, so you compose what you need instead of picking a monolithic implementation off a shelf.</li>
@@ -90,7 +90,7 @@
               <ul class="detail-list">
                 <li>An interface should expose the underlying math, not hide it behind abstraction for its own sake.</li>
                 <li>If I can't measure a performance claim, I don't trust it, so profiling and benchmarking happen as I go, not after.</li>
-                <li>Environment management, tested examples, documented workflows — boring, and the reason a collaborator doesn't have to email me to get something running.</li>
+                <li>Environment management, tested examples, documented workflows: none of it is exciting, but it's usually why a collaborator doesn't have to email me just to get something running.</li>
                 <li>A package should work equally well for someone prototyping a new method and someone bolting it into a bigger pipeline.</li>
               </ul>
             </article>
