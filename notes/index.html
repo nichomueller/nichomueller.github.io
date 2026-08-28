@@ -32,7 +32,7 @@
       <aside class="sidebar">
         <img class="sidebar__avatar" src="../assets/avatar.jpeg" alt="Nicholas Mueller">
         <p class="eyebrow" style="margin-top:16px;">Notes</p>
-        <p>Short write-ups on simulation, software, and forecasting — things I noticed while doing the actual work.</p>
+        <p>Short write-ups on simulation, software, and forecasting. Mostly things I noticed while doing the actual work.</p>
         <div class="chip-row">
           <span class="chip">Methods</span>
           <span class="chip">Software</span>
@@ -45,14 +45,14 @@
         <div class="panel__inner">
           <p class="eyebrow">Project notes</p>
           <h1 class="page-title">Notes from the parts of the job that don't make it into a paper</h1>
-          <p class="page-lead">Practical stuff about simulation pipelines, software design, and forecasting — for anyone who's tried to get a method working outside its own benchmark and hit the same walls I did.</p>
+          <p class="page-lead">Practical stuff about simulation pipelines, software design, and forecasting, for anyone who's tried to get a method working outside its own benchmark and hit the same walls I did.</p>
 
           <section class="section publication-list publication-list--stack">
             <article class="publication-card publication-card--wide">
               <div>
                 <p class="card-kicker">Software practice</p>
                 <h2 class="card-title">What makes a scientific codebase usable beyond its first paper</h2>
-                <p class="publication-meta">Most scientific repos start as research vehicles — just enough code to test an idea and make a plot for the paper. Fine as a starting point. It doesn't survive contact with anyone else's problem.</p>
+                <p class="publication-meta">Most scientific repos start as research vehicles: just enough code to test an idea and make a plot for the paper. That's a fine starting point, but it rarely holds up once someone else tries to build on it.</p>
                 <p class="publication-meta">What actually makes code reusable, in my experience, is boring: a clear line between where the model assumptions live and where the numerical choices live, examples that run and break loudly when a refactor changes behavior, enough profiling that "it's fast" means something specific, and failure modes you can name instead of a silent NaN three functions deep.</p>
                 <p class="publication-meta">None of that is maintenance tacked onto the real result. It's the reason a method makes it past me.</p>
               </div>
@@ -65,9 +65,9 @@
               <div>
                 <p class="card-kicker">Model deployment</p>
                 <h2 class="card-title">Why reduced-order models fail in deployment even when they look good offline</h2>
-                <p class="publication-meta">Offline accuracy numbers almost always come from data generated under the same assumptions used to build the model. Deployment doesn't offer that. Inputs drift, sensors change, operating conditions wander outside whatever you sampled during training — and a model that compresses beautifully can still fall apart here.</p>
+                <p class="publication-meta">Offline accuracy numbers almost always come from data generated under the same assumptions used to build the model. Deployment doesn't offer that. Inputs drift, sensors change, operating conditions wander outside whatever you sampled during training, and a model that compresses the data beautifully can still fall apart under any of that.</p>
                 <p class="publication-meta">In my experience it's usually one of a few things: the reduced space was only ever faithful near the training data and gets shaky at the edges that matter operationally; the deployment sensors resolve something different from what the offline metrics were tracking; or an assumption baked into a precomputed operator quietly stopped holding once the system drifted.</p>
-                <p class="publication-meta">There's no single algorithmic fix for this. What works is treating the reduced model less like a frozen artifact and more like something you monitor — residuals, uncertainty growth, some way to notice you've left the training regime before the predictions do.</p>
+                <p class="publication-meta">There's no single algorithmic fix for this. What works is treating the reduced model less like a frozen artifact and more like something you actively monitor: tracking residuals, watching uncertainty grow, having some way to notice you've left the training regime before the predictions do.</p>
               </div>
               <div class="publication-actions">
                 <span class="mini-chip">ROMs</span>
@@ -78,9 +78,9 @@
               <div>
                 <p class="card-kicker">Forecasting systems</p>
                 <h2 class="card-title">Data assimilation as engineering infrastructure</h2>
-                <p class="publication-meta">Data assimilation gets taught as an estimation problem. Once it's actually running against live sensors, it behaves more like infrastructure — the layer that keeps reconciling predictions with reality and feeding whatever's downstream: an alarm, a control update, a planning scenario.</p>
-                <p class="publication-meta">That changes what you optimize for. Reliability and observability end up mattering as much as estimator optimality: health checks, latency budgets, some sensible fallback for when a sensor stream goes quiet. And the uncertainty a filter produces has to mean something to whoever's consuming it, not just be correct in isolation.</p>
-                <p class="publication-meta">This shows up most in environmental and energy work, where the people using the forecast usually aren't the people who built the filter. The pipeline earns its keep by running predictably and being honest about what it doesn't know — not by being clever.</p>
+                <p class="publication-meta">Data assimilation gets taught as an estimation problem. Once it's actually running against live sensors, though, it starts behaving more like infrastructure: the layer that keeps reconciling predictions with reality and feeding whatever sits downstream, whether that's an alarm, a control update, or a planning scenario.</p>
+                <p class="publication-meta">That changes what you optimize for. Reliability and observability end up mattering as much as estimator optimality: health checks, latency budgets, some sensible fallback for when a sensor stream goes quiet. The uncertainty a filter produces also has to mean something to whoever's consuming it, not just be correct in isolation.</p>
+                <p class="publication-meta">This shows up most in environmental and energy work, where the people using the forecast usually aren't the people who built the filter. What makes the pipeline useful in practice is that it runs predictably and is upfront about what it doesn't know.</p>
               </div>
               <div class="publication-actions">
                 <span class="mini-chip">Assimilation</span>
