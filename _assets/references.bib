@@ -12,8 +12,8 @@ issn = {0377-0427},
 doi = {https://doi.org/10.1016/j.cam.2024.115767},
 url = {https://www.sciencedirect.com/science/article/pii/S0377042724000165},
 author = {Nicholas Mueller and Santiago Badia},
-keywords = {Parameterized, Unsteady partial differential equations, Space–time model order reduction, Reduced basis method, Discrete empirical interpolation, Hyper-reduction},
-abstract = {This work proposes novel techniques for the efficient numerical simulation of parameterized, unsteady partial differential equations. Projection-based reduced order models (ROMs) such as the reduced basis method employ a (Petrov-)Galerkin projection onto a linear low-dimensional subspace. In unsteady applications, space–time reduced basis (ST-RB) methods have been developed to achieve a dimension reduction both in space and time, eliminating the computational burden of time marching schemes. However, nonaffine parameterizations dilute any computational speedup achievable by traditional ROMs. Computational efficiency can be recovered by linearizing the nonaffine operators via hyper-reduction, such as the empirical interpolation method in matrix form. In this work, we implement new hyper-reduction techniques explicitly tailored to deal with unsteady problems and embed them in a ST-RB framework. For each of the proposed methods, we develop a posteriori error bounds. We run numerical tests to compare the performance of the proposed ROMs against high-fidelity simulations, in which we combine the finite element method for space discretization on 3D geometries and the Backward Euler time integrator. In particular, we consider a heat equation and an unsteady Stokes equation. The numerical experiments demonstrate the accuracy and computational efficiency our methods retain with respect to the high-fidelity simulations.}
+keywords = {Parameterised, Unsteady partial differential equations, Space–time model order reduction, Reduced basis method, Discrete empirical interpolation, Hyper-reduction},
+abstract = {This work proposes novel techniques for the efficient numerical simulation of parameterised, unsteady partial differential equations. Projection-based reduced order models (ROMs) such as the reduced basis method employ a (Petrov-)Galerkin projection onto a linear low-dimensional subspace. In unsteady applications, space–time reduced basis (ST-RB) methods have been developed to achieve a dimension reduction both in space and time, eliminating the computational burden of time marching schemes. However, nonaffine parameterisations dilute any computational speedup achievable by traditional ROMs. Computational efficiency can be recovered by linearizing the nonaffine operators via hyper-reduction, such as the empirical interpolation method in matrix form. In this work, we implement new hyper-reduction techniques explicitly tailored to deal with unsteady problems and embed them in a ST-RB framework. For each of the proposed methods, we develop a posteriori error bounds. We run numerical tests to compare the performance of the proposed ROMs against high-fidelity simulations, in which we combine the finite element method for space discretisation on 3D geometries and the Backward Euler time integrator. In particular, we consider a heat equation and an unsteady Stokes equation. The numerical experiments demonstrate the accuracy and computational efficiency our methods retain with respect to the high-fidelity simulations.}
 }
 
 @article{choi2019space,
@@ -62,7 +62,7 @@ abstract = {Unfitted finite element techniques are valuable tools in different a
 }
 
 @article{CHASAPI2023115997,
-title = {A localized reduced basis approach for unfitted domain methods on parameterized geometries},
+title = {A localised reduced basis approach for unfitted domain methods on parameterised geometries},
 journal = {Computer Methods in Applied Mechanics and Engineering},
 volume = {410},
 pages = {115997},
@@ -72,11 +72,11 @@ doi = {https://doi.org/10.1016/j.cma.2023.115997},
 url = {https://www.sciencedirect.com/science/article/pii/S0045782523001214},
 author = {Margarita Chasapi and Pablo Antolin and Annalisa Buffa},
 keywords = {Reduced basis method, Discrete empirical interpolation method, Proper orthogonal decomposition, Immersed method, Isogeometric analysis, Trimming},
-abstract = {This work introduces a reduced order modeling (ROM) framework for the solution of parameterized second-order linear elliptic partial differential equations formulated on unfitted geometries. The goal is to construct efficient projection-based ROMs, which rely on techniques such as the reduced basis method and discrete empirical interpolation. The presence of geometrical parameters in unfitted domain discretizations entails challenges for the application of standard ROMs. Therefore, in this work we propose a methodology based on (i) extension of snapshots on the background mesh and (ii) localization strategies to decrease the number of reduced basis functions. The method we obtain is computationally efficient and accurate, while it is agnostic with respect to the underlying discretization choice. We test the applicability of the proposed framework with numerical experiments on two model problems, namely the Poisson and linear elasticity problems. In particular, we study several benchmarks formulated on two-dimensional, trimmed domains discretized with splines and we observe a significant reduction of the online computational cost compared to standard ROMs for the same level of accuracy. Moreover, we show the applicability of our methodology to a three-dimensional geometry of a linear elastic problem.}
+abstract = {This work introduces a reduced order modeling (ROM) framework for the solution of parameterised second-order linear elliptic partial differential equations formulated on unfitted geometries. The goal is to construct efficient projection-based ROMs, which rely on techniques such as the reduced basis method and discrete empirical interpolation. The presence of geometrical parameters in unfitted domain discretisations entails challenges for the application of standard ROMs. Therefore, in this work we propose a methodology based on (i) extension of snapshots on the background mesh and (ii) localisation strategies to decrease the number of reduced basis functions. The method we obtain is computationally efficient and accurate, while it is agnostic with respect to the underlying discretisation choice. We test the applicability of the proposed framework with numerical experiments on two model problems, namely the Poisson and linear elasticity problems. In particular, we study several benchmarks formulated on two-dimensional, trimmed domains discretised with splines and we observe a significant reduction of the online computational cost compared to standard ROMs for the same level of accuracy. Moreover, we show the applicability of our methodology to a three-dimensional geometry of a linear elastic problem.}
 }
 
 @article{NOUY20113066,
-title = {Fictitious domain method and separated representations for the solution of boundary value problems on uncertain parameterized domains},
+title = {Fictitious domain method and separated representations for the solution of boundary value problems on uncertain parameterised domains},
 journal = {Computer Methods in Applied Mechanics and Engineering},
 volume = {200},
 number = {45},
@@ -86,8 +86,8 @@ issn = {0045-7825},
 doi = {https://doi.org/10.1016/j.cma.2011.07.002},
 url = {https://www.sciencedirect.com/science/article/pii/S0045782511002362},
 author = {A. Nouy and M. Chevreuil and E. Safatly},
-keywords = {Uncertainty quantification, Proper Generalized Decomposition, Tensor product approximation, Random domain, Fictitious domain method, Spectral stochastic methods},
-abstract = {A tensor-based method is proposed for the solution of partial differential equations defined on uncertain parameterized domains. It provides an accurate solution which is explicit with respect to parameters defining the shape of the domain, thus allowing efficient a posteriori probabilistic or parametric analyses. In the proposed method, a fictitious domain approach is first adopted for the reformulation of the parametric problem on a fixed domain, yielding a weak formulation in a tensor product space (product of space functions and parametric functions). The paper is limited to the case of Neumann conditions on uncertain parts of the boundary. The Proper Generalized Decomposition method is then introduced for the construction of a tensor product approximation (separated representation) of the solution. It can be seen as an a priori model reduction technique which automatically captures reduced bases of space functions and parametric functions which are optimal for the representation of the solution. This tensor-based method is made computationally tractable by introducing separated representations of variational forms, resulting from separated representations of the parameterized indicator function of the uncertain domain. For this purpose, a method is proposed for the construction of a constrained tensor product approximation which preserves positivity and therefore ensures well-posedness of problems associated with approximate indicator functions. Moreover, a regularization of the geometry is introduced to speed up the convergence of these tensor product approximations.}
+keywords = {Uncertainty quantification, Proper Generalised Decomposition, Tensor product approximation, Random domain, Fictitious domain method, Spectral stochastic methods},
+abstract = {A tensor-based method is proposed for the solution of partial differential equations defined on uncertain parameterised domains. It provides an accurate solution which is explicit with respect to parameters defining the shape of the domain, thus allowing efficient a posteriori probabilistic or parametric analyses. In the proposed method, a fictitious domain approach is first adopted for the reformulation of the parametric problem on a fixed domain, yielding a weak formulation in a tensor product space (product of space functions and parametric functions). The paper is limited to the case of Neumann conditions on uncertain parts of the boundary. The Proper Generalised Decomposition method is then introduced for the construction of a tensor product approximation (separated representation) of the solution. It can be seen as an a priori model reduction technique which automatically captures reduced bases of space functions and parametric functions which are optimal for the representation of the solution. This tensor-based method is made computationally tractable by introducing separated representations of variational forms, resulting from separated representations of the parameterised indicator function of the uncertain domain. For this purpose, a method is proposed for the construction of a constrained tensor product approximation which preserves positivity and therefore ensures well-posedness of problems associated with approximate indicator functions. Moreover, a regularisation of the geometry is introduced to speed up the convergence of these tensor product approximations.}
 }
 
 @article{BALAJEWICZ2014489,
@@ -105,7 +105,7 @@ abstract = {Embedded boundary methods alleviate many computational challenges, i
 }
 
 @article{KARATZAS2020833,
-title = {Projection-based reduced order models for a cut finite element method in parametrized domains},
+title = {Projection-based reduced order models for a cut finite element method in parametrised domains},
 journal = {Computers \& Mathematics with Applications},
 volume = {79},
 number = {3},
@@ -115,12 +115,12 @@ issn = {0898-1221},
 doi = {https://doi.org/10.1016/j.camwa.2019.08.003},
 url = {https://www.sciencedirect.com/science/article/pii/S0898122119303931},
 author = {Efthymios N. Karatzas and Francesco Ballarin and Gianluigi Rozza},
-keywords = {Reduced order methods, Cut finite element method, Geometrical parametrization, Free boundary problems, Embedded methods, Viscous flows},
-abstract = {This work presents a reduced order modeling technique built on a high fidelity embedded mesh finite element method. Such methods, and in particular the CutFEM method, are attractive in the generation of projection-based reduced order models thanks to their capabilities to seamlessly handle large deformations of parametrized domains and in general to handle topological changes. The combination of embedded methods and reduced order models allows us to obtain fast evaluation of parametrized problems, avoiding remeshing as well as the reference domain formulation, often used in the reduced order modeling for boundary fitted finite element formulations. The resulting novel methodology is presented on linear elliptic and Stokes problems, together with several test cases to assess its capability. The role of a proper extension and transport of embedded solutions to a common background is analyzed in detail.}
+keywords = {Reduced order methods, Cut finite element method, Geometrical parametrisation, Free boundary problems, Embedded methods, Viscous flows},
+abstract = {This work presents a reduced order modeling technique built on a high fidelity embedded mesh finite element method. Such methods, and in particular the CutFEM method, are attractive in the generation of projection-based reduced order models thanks to their capabilities to seamlessly handle large deformations of parametrised domains and in general to handle topological changes. The combination of embedded methods and reduced order models allows us to obtain fast evaluation of parametrised problems, avoiding remeshing as well as the reference domain formulation, often used in the reduced order modeling for boundary fitted finite element formulations. The resulting novel methodology is presented on linear elliptic and Stokes problems, together with several test cases to assess its capability. The role of a proper extension and transport of embedded solutions to a common background is analyzed in detail.}
 }
 
 @article{KARATZAS2022140,
-title = {A Reduced Order Cut Finite Element method for geometrically parametrized steady and unsteady Navier–Stokes problems},
+title = {A Reduced Order Cut Finite Element method for geometrically parametrised steady and unsteady Navier–Stokes problems},
 journal = {Computers \& Mathematics with Applications},
 volume = {116},
 pages = {140-160},
@@ -131,7 +131,7 @@ doi = {https://doi.org/10.1016/j.camwa.2021.07.016},
 url = {https://www.sciencedirect.com/science/article/pii/S0898122121002790},
 author = {Efthymios N. Karatzas and Monica Nonino and Francesco Ballarin and Gianluigi Rozza},
 keywords = {Reduced Order Models, Unfitted mesh, Cut Finite Element Method, Navier–Stokes equations, Parameter–dependent shape geometry},
-abstract = {We focus on steady and unsteady Navier–Stokes flow systems in a reduced-order modeling framework based on Proper Orthogonal Decomposition within a levelset geometry description and discretized by an unfitted mesh Finite Element Method. This work extends the approaches of [1], [2], [3] to nonlinear CutFEM discretization. We construct and investigate a unified and geometry independent reduced basis which overcomes many barriers and complications of the past, that may occur whenever geometrical morphings are taking place. By employing a geometry independent reduced basis, we are able to avoid remeshing and transformation to reference configurations, and we are able to handle complex geometries. This combination of a fixed background mesh in a fixed extended background geometry with reduced order techniques appears beneficial and advantageous in many industrial and engineering applications, which could not be resolved efficiently in the past.}
+abstract = {We focus on steady and unsteady Navier–Stokes flow systems in a reduced-order modeling framework based on Proper Orthogonal Decomposition within a levelset geometry description and discretised by an unfitted mesh Finite Element Method. This work extends the approaches of [1], [2], [3] to nonlinear CutFEM discretisation. We construct and investigate a unified and geometry independent reduced basis which overcomes many barriers and complications of the past, that may occur whenever geometrical morphings are taking place. By employing a geometry independent reduced basis, we are able to avoid remeshing and transformation to reference configurations, and we are able to handle complex geometries. This combination of a fixed background mesh in a fixed extended background geometry with reduced order techniques appears beneficial and advantageous in many industrial and engineering applications, which could not be resolved efficiently in the past.}
 }
 
 @article{BAHARI2024116570,
@@ -144,8 +144,8 @@ issn = {0045-7825},
 doi = {https://doi.org/10.1016/j.cma.2023.116570},
 url = {https://www.sciencedirect.com/science/article/pii/S0045782523006941},
 author = {M. Bahari and A. Habbal and A. Ratnani and E. Sonnendrücker},
-keywords = {B-spline discretization, Optimal transport, Isogeometric Analysis, Multi level, Mesh generation, r-refinement},
-abstract = {In this work, we devise fast solvers and adaptive mesh generation procedures based on the Monge–Ampère Equation using B-Splines Finite Elements, within the Isogeometric Analysis framework. Our approach ensures that the constructed mapping is a bijection, which is a major challenge in Isogeometric Analysis. First, we use standard B-Splines Finite Elements to solve the Monge–Ampère Equation. An analysis of this approach shows serious limitations when dealing with high variations near the boundary. In order to solve this problem, a new formulation is derived using compatible B-Splines discretization based on a discrete DeRham sequence. A new fast solver is devised in this case using the Fast Diagonalization method. Different tests are provided and show the performance of our new approach.}
+keywords = {B-spline discretisation, Optimal transport, Isogeometric Analysis, Multi level, Mesh generation, r-refinement},
+abstract = {In this work, we devise fast solvers and adaptive mesh generation procedures based on the Monge–Ampère Equation using B-Splines Finite Elements, within the Isogeometric Analysis framework. Our approach ensures that the constructed mapping is a bijection, which is a major challenge in Isogeometric Analysis. First, we use standard B-Splines Finite Elements to solve the Monge–Ampère Equation. An analysis of this approach shows serious limitations when dealing with high variations near the boundary. In order to solve this problem, a new formulation is derived using compatible B-Splines discretisation based on a discrete DeRham sequence. A new fast solver is devised in this case using the Fast Diagonalisation method. Different tests are provided and show the performance of our new approach.}
 }
 
 @article{https://doi.org/10.1002/nme.4371,
@@ -159,13 +159,13 @@ keywords = {GNAT, hyper reduction, local basis, nonlinear model order reduction,
 doi = {https://doi.org/10.1002/nme.4371},
 url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.4371},
 eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.4371},
-abstract = {SUMMARY A new approach for the dimensional reduction via projection of nonlinear computational models based on the concept of local reduced-order bases is presented. It is particularly suited for problems characterized by different physical regimes, parameter variations, or moving features such as discontinuities and fronts. Instead of approximating the solution of interest in a fixed lower-dimensional subspace of global basis vectors, the proposed model order reduction method approximates this solution in a lower-dimensional subspace generated by most appropriate local basis vectors. To this effect, the solution space is partitioned into subregions, and a local reduced-order basis is constructed and assigned to each subregion offline. During the incremental solution online of the reduced problem, a local basis is chosen according to the subregion of the solution space where the current high-dimensional solution lies. This is achievable in real time because the computational complexity of the selection algorithm scales with the dimension of the lower-dimensional solution space. Because it is also applicable to the process of hyper reduction, the proposed method for nonlinear model order reduction is computationally efficient. Its potential for achieving large speedups while maintaining good accuracy is demonstrated for two nonlinear computational fluid and fluid-structure-electric interaction problems. Copyright © 2012 John Wiley \& Sons, Ltd.},
+abstract = {SUMMARY A new approach for the dimensional reduction via projection of nonlinear computational models based on the concept of local reduced-order bases is presented. It is particularly suited for problems characterised by different physical regimes, parameter variations, or moving features such as discontinuities and fronts. Instead of approximating the solution of interest in a fixed lower-dimensional subspace of global basis vectors, the proposed model order reduction method approximates this solution in a lower-dimensional subspace generated by most appropriate local basis vectors. To this effect, the solution space is partitioned into subregions, and a local reduced-order basis is constructed and assigned to each subregion offline. During the incremental solution online of the reduced problem, a local basis is chosen according to the subregion of the solution space where the current high-dimensional solution lies. This is achievable in real time because the computational complexity of the selection algorithm scales with the dimension of the lower-dimensional solution space. Because it is also applicable to the process of hyper reduction, the proposed method for nonlinear model order reduction is computationally efficient. Its potential for achieving large speedups while maintaining good accuracy is demonstrated for two nonlinear computational fluid and fluid-structure-electric interaction problems. Copyright © 2012 John Wiley \& Sons, Ltd.},
 year = {2012}
 }
 
 @article{doi:10.1137/130924408,
 author = {Peherstorfer, Benjamin and Butnaru, Daniel and Willcox, Karen and Bungartz, Hans-Joachim},
-title = {Localized Discrete Empirical Interpolation Method},
+title = {Localised Discrete Empirical Interpolation Method},
 journal = {SIAM Journal on Scientific Computing},
 volume = {36},
 number = {1},
@@ -174,11 +174,11 @@ year = {2014},
 doi = {10.1137/130924408},
 URL = {https://doi.org/10.1137/130924408},
 eprint = {https://doi.org/10.1137/130924408},
-abstract = {This paper presents a new approach to construct more efficient reduced-order models for nonlinear partial differential equations with proper orthogonal decomposition and the discrete empirical interpolation method (DEIM). Whereas DEIM projects the nonlinear term onto one global subspace, our localized discrete empirical interpolation method (LDEIM) computes several local subspaces, each tailored to a particular region of characteristic system behavior. Then, depending on the current state of the system, LDEIM selects an appropriate local subspace for the approximation of the nonlinear term. In this way, the dimensions of the local DEIM subspaces, and thus the computational costs, remain low even though the system might exhibit a wide range of behaviors as it passes through different regimes. LDEIM uses machine learning methods in the offline computational phase to discover these regions via clustering. Local DEIM approximations are then computed for each cluster. In the online computational phase, machine-learning-based classification procedures select one of these local subspaces adaptively as the computation proceeds. The classification can be achieved using either the system parameters or a low-dimensional representation of the current state of the system obtained via feature extraction. The LDEIM approach is demonstrated for a reacting flow example of an \$\mathrm H\_2\$-Air flame. In this example, where the system state has a strong nonlinear dependence on the parameters, the LDEIM provides speedups of two orders of magnitude over standard DEIM. }
+abstract = {This paper presents a new approach to construct more efficient reduced-order models for nonlinear partial differential equations with proper orthogonal decomposition and the discrete empirical interpolation method (DEIM). Whereas DEIM projects the nonlinear term onto one global subspace, our localised discrete empirical interpolation method (LDEIM) computes several local subspaces, each tailored to a particular region of characteristic system behavior. Then, depending on the current state of the system, LDEIM selects an appropriate local subspace for the approximation of the nonlinear term. In this way, the dimensions of the local DEIM subspaces, and thus the computational costs, remain low even though the system might exhibit a wide range of behaviors as it passes through different regimes. LDEIM uses machine learning methods in the offline computational phase to discover these regions via clustering. Local DEIM approximations are then computed for each cluster. In the online computational phase, machine-learning-based classification procedures select one of these local subspaces adaptively as the computation proceeds. The classification can be achieved using either the system parameters or a low-dimensional representation of the current state of the system obtained via feature extraction. The LDEIM approach is demonstrated for a reacting flow example of an \$\mathrm H\_2\$-Air flame. In this example, where the system state has a strong nonlinear dependence on the parameters, the LDEIM provides speedups of two orders of magnitude over standard DEIM. }
 }
 
 @article{PAGANI2018530,
-title = {Numerical approximation of parametrized problems in cardiac electrophysiology by a local reduced basis method},
+title = {Numerical approximation of parametrised problems in cardiac electrophysiology by a local reduced basis method},
 journal = {Computer Methods in Applied Mechanics and Engineering},
 volume = {340},
 pages = {530-558},
@@ -187,12 +187,12 @@ issn = {0045-7825},
 doi = {https://doi.org/10.1016/j.cma.2018.06.003},
 url = {https://www.sciencedirect.com/science/article/pii/S0045782518303001},
 author = {Stefano Pagani and Andrea Manzoni and Alfio Quarteroni},
-keywords = {Cardiac electrophysiology, Parametrized monodomain model, Local reduced order model, Reduced basis method, Proper orthogonal decomposition, Empirical interpolation method},
-abstract = {The efficient solution of coupled PDEs/ODEs problems arising in cardiac electrophysiology is of key importance whenever interested to study the electrical behavior of the tissue for several instances of relevant physical and/or geometrical parameters. This poses significant challenges to reduced order modeling (ROM) techniques –such as the reduced basis method –traditionally employed when dealing with the repeated solution of parameter dependent differential equations. Indeed, the nonlinear nature of the problem, the presence of moving fronts in the solution, and the high sensitivity of this latter to parameter variations, make the application of standard ROM techniques very problematic. In this paper we propose a local ROM built through a k-means clustering in the state space of the snapshots for both the solution and the nonlinear term. Several comparisons among alternative local ROMs on a benchmark test case show the effectivity of the proposed approach. Finally, the application to a parametrized problem set on an idealized left-ventricle geometry shows the capability of the proposed ROM to face complex problems.}
+keywords = {Cardiac electrophysiology, Parametrised monodomain model, Local reduced order model, Reduced basis method, Proper orthogonal decomposition, Empirical interpolation method},
+abstract = {The efficient solution of coupled PDEs/ODEs problems arising in cardiac electrophysiology is of key importance whenever interested to study the electrical behavior of the tissue for several instances of relevant physical and/or geometrical parameters. This poses significant challenges to reduced order modeling (ROM) techniques –such as the reduced basis method –traditionally employed when dealing with the repeated solution of parameter dependent differential equations. Indeed, the nonlinear nature of the problem, the presence of moving fronts in the solution, and the high sensitivity of this latter to parameter variations, make the application of standard ROM techniques very problematic. In this paper we propose a local ROM built through a k-means clustering in the state space of the snapshots for both the solution and the nonlinear term. Several comparisons among alternative local ROMs on a benchmark test case show the effectivity of the proposed approach. Finally, the application to a parametrised problem set on an idealised left-ventricle geometry shows the capability of the proposed ROM to face complex problems.}
 }
 
 @misc{karatzas2021reducedordermodelstable,
-    title={A reduced order model for a stable embedded boundary parametrized Cahn-Hilliard phase-field system based on cut finite elements}, 
+    title={A reduced order model for a stable embedded boundary parametrised Cahn-Hilliard phase-field system based on cut finite elements}, 
     author={Efthymios N. Karatzas and Gianluigi Rozza},
     year={2021},
     eprint={2009.01596},
@@ -202,7 +202,7 @@ abstract = {The efficient solution of coupled PDEs/ODEs problems arising in card
 }
 
 @article{Karatzas_2019,
-  title={A reduced basis approach for PDEs on parametrized geometries based on the shifted boundary finite element method and application to a Stokes flow},
+  title={A reduced basis approach for PDEs on parametrised geometries based on the shifted boundary finite element method and application to a Stokes flow},
   volume={347},
   ISSN={0045-7825},
   url={http://dx.doi.org/10.1016/j.cma.2018.12.040},
@@ -232,7 +232,7 @@ author = {Katsouleas, Georgios and Karatzas, Efthymios and Travlopanos, Fotios},
 year = {2020},
 month = {10},
 pages = {},
-title = {Discrete Empirical Interpolation and unfitted mesh FEMs: application in PDE-constrained optimization},
+title = {Discrete Empirical Interpolation and unfitted mesh FEMs: application in PDE-constrained optimisation},
 doi = {10.48550/arXiv.2010.09059}
 }
 
@@ -299,7 +299,7 @@ keywords = {extended finite element method, unfitted methods, finite element met
 doi = {https://doi.org/10.1002/nme.4823},
 url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.4823},
 eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.4823},
-abstract = {Summary We discuss recent advances on robust unfitted finite element methods on cut meshes. These methods are designed to facilitate computations on complex geometries obtained, for example, from computer-aided design or image data from applied sciences. Both the treatment of boundaries and interfaces and the discretization of PDEs on surfaces are discussed and illustrated numerically. Copyright © 2014 John Wiley \& Sons, Ltd.},
+abstract = {Summary We discuss recent advances on robust unfitted finite element methods on cut meshes. These methods are designed to facilitate computations on complex geometries obtained, for example, from computer-aided design or image data from applied sciences. Both the treatment of boundaries and interfaces and the discretisation of PDEs on surfaces are discussed and illustrated numerically. Copyright © 2014 John Wiley \& Sons, Ltd.},
 year = {2015}
 }
 
@@ -342,7 +342,7 @@ year = {2001}
   doi = {10.1137/0710032},
   URL = {https://doi.org/10.1137/0710032},
   eprint = {https://doi.org/10.1137/0710032},
-  abstract = { Let M be a mesh consisting of \$n^2 \$ squares called elements, formed by subdividing the unit square \$(0,1) \times (0,1)\$ into \$n^2 \$ small squares of side \${1 / h}\$, and having a node at each of the \$(n + 1)^2 \$ grid points. With M we associate the \$N \times N\$ symmetric positive definite system \$Ax = b\$, where \$N = (n + 1)^2 \$, each \$x\_i \$ is associated with a node of M, and \$A\_{ij} \ne 0\$ if and only if \$x\_i \$ and \$x\_j \$ are associated with nodes of the same element. If we solve the equations via the standard symmetric factorization of A, then \$O(n^4 )\$ arithmetic operations are required if the usual row by row (banded) numbering scheme is used, and the storage required is \$O(n^3 )\$. In this paper we present an unusual numbering of the mesh (unknowns) and show that if we avoid operating on zeros, the \$LDL^T \$ factorization of A can be computed using the same standard algorithm in \$O(n^3 )\$ arithmetic operations. Furthermore, the storage required is only \$O(n^2 \log \_2 n)\$. Finally, we prove that all orderings of the mesh must yield an operation count of at least \$O(n^3 )\$, provided we use the standard factorization algorithm. }
+  abstract = { Let M be a mesh consisting of \$n^2 \$ squares called elements, formed by subdividing the unit square \$(0,1) \times (0,1)\$ into \$n^2 \$ small squares of side \${1 / h}\$, and having a node at each of the \$(n + 1)^2 \$ grid points. With M we associate the \$N \times N\$ symmetric positive definite system \$Ax = b\$, where \$N = (n + 1)^2 \$, each \$x\_i \$ is associated with a node of M, and \$A\_{ij} \ne 0\$ if and only if \$x\_i \$ and \$x\_j \$ are associated with nodes of the same element. If we solve the equations via the standard symmetric factorisation of A, then \$O(n^4 )\$ arithmetic operations are required if the usual row by row (banded) numbering scheme is used, and the storage required is \$O(n^3 )\$. In this paper we present an unusual numbering of the mesh (unknowns) and show that if we avoid operating on zeros, the \$LDL^T \$ factorisation of A can be computed using the same standard algorithm in \$O(n^3 )\$ arithmetic operations. Furthermore, the storage required is only \$O(n^2 \log \_2 n)\$. Finally, we prove that all orderings of the mesh must yield an operation count of at least \$O(n^3 )\$, provided we use the standard factorisation algorithm. }
 }
 
 @misc{muellerbadiagridaproms,
@@ -396,8 +396,8 @@ author = {Matt Pharr and Wenzel Jakob and Greg Humphreys}
   url={https://arxiv.org/abs/0909.4061}, 
 }
 
-@misc{chertkov2022optimizationfunctionsgiventensor,
-      title={Optimization of Functions Given in the Tensor Train Format}, 
+@misc{chertkov2022optimisationfunctionsgiventensor,
+      title={Optimisation of Functions Given in the Tensor Train Format}, 
       author={Andrei Chertkov and Gleb Ryzhakov and Georgii Novikov and Ivan Oseledets},
       year={2022},
       eprint={2209.14808},
@@ -421,7 +421,7 @@ author = {Matt Pharr and Wenzel Jakob and Greg Humphreys}
   year = {1999},
   month = {07},
   pages = {},
-  title = {Lanczos Bidiagonalization With Partial Reorthogonalization},
+  title = {Lanczos Bidiagonalisation With Partial Reorthogonalisation},
   volume = {27},
   journal = {DAIMI Report Series},
   doi = {10.7146/dpb.v27i537.7070}
@@ -438,12 +438,12 @@ doi = {https://doi.org/10.1016/j.cma.2018.11.038},
 url = {https://www.sciencedirect.com/science/article/pii/S0045782518305978},
 author = {Eivind Fonn and Harald {van Brummelen} and Trond Kvamsdal and Adil Rasheed},
 keywords = {Reduced order modeling, Reduced basis method, Isogeometric analysis, Divergence-conforming},
-abstract = {Reduced-basis methods (RB methods or RBMs) form one of the most promising techniques to deliver numerical solutions of parametrized PDEs in real-time with reasonable accuracy. For incompressible flow problems, RBMs based on LBB stable velocity–pressure spaces do not generally inherit the stability of the underlying high-fidelity model and, instead, additional stabilization techniques must be introduced. One way of bypassing the loss of LBB stability in the RBM is to inflate the velocity space with supremizer modes. This however deteriorates the performance of the RBM in the performance-critical online stage, as additional DOFs must be introduced to retain stability, while these DOFs do not effectively contribute to accuracy of the RB approximation. In this work we consider a velocity-only RB approximation, exploiting a solenoidal velocity basis. The solenoidal reduced basis emerges directly from the high-fidelity velocity solutions in the offline stage. By means of Piola transforms, the solenoidality of the velocity space is retained under geometric transformations, making the proposed RB method suitable also for the investigation of geometric parameters. To ensure exact solenoidality of the high-fidelity velocity solutions that constitute the RB, we consider approximations based on divergence-conforming compatible B-splines. We show that the velocity-only RB method leads to a significant improvement in computational efficiency in the online stage, and that the pressure solution can be recovered a posteriori at negligible extra cost. We illustrate the solenoidal RB approach by modeling steady two-dimensional Navier–Stokes flow around a NACA0015 airfoil at various angles of attack.}
+abstract = {Reduced-basis methods (RB methods or RBMs) form one of the most promising techniques to deliver numerical solutions of parametrised PDEs in real-time with reasonable accuracy. For incompressible flow problems, RBMs based on LBB stable velocity–pressure spaces do not generally inherit the stability of the underlying high-fidelity model and, instead, additional stabilisation techniques must be introduced. One way of bypassing the loss of LBB stability in the RBM is to inflate the velocity space with supremizer modes. This however deteriorates the performance of the RBM in the performance-critical online stage, as additional DOFs must be introduced to retain stability, while these DOFs do not effectively contribute to accuracy of the RB approximation. In this work we consider a velocity-only RB approximation, exploiting a solenoidal velocity basis. The solenoidal reduced basis emerges directly from the high-fidelity velocity solutions in the offline stage. By means of Piola transforms, the solenoidality of the velocity space is retained under geometric transformations, making the proposed RB method suitable also for the investigation of geometric parameters. To ensure exact solenoidality of the high-fidelity velocity solutions that constitute the RB, we consider approximations based on divergence-conforming compatible B-splines. We show that the velocity-only RB method leads to a significant improvement in computational efficiency in the online stage, and that the pressure solution can be recovered a posteriori at negligible extra cost. We illustrate the solenoidal RB approach by modeling steady two-dimensional Navier–Stokes flow around a NACA0015 airfoil at various angles of attack.}
 }
 
 @article{doi:10.1137/0909057, 
 author = {George, Alan and Ng, Esmond},
-title = {On the Complexity of Sparse QR and LU Factorization of Finite-Element Matrices},
+title = {On the Complexity of Sparse QR and LU Factorisation of Finite-Element Matrices},
 journal = {SIAM Journal on Scientific and Statistical Computing},
 volume = {9},
 number = {5},
@@ -483,7 +483,7 @@ eprint = {https://doi.org/10.1137/0909057},
 }
 
 @article{dalsanto2019algebraic,
-	title={An algebraic least squares reduced basis method for the solution of nonaffinely parametrized {S}tokes equations},
+	title={An algebraic least squares reduced basis method for the solution of nonaffinely parametrised {S}tokes equations},
 	author={Dal Santo, Niccol{\`o} and Deparis, Simone and Manzoni, Andrea and Quarteroni, Alfio},
 	journal={Computer Methods in Applied Mechanics and Engineering},
 	volume={344},
@@ -505,7 +505,7 @@ eprint = {https://doi.org/10.1137/0909057},
 @article{quarteroni2000computational,
 	title={Computational vascular fluid dynamics: problems, models and methods},
 	author={Quarteroni, Alfio and Tuveri, Massimiliano and Veneziani, Alessandro},
-	journal={Computing and Visualization in Science},
+	journal={Computing and Visualisation in Science},
 	volume={2},
 	number={4},
 	pages={163--197},
@@ -513,8 +513,8 @@ eprint = {https://doi.org/10.1137/0909057},
 	publisher={Springer-Verlag}
 }
 
-@article{rozza2005optimization,
-  title={On optimization, control and shape design of an arterial bypass},
+@article{rozza2005optimisation,
+  title={On optimisation, control and shape design of an arterial bypass},
   author={Rozza, Gianluigi},
   journal={International Journal for Numerical Methods in Fluids},
   volume={47},
@@ -525,7 +525,7 @@ eprint = {https://doi.org/10.1137/0909057},
 }
 
 @article{ballarin2015supremizer,
-	title={Supremizer stabilization of {POD}--{G}alerkin approximation of parametrized steady incompressible {N}avier--{S}tokes equations},
+	title={Supremizer stabilisation of {POD}--{G}alerkin approximation of parametrised steady incompressible {N}avier--{S}tokes equations},
 	author={Ballarin, Francesco and Manzoni, Andrea and Quarteroni, Alfio and Rozza, Gianluigi},
 	journal={International Journal for Numerical Methods in Engineering},
 	volume={102},
@@ -536,7 +536,7 @@ eprint = {https://doi.org/10.1137/0909057},
 }
 
 @article{dalsanto2019hyper,
-	title={Hyper-reduced order models for parametrized unsteady {N}avier--{S}tokes equations on domains with variable shape},
+	title={Hyper-reduced order models for parametrised unsteady {N}avier--{S}tokes equations on domains with variable shape},
 	author={Dal Santo, Niccol{\`o} and Manzoni, Andrea},
 	journal={Advances in Computational Mathematics},
 	volume={45},
@@ -576,11 +576,11 @@ issn = {0045-7825},
 doi = {https://doi.org/10.1016/j.cma.2010.01.007},
 url = {https://www.sciencedirect.com/science/article/pii/S0045782510000162},
 author = {Toni Lassila and Gianluigi Rozza},
-keywords = {Reduced basis methods, Free-form deformations, Empirical interpolation, Engineering design, Shape optimization}
+keywords = {Reduced basis methods, Free-form deformations, Empirical interpolation, Engineering design, Shape optimisation}
 }
 
 @article{prudhomme:hal-00798326,
-  TITLE = {{Reliable Real-Time Solution of Parametrized Partial Differential Equations: Reduced-Basis Output Bound Methods}},
+  TITLE = {{Reliable Real-Time Solution of Parametrised Partial Differential Equations: Reduced-Basis Output Bound Methods}},
   AUTHOR = {Prud'Homme, Christophe and Rovas, Dimitrios V. and Veroy, Karen and Machiels, Luc and Maday, Yvon and Patera, Anthony T. and Turinici, Gabriel},
   URL = {https://hal.science/hal-00798326},
   JOURNAL = {{Journal of Fluids Engineering}},
@@ -602,7 +602,7 @@ author = {Prud'homme, Christophe and Rovas, Dimitrios and Veroy, Karen and Pater
 year = {2002},
 month = {09},
 pages = {747 - 771},
-title = {A Mathematical and Computational Framework for Reliable Real-Time Solution of Parametrized Partial Differential Equations},
+title = {A Mathematical and Computational Framework for Reliable Real-Time Solution of Parametrised Partial Differential Equations},
 volume = {36},
 journal = {ESAIM: Mathematical Modelling and Numerical Analysis},
 doi = {10.1051/m2an:2002035}
@@ -649,7 +649,7 @@ doi = {10.1051/m2an:2002035}
 }
 
 @article{deparis2019coupling,
-	title={Coupling non-conforming discretizations of {PDE}s by spectral approximation of the {L}agrange multiplier space},
+	title={Coupling non-conforming discretisations of {PDE}s by spectral approximation of the {L}agrange multiplier space},
 	author={Deparis, Simone and Iubatti, Antonio and Pegolotti, Luca},
 	journal={ESAIM: Mathematical Modelling and Numerical Analysis},
 	volume={53},
@@ -693,7 +693,7 @@ doi = {10.1051/m2an:2002035}
 }
 
 @article{barrault2004empirical,
-	title={An ‘empirical interpolation’method: application to efficient reduced basis discretization of partial differential equations},
+	title={An ‘empirical interpolation’method: application to efficient reduced basis discretisation of partial differential equations},
 	author={Barrault, Maxime and Maday, Yvon and Nguyen, Ngoc Cuong and Patera, Anthony T},
 	journal={Comptes Rendus Mathematique},
 	volume={339},
@@ -726,7 +726,7 @@ doi = {10.1051/m2an:2002035}
 }
 
 @article{negri2015reduced,
-	title={Reduced basis approximation of parametrized optimal flow control problems for the {S}tokes equations},
+	title={Reduced basis approximation of parametrised optimal flow control problems for the {S}tokes equations},
 	author={Negri, Federico and Manzoni, Andrea and Rozza, Gianluigi},
 	journal={Computers \& Mathematics with Applications},
 	volume={69},
@@ -737,7 +737,7 @@ doi = {10.1051/m2an:2002035}
 }
 
 @article{rozza2013reduced,
-	title={Reduced basis approximation and a posteriori error estimation for {S}tokes flows in parametrized geometries: roles of the inf--sup stability constants},
+	title={Reduced basis approximation and a posteriori error estimation for {S}tokes flows in parametrised geometries: roles of the inf--sup stability constants},
 	author={Rozza, Gianluigi and Huynh, DB and Manzoni, Andrea},
 	journal={Numerische Mathematik},
 	volume={125},
@@ -826,7 +826,7 @@ doi = {10.1051/m2an:2002035}
 }
 
 @techreport{manzoni2012reduced,
-	title={Reduced models for optimal control, shape optimization and inverse problems in haemodynamics},
+	title={Reduced models for optimal control, shape optimisation and inverse problems in haemodynamics},
 	author={Manzoni, Andrea},
 	year={2012},
 	institution={EPFL}
@@ -894,7 +894,7 @@ doi = {10.1051/m2an:2002035}
 }
 
 @article{abdulle2015petrov,
-	title={A {P}etrov--{G}alerkin reduced basis approximation of the {S}tokes equation in parametrized geometries},
+	title={A {P}etrov--{G}alerkin reduced basis approximation of the {S}tokes equation in parametrised geometries},
 	author={Abdulle, Assyr and Bud{\'a}{\v{c}}, Ondrej},
 	journal={Comptes Rendus Mathematique},
 	volume={353},
@@ -905,7 +905,7 @@ doi = {10.1051/m2an:2002035}
 }
 
 @article{constantine2012residual,
-	title={Residual minimizing model interpolation for parametrized nonlinear dynamical systems},
+	title={Residual minimizing model interpolation for parametrised nonlinear dynamical systems},
 	author={Constantine, Paul G and Wang, Qiqi},
 	journal={SIAM Journal on Scientific Computing},
 	volume={34},
@@ -952,7 +952,7 @@ doi = {10.1051/m2an:2002035}
 	booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
 	pages={388--395},
 	year={2010},
-	organization={Springer}
+	organisation={Springer}
 }
 
 @article{maday2002parareal,
@@ -1168,7 +1168,7 @@ url="https://doi.org/10.1007/978-3-319-02090-7_4"
 }
 
 @article{NEGRI2015431,
-title = {Efficient model reduction of parametrized systems by matrix discrete empirical interpolation},
+title = {Efficient model reduction of parametrised systems by matrix discrete empirical interpolation},
 journal = {Journal of Computational Physics},
 volume = {303},
 pages = {431-454},
@@ -1194,12 +1194,12 @@ keywords = {Model order reduction, Discrete empirical interpolation, System appr
 
 @article{https://doi.org/10.1002/nme.2309,
 author = {Nguyen, N. C. and Peraire, J.},
-title = {An efficient reduced-order modeling approach for non-linear parametrized partial differential equations},
+title = {An efficient reduced-order modeling approach for non-linear parametrised partial differential equations},
 journal = {International Journal for Numerical Methods in Engineering},
 volume = {76},
 number = {1},
 pages = {27-55},
-keywords = {parametrized PDEs, reduced-order approximation, standard Galerkin reduced-order model, coefficient-function approximation, elliptic equations, convection–diffusion equations},
+keywords = {parametrised PDEs, reduced-order approximation, standard Galerkin reduced-order model, coefficient-function approximation, elliptic equations, convection–diffusion equations},
 doi = {https://doi.org/10.1002/nme.2309},
 url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.2309},
 eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.2309},
@@ -1207,7 +1207,7 @@ year = {2008}
 }
 
 @article{BARRAULT2004667,
-title = {An ‘empirical interpolation’ method: application to efficient reduced-basis discretization of partial differential equations},
+title = {An ‘empirical interpolation’ method: application to efficient reduced-basis discretisation of partial differential equations},
 journal = {Comptes Rendus Mathematique},
 volume = {339},
 number = {9},
@@ -1288,7 +1288,7 @@ eprint = {https://doi.org/10.1137/130932715}
 
 @article{doi:10.1137/22M1509114,
 author = {Tenderini, Riccardo and Mueller, Nicholas and Deparis, Simone},
-title = {Space-Time Reduced Basis Methods for Parametrized Unsteady Stokes Equations},
+title = {Space-Time Reduced Basis Methods for Parametrised Unsteady Stokes Equations},
 journal = {SIAM Journal on Scientific Computing},
 volume = {46},
 number = {1},
@@ -1297,11 +1297,11 @@ year = {2024},
 doi = {10.1137/22M1509114},
 URL = {https://doi.org/10.1137/22M1509114},
 eprint = {https://doi.org/10.1137/22M1509114},
-abstract = {Abstract. In this work, we analyze space-time reduced basis methods for the efficient numerical simulation of hæmodynamics in arteries. The classical formulation of the reduced basis (RB) method features dimensionality reduction in space, while finite difference schemes are employed for the time integration of the resulting ordinary differential equation (ODE). Space-time reduced basis (ST–RB) methods extend the dimensionality reduction paradigm to the temporal dimension, projecting the full-order problem onto a low-dimensional spatio-temporal subspace. Our goal is to investigate the application of ST–RB methods to the unsteady incompressible Stokes equations, with a particular focus on stability. High-fidelity simulations are performed using the finite element (FE) method and BDF2 as a time marching scheme. We consider two different ST–RB methods. In the first one -- called ST–GRB -- space-time model order reduction is achieved by means of a Galerkin projection; a spatio-temporal velocity basis enrichment procedure is introduced to guarantee stability. The second method -- called ST–PGRB -- is characterized by a Petrov–Galerkin projection, stemming from a suitable minimization of the FOM residual, that allows us to automatically attain stability. The classical RB method -- denoted as SRB–TFO -- serves as a baseline for the theoretical development. Numerical tests have been conducted on an idealized symmetric bifurcation geometry and on the patient-specific one of a femoropopliteal bypass. The results show that both ST–RB methods provide accurate approximations of the high-fidelity solutions, while considerably reducing the computational cost. In particular, the ST–PGRB method exhibits the best performance, as it features a better computational efficiency while retaining accuracies in accordance with theoretical expectations. }
+abstract = {Abstract. In this work, we analyze space-time reduced basis methods for the efficient numerical simulation of hæmodynamics in arteries. The classical formulation of the reduced basis (RB) method features dimensionality reduction in space, while finite difference schemes are employed for the time integration of the resulting ordinary differential equation (ODE). Space-time reduced basis (ST–RB) methods extend the dimensionality reduction paradigm to the temporal dimension, projecting the full-order problem onto a low-dimensional spatio-temporal subspace. Our goal is to investigate the application of ST–RB methods to the unsteady incompressible Stokes equations, with a particular focus on stability. High-fidelity simulations are performed using the finite element (FE) method and BDF2 as a time marching scheme. We consider two different ST–RB methods. In the first one -- called ST–GRB -- space-time model order reduction is achieved by means of a Galerkin projection; a spatio-temporal velocity basis enrichment procedure is introduced to guarantee stability. The second method -- called ST–PGRB -- is characterised by a Petrov–Galerkin projection, stemming from a suitable minimisation of the FOM residual, that allows us to automatically attain stability. The classical RB method -- denoted as SRB–TFO -- serves as a baseline for the theoretical development. Numerical tests have been conducted on an idealised symmetric bifurcation geometry and on the patient-specific one of a femoropopliteal bypass. The results show that both ST–RB methods provide accurate approximations of the high-fidelity solutions, while considerably reducing the computational cost. In particular, the ST–PGRB method exhibits the best performance, as it features a better computational efficiency while retaining accuracies in accordance with theoretical expectations. }
 }
 
 @misc{mueller2025tensortrainreducedbasissolver,
-      title={A tensor-train reduced basis solver for parameterized partial differential equations on Cartesian grids}, 
+      title={A tensor-train reduced basis solver for parameterised partial differential equations on Cartesian grids}, 
       author={Nicholas Mueller and Yiran Zhao and Santiago Badia and Tiangang Cui},
       year={2025},
       eprint={2412.14460},
@@ -1438,7 +1438,7 @@ doi = {https://doi.org/10.1016/j.cam.2017.09.034},
 url = {https://www.sciencedirect.com/science/article/pii/S037704271730465X},
 author = {Santiago Badia and Francesc Verdugo},
 keywords = {Unfitted finite elements, Embedded boundary methods, Linear solvers, Parallel computing, Domain decomposition},
-abstract = {Unfitted finite element methods, e.g., extended finite element techniques or the so-called finite cell method, have a great potential for large scale simulations, since they avoid the generation of body-fitted meshes and the use of graph partitioning techniques, two main bottlenecks for problems with non-trivial geometries. However, the linear systems that arise from these discretizations can be much more ill-conditioned, due to the so-called small cut cell problem. The state-of-the-art approach is to rely on sparse direct methods, which have quadratic complexity and are thus not well suited for large scale simulations. In order to solve this situation, in this work we investigate the use of domain decomposition preconditioners (balancing domain decomposition by constraints) for unfitted methods. We observe that a straightforward application of these preconditioners to the unfitted case has a very poor behavior. As a result, we propose a customization of the classical BDDC methods based on the stiffness weighting operator and an improved definition of the coarse degrees of freedom in the definition of the preconditioner. These changes lead to a robust and algorithmically scalable solver able to deal with unfitted grids. A complete set of complex 3D numerical experiments shows the good performance of the proposed preconditioners.}
+abstract = {Unfitted finite element methods, e.g., extended finite element techniques or the so-called finite cell method, have a great potential for large scale simulations, since they avoid the generation of body-fitted meshes and the use of graph partitioning techniques, two main bottlenecks for problems with non-trivial geometries. However, the linear systems that arise from these discretisations can be much more ill-conditioned, due to the so-called small cut cell problem. The state-of-the-art approach is to rely on sparse direct methods, which have quadratic complexity and are thus not well suited for large scale simulations. In order to solve this situation, in this work we investigate the use of domain decomposition preconditioners (balancing domain decomposition by constraints) for unfitted methods. We observe that a straightforward application of these preconditioners to the unfitted case has a very poor behavior. As a result, we propose a customisation of the classical BDDC methods based on the stiffness weighting operator and an improved definition of the coarse degrees of freedom in the definition of the preconditioner. These changes lead to a robust and algorithmically scalable solver able to deal with unfitted grids. A complete set of complex 3D numerical experiments shows the good performance of the proposed preconditioners.}
 }
 
 @misc{burman2011penaltyfreenonsymmetricnitsche,
@@ -1490,12 +1490,12 @@ journal = {Lecture Notes, University of Konstanz}
 
 @article{https://doi.org/10.1002/fld.2712,
 author = {Manzoni, Andrea and Quarteroni, Alfio and Rozza, Gianluigi},
-title = {Shape optimization for viscous flows by reduced basis methods and free-form deformation},
+title = {Shape optimisation for viscous flows by reduced basis methods and free-form deformation},
 journal = {International Journal for Numerical Methods in Fluids},
 volume = {70},
 number = {5},
 pages = {646-670},
-keywords = {model order reduction, reduced basis methods, free-form deformation, shape optimization, hemodynamics, Stokes equations},
+keywords = {model order reduction, reduced basis methods, free-form deformation, shape optimisation, hemodynamics, Stokes equations},
 doi = {https://doi.org/10.1002/fld.2712},
 url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/fld.2712},
 eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/fld.2712},
@@ -1532,7 +1532,7 @@ year = {2012}
   url = {https://arxiv.org/abs/2202.02658},
   author = {Cicci, Ludovica and Fresca, Stefania and Manzoni, Andrea},
   keywords = {Numerical Analysis (math.NA), Machine Learning (cs.LG), FOS: Mathematics, FOS: Mathematics, FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Deep-HyROMnet: A deep learning-based operator approximation for hyper-reduction of nonlinear parametrized PDEs},
+  title = {Deep-HyROMnet: A deep learning-based operator approximation for hyper-reduction of nonlinear parametrised PDEs},
   publisher = {arXiv},
   year = {2022},
   copyright = {arXiv.org perpetual, non-exclusive license}
@@ -1596,7 +1596,7 @@ year = {2012}
 
 @article{doi:10.1137/10081157X,
 author = {Drohmann, Martin and Haasdonk, Bernard and Ohlberger, Mario},
-title = {Reduced Basis Approximation for Nonlinear Parametrized Evolution Equations based on Empirical Operator Interpolation},
+title = {Reduced Basis Approximation for Nonlinear Parametrised Evolution Equations based on Empirical Operator Interpolation},
 journal = {SIAM Journal on Scientific Computing},
 volume = {34},
 number = {2},
@@ -1693,7 +1693,7 @@ author = {Burman, Erik and Hansbo, Peter},
 year = {2014},
 month = {05},
 pages = {},
-title = {Fictitious domain methods using cut elements: III. A stabilized Nitsche method for Stokes’ problem},
+title = {Fictitious domain methods using cut elements: III. A stabilised Nitsche method for Stokes’ problem},
 volume = {48},
 journal = {European Series in Applied and Industrial Mathematics (ESAIM): Mathematical Modelling and Numerical Analysis},
 doi = {10.1051/m2an/2013123}
@@ -1797,7 +1797,7 @@ doi = {10.48550/arXiv.2407.11290}
   volume={1},
   pages={1150--1157},
   year={2005},
-  organization={IEEE}
+  organisation={IEEE}
 }
 
 
@@ -1813,7 +1813,7 @@ doi = {10.48550/arXiv.2407.11290}
 }
 
 @article{de2001independent,
-  title={Independent component analysis and (simultaneous) third-order tensor diagonalization},
+  title={Independent component analysis and (simultaneous) third-order tensor diagonalisation},
   author={De Lathauwer, Lieven and De Moor, Bart and Vandewalle, Joos},
   journal={IEEE Transactions on Signal Processing},
   volume={49},
@@ -1918,7 +1918,7 @@ doi = {10.48550/arXiv.2407.11290}
 }
 
 @article{carroll1970analysis,
-  title={Analysis of individual differences in multidimensional scaling via an N-way generalization of “Eckart-Young” decomposition},
+  title={Analysis of individual differences in multidimensional scaling via an N-way generalisation of “Eckart-Young” decomposition},
   author={Carroll, J Douglas and Chang, Jih-Jie},
   journal={Psychometrika},
   volume={35},
@@ -1940,7 +1940,7 @@ doi = {10.48550/arXiv.2407.11290}
 }
 
 @article{hitchcock1928multiple,
-  title={Multiple invariants and generalized rank of a p-way matrix or tensor},
+  title={Multiple invariants and generalised rank of a p-way matrix or tensor},
   author={Hitchcock, Frank L},
   journal={Journal of Mathematics and Physics},
   volume={7},
@@ -1973,7 +1973,7 @@ doi = {10.48550/arXiv.2407.11290}
 }
 
 @article{sorensen2016deim,
-  title={A deim induced cur factorization},
+  title={A deim induced cur factorisation},
   author={Sorensen, Danny C and Embree, Mark},
   journal={SIAM Journal on Scientific Computing},
   volume={38},
@@ -1984,7 +1984,7 @@ doi = {10.48550/arXiv.2407.11290}
 }
 
 @article{townsend2015continuous,
-  title={Continuous analogues of matrix factorizations},
+  title={Continuous analogues of matrix factorisations},
   author={Townsend, Alex and Trefethen, Lloyd N},
   journal={Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences},
   volume={471},
@@ -2031,7 +2031,7 @@ author = {Holtz, Sebastian and Rohwedder, Thorsten and Schneider, Reinhold},
 year = {2011},
 month = {01},
 pages = {},
-title = {The Alternating Linear Scheme for Tensor Optimization in the Tensor Train Format},
+title = {The Alternating Linear Scheme for Tensor Optimisation in the Tensor Train Format},
 journal = {SIAM Journal on Scientific Computing},
 doi = {10.1137/100818893}
 }
@@ -2211,7 +2211,7 @@ abstract = {Summary This chapter contains sections titled: Matrix Multiplication
   booktitle={ISPA 2005. Proceedings of the 4th International Symposium on Image and Signal Processing and Analysis, 2005.},
   pages={64--69},
   year={2005},
-  organization={IEEE}
+  organisation={IEEE}
 }
 
 @article{chopin2004central,
@@ -2336,7 +2336,7 @@ abstract = {Summary This chapter contains sections titled: Matrix Multiplication
   number={2},
   pages={107--113},
   year={1993},
-  organization={IET}
+  organisation={IET}
 }
 
 @article{geman1984stochastic,
@@ -2576,7 +2576,7 @@ abstract = {Summary This chapter contains sections titled: Matrix Multiplication
   booktitle={Proceedings of the 23rd international conference on Machine learning},
   pages={481--488},
   year={2006},
-  organization={ACM}
+  organisation={ACM}
 }
 
 @article{godsill2004monte,
@@ -2745,7 +2745,7 @@ Kalman filter
 }
 
 @article{anderson2007exploring,
-  title={Exploring the need for localization in ensemble data assimilation using a hierarchical ensemble filter},
+  title={Exploring the need for localisation in ensemble data assimilation using a hierarchical ensemble filter},
   author={Anderson, Jeffrey L},
   journal={Physica D: Nonlinear Phenomena},
   volume={230},
@@ -2773,8 +2773,8 @@ Kalman filter
   publisher={Citeseer}
 }
 
-@book{bierman2006factorization,
-  title={Factorization methods for discrete sequential estimation},
+@book{bierman2006factorisation,
+  title={Factorisation methods for discrete sequential estimation},
   author={Bierman, Gerald J},
   year={2006},
   publisher={Courier Corporation}
@@ -2827,7 +2827,7 @@ Kalman filter
   volume={6},
   pages={4555--4559},
   year={2002},
-  organization={IEEE}
+  organisation={IEEE}
 }
 
 @article{wan2001unscented,
@@ -2845,7 +2845,7 @@ Kalman filter
   booktitle={Proceedings of the IEEE 2000 Adaptive Systems for Signal Processing, Communications, and Control Symposium (Cat. No. 00EX373)},
   pages={153--158},
   year={2000},
-  organization={Ieee}
+  organisation={Ieee}
 }
 
 @article{miller1999data,
@@ -2888,7 +2888,7 @@ Kalman filter
   volume={3068},
   pages={182--193},
   year={1997},
-  organization={Spie}
+  organisation={Spie}
 }
 
 @inproceedings{julier1995new,
@@ -2898,7 +2898,7 @@ Kalman filter
   volume={3},
   pages={1628--1632},
   year={1995},
-  organization={IEEE}
+  organisation={IEEE}
 }
 
 @article{welch1995introduction,
@@ -3045,30 +3045,30 @@ Kalman filter
   booktitle={Proceedings of the 2021 ACM-SIAM Symposium on Discrete Algorithms (SODA)},
   pages={522--539},
   year={2021},
-  organization={SIAM}
+  organisation={SIAM}
 }
 
 @article{kerin2020lorenz,
-  title={On the Lorenz'96 model and some generalizations},
+  title={On the Lorenz'96 model and some generalisations},
   author={Kerin, John and Engler, Hans},
   journal={arXiv preprint arXiv:2005.07767},
   year={2020}
 }
 
 @article{ghojogh2019eigenvalue,
-  title={Eigenvalue and generalized eigenvalue problems: Tutorial},
+  title={Eigenvalue and generalised eigenvalue problems: Tutorial},
   author={Ghojogh, Benyamin and Karray, Fakhri and Crowley, Mark},
   journal={arXiv preprint arXiv:1903.11240},
   year={2019}
 }
 
 @inproceedings{ge2016efficient,
-  title={Efficient algorithms for large-scale generalized eigenvector computation and canonical correlation analysis},
+  title={Efficient algorithms for large-scale generalised eigenvector computation and canonical correlation analysis},
   author={Ge, Rong and Jin, Chi and Netrapalli, Praneeth and Sidford, Aaron and others},
   booktitle={International Conference on Machine Learning},
   pages={2741--2750},
   year={2016},
-  organization={PMLR}
+  organisation={PMLR}
 }
 
 @article{khadr2016forecasting,
@@ -3135,7 +3135,7 @@ Kalman filter
   booktitle={Monte Carlo and Quasi-Monte Carlo Methods 2000: Proceedings of a Conference held at Hong Kong Baptist University, Hong Kong SAR, China, November 27--December 1, 2000},
   pages={27--49},
   year={2002},
-  organization={Springer}
+  organisation={Springer}
 }
 
 @article{medsker2001recurrent,

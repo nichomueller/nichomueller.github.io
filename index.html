@@ -95,7 +95,7 @@
             <article class="current-work-sticker">
               <p class="card-kicker">Current work</p>
               <h2 class="section-title">Digital twins for offshore renewable energy</h2>
-              <p class="section-intro">Right now that means multiphysics and uncertainty pipelines for offshore floating solar. It's built to feed directly into environmental risk assessment and design decisions, rather than sit as a research demo.</p>
+              <p class="section-intro">Right now that's DigiOcean4Solar, an NWO Vidi project led by Oriol Colomés Gené that's building a digital framework to simulate how waves, wind, and floating solar platforms interact at the scale of a whole farm. One island's wake changes the conditions the next island downstream has to be designed for, and modeling the whole farm as a system is what makes that visible ahead of time. My part is the forecasting and uncertainty quantification layer that sits on top of that.</p>
             </article>
           </section>
 
@@ -111,21 +111,21 @@
                 <article class="project-card">
                   <img src="assets/gridaproms.png" alt="GridapROMs.jl">
                   <p class="card-kicker">GridapROMs.jl</p>
-                  <h3 class="card-title">Reduced-order modeling toolkit for parameterized PDEs</h3>
-                  <p>Handles nonlinear, transient, and multi-field problems, with an eye toward reduced models that hold up in a real workflow rather than a single benchmark.</p>
+                  <h3 class="card-title">Reduced-order modeling toolkit for parameterised PDEs</h3>
+                  <p>Handles nonlinear, transient, and multi-field problems, with reduced-order algorithms that have achieved up to 100,000x speedups over full-order simulations.</p>
                   <div class="project-links">
                     <a href="software/">Details</a>
                     <a href="https://github.com/gridap/GridapROMs.jl">Repository</a>
                   </div>
                 </article>
                 <article class="project-card">
-                  <img src="assets/opals.png" alt="Opal.jl">
-                  <p class="card-kicker">Opal.jl</p>
+                  <img src="assets/opals.png" alt="Opals.jl">
+                  <p class="card-kicker">Opals.jl</p>
                   <h3 class="card-title">Data assimilation across ODEs, PDEs, and reduced-order surrogates</h3>
-                  <p>Kalman, particle, and variational filters behind one interface, with add-ons for localization, inflation, RC-based bias correction, and ROM calibration bolted on as needed. Replaces MeteoModels.jl, an earlier package of mine that's no longer maintained.</p>
+                  <p>Kalman, particle, and variational filters behind one interface, with add-ons for localisation, inflation, RC-based bias correction, and integration with ROM pipelines for efficiency.</p>
                   <div class="project-links">
                     <a href="software/">Details</a>
-                    <a href="https://github.com/nichomueller/Opal.jl">Repository</a>
+                    <a href="https://github.com/nichomueller/Opals.jl">Repository</a>
                   </div>
                 </article>
               </div>
@@ -133,7 +133,7 @@
             <aside class="quote-card">
               <p class="card-kicker">Working Style</p>
               <blockquote>
-                Most of my time doesn't go into inventing the method. It goes into making sure it still works when somebody else tries to use it
+                I care about turning mathematically sound ideas into scientific software that is reliable, scalable, and useful beyond the problem it was originally designed to solve
               </blockquote>
               <div class="meta-list">
                 <div>
@@ -167,17 +167,17 @@
               <article class="timeline-card">
                 <div class="timeline-meta">2026 - present</div>
                 <h3 class="card-title">TU Delft, DigiOcean4Solar</h3>
-                <p>Developing digital-twin and large-scale multiphysics frameworks for offshore floating solar systems, with forecasting and UQ workflows for reliable design and environmental risk assessment.</p>
+                <p>Developing digital-twin and large-scale multiphysics frameworks for offshore floating solar farms, with a forecasting and uncertainty quantification layer that feeds into how a farm's layout and structures actually get designed.</p>
               </article>
               <article class="timeline-card">
                 <div class="timeline-meta">2022 - 2025</div>
                 <h3 class="card-title">PhD in Applied Mathematics, Monash University</h3>
-                <p>Built reduced-order methods, tensor compression workflows, unfitted finite element techniques, and scientific software for parameterized PDEs and computational fluid dynamics.</p>
+                <p>Built reduced-order methods, novel tensor-based compression workflows, unfitted finite element techniques, and scientific software for parameterised PDEs and computational fluid dynamics.</p>
               </article>
               <article class="timeline-card">
                 <div class="timeline-meta">2020 - 2021</div>
                 <h3 class="card-title">R&amp;D internship at CSEM</h3>
-                <p>Worked on topology optimization for compliant aerospace mechanisms under manufacturing and stress constraints, connecting numerical methods to engineering requirements.</p>
+                <p>Worked on topology optimisation for compliant aerospace mechanisms under manufacturing and stress constraints, connecting numerical methods to engineering requirements.</p>
               </article>
             </div>
           </section>
@@ -194,8 +194,8 @@
               <div class="card-grid">
                 <article class="info-card note-card">
                   <p class="card-kicker">Project note</p>
-                  <h3 class="card-title">What makes a scientific codebase usable beyond its first paper</h3>
-                  <p>A short piece on why interfaces, tests, and benchmarks are part of the actual technical result, not something you add later if there's time.</p>
+                  <h3 class="card-title">Building scientific software that lasts</h3>
+                  <p>A short piece on how thoughtful interfaces, testing, and benchmarking help turn research ideas into reliable tools for the wider scientific community.</p>
                 </article>
                 <article class="info-card note-card">
                   <p class="card-kicker">Modeling note</p>
@@ -220,7 +220,7 @@
             <aside class="quote-card">
               <p class="card-kicker">Orientation</p>
               <blockquote>
-                I work across the whole chain, from the math down to the last line of code, because a tool that stops working once I hand it off isn't really finished
+                My work spans mathematical modelling, numerical methods, and software engineering, from formulating a method on paper through to a package other people actually install and use
               </blockquote>
             </aside>
           </section>
