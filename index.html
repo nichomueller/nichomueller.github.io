@@ -52,7 +52,7 @@
           <section class="hero">
             <div class="hero__copy">
               <p class="eyebrow">About</p>
-              <p class="hero__lead">I'm an applied mathematician and engineer working on data-driven simulation of physical systems, combining reduced-order modeling, data assimilation, and machine learning with physics-based solvers. My goal is to integrate these approaches to advance sustainable and predictive science for environmental and climate systems.</p>
+              <p class="hero__lead">I'm an applied mathematician and engineer working on data-driven simulation of physical systems, combining reduced-order modeling, data assimilation, and machine learning with physics-based solvers across diverse engineering and scientific applications. Ultimately, I want to develop technologies that help us understand and address the challenges of climate change and contribute to a more sustainable future for everyone.</p>
               <div class="cta-row">
                 <a class="button" href="cv/">View CV</a>
                 <a class="button--ghost" href="software/">Explore Software</a>
@@ -86,7 +86,7 @@
               <article class="feature-card">
                 <p class="card-kicker">Compute Strategy</p>
                 <h3 class="card-title">HPC-aware implementations for large-scale models</h3>
-                <p>My day-to-day toolkit includes MPI, GPU-aware computing, distributed snapshot generation, and Slurm-based workflows. I use these tools to develop scalable methods that can move from small proof-of-concept problems to demanding scientific and engineering applications.</p>
+                <p>My day-to-day toolkit includes MPI, GPU-aware computing, and Slurm-based workflows. I use these tools to develop scalable methods that can move from small proof-of-concept problems to demanding scientific and engineering applications.</p>
               </article>
             </div>
           </section>
@@ -95,7 +95,7 @@
             <article class="current-work-sticker">
               <p class="card-kicker">Current work</p>
               <h2 class="section-title">Digital twins for offshore renewable energy</h2>
-              <p class="section-intro">Right now that's DigiOcean4Solar, an NWO Vidi project led by Oriol Colomés Gené that's building a digital framework to simulate how waves, wind, and floating solar platforms interact at the scale of a whole farm. One island's wake changes the conditions the next island downstream has to be designed for, and modeling the whole farm as a system is what makes that visible ahead of time. My part is the forecasting and uncertainty quantification layer that sits on top of that.</p>
+              <p class="section-intro">Right now that's DigiOcean4Solar, an NWO Vidi project that's building a digital framework to simulate how waves, wind, and floating solar platforms interact at the scale of a whole farm. One island's wake changes the conditions the next island downstream has to be designed for, and modeling the whole farm as a system is what makes that visible ahead of time. My part is the forecasting and uncertainty quantification layer that sits on top of that.</p>
             </article>
           </section>
 
@@ -119,10 +119,10 @@
                   </div>
                 </article>
                 <article class="project-card">
-                  <img src="assets/opals.png" alt="Opals.jl">
+                  <img src="assets/opal.png" alt="Opals.jl">
                   <p class="card-kicker">Opals.jl</p>
                   <h3 class="card-title">Data assimilation across ODEs, PDEs, and reduced-order surrogates</h3>
-                  <p>Kalman, particle, and variational filters behind one interface, with add-ons for localisation, inflation, RC-based bias correction, and integration with ROM pipelines for efficiency.</p>
+                  <p>Kalman, particle, and variational filters behind one interface, with add-ons for localisation, inflation, bias correction, and integration with ROM pipelines for efficiency.</p>
                   <div class="project-links">
                     <a href="software/">Details</a>
                     <a href="https://github.com/nichomueller/Opals.jl">Repository</a>
@@ -167,7 +167,7 @@
               <article class="timeline-card">
                 <div class="timeline-meta">2026 - present</div>
                 <h3 class="card-title">TU Delft, DigiOcean4Solar</h3>
-                <p>Developing digital-twin and large-scale multiphysics frameworks for offshore floating solar farms, with a forecasting and uncertainty quantification layer that feeds into how a farm's layout and structures actually get designed.</p>
+                <p>Developing digital-twin and large-scale multiphysics frameworks for offshore floating solar farms, with a forecasting and uncertainty quantification layer that feeds into how a farm's layout and structures get designed.</p>
               </article>
               <article class="timeline-card">
                 <div class="timeline-meta">2022 - 2025</div>
@@ -182,47 +182,36 @@
             </div>
           </section>
 
-          <section class="section split-grid">
-            <div>
-              <div class="section-head">
-                <div>
-                  <p class="eyebrow">Notes</p>
-                  <h2 class="section-title">Short writing on methods, software, and modeling practice</h2>
-                </div>
-                <a class="button--ghost" href="notes/">See all notes</a>
+          <section class="section">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Notes</p>
+                <h2 class="section-title">Short writing on methods, software, and modeling practice</h2>
               </div>
-              <div class="card-grid">
-                <article class="info-card note-card">
-                  <p class="card-kicker">Project note</p>
-                  <h3 class="card-title">Building scientific software that lasts</h3>
-                  <p>A short piece on how thoughtful interfaces, testing, and benchmarking help turn research ideas into reliable tools for the wider scientific community.</p>
-                </article>
-                <article class="info-card note-card">
-                  <p class="card-kicker">Modeling note</p>
-                  <h3 class="card-title">Why reduced-order models fail in deployment even when they look good offline</h3>
-                  <p>A model can compress the data beautifully and still be the wrong tool once it hits the real world. Some thoughts on why.</p>
-                </article>
-                <article class="info-card note-card">
-                  <p class="card-kicker">Forecasting note</p>
-                  <h3 class="card-title">Data assimilation as engineering infrastructure</h3>
-                  <p>Once uncertainty has to drive an actual decision, a filtering pipeline stops being a math exercise and starts being infrastructure.</p>
-                </article>
-                <article class="info-card note-card note-card--cta">
-                  <p class="card-kicker">Practice</p>
-                  <h3 class="card-title">A place for compact technical writing</h3>
-                  <p>Short notes on simulation, software, and forecasting. I add one whenever I have something worth saying, without any real schedule.</p>
-                  <div class="project-links">
-                    <a href="notes/">Open notes</a>
-                  </div>
-                </article>
-              </div>
+              <a class="button--ghost" href="notes/">See all notes</a>
             </div>
-            <aside class="quote-card">
-              <p class="card-kicker">Orientation</p>
-              <blockquote>
-                My work spans mathematical modelling, numerical methods, and software engineering, from formulating a method on paper through to a package other people actually install and use
-              </blockquote>
-            </aside>
+            <div class="card-grid">
+              <article class="info-card note-card">
+                <p class="card-kicker">Project note</p>
+                <h3 class="card-title">Building scientific software that lasts</h3>
+                <p>A short piece on how thoughtful interfaces, testing, and benchmarking help turn research ideas into reliable tools for the wider scientific community.</p>
+              </article>
+              <article class="info-card note-card">
+                <p class="card-kicker">Modeling note</p>
+                <h3 class="card-title">Why reduced-order models fail in deployment even when they look good offline</h3>
+                <p>A model can compress the data beautifully and still be the wrong tool once it hits the real world. Some thoughts on why.</p>
+              </article>
+              <article class="info-card note-card">
+                <p class="card-kicker">Forecasting note</p>
+                <h3 class="card-title">Data assimilation as engineering infrastructure</h3>
+                <p>Once uncertainty has to drive an actual decision, a filtering pipeline stops being a math exercise and starts being infrastructure.</p>
+              </article>
+              <article class="info-card note-card">
+                <p class="card-kicker">Orientation</p>
+                <h3 class="card-title">The whole pipeline, start to finish</h3>
+                <p>My work spans mathematical modelling, numerical methods, and software engineering, from formulating a method on paper through to a package other people install and use.</p>
+              </article>
+            </div>
           </section>
         </div>
       </main>

@@ -32,7 +32,7 @@
       <aside class="sidebar">
         <img class="sidebar__avatar" src="../assets/avatar.jpeg" alt="Nicholas Mueller">
         <p class="eyebrow" style="margin-top:16px;">Selected results</p>
-        <p>A handful of results where something moved that actually matters: a problem going from infeasible to solvable, a memory footprint dropping by an order of magnitude, a runtime going from hours to seconds.</p>
+        <p>A handful of results: a problem going from infeasible to solvable, a memory footprint dropping by an order of magnitude, a runtime going from hours to seconds.</p>
       </aside>
 
       <main class="panel">
@@ -51,7 +51,7 @@
               <img src="../assets/cost_Julia.png" alt="Performance benchmarks">
               <p class="card-kicker">Performance engineering</p>
               <h2 class="card-title">Lowering the cost of high-fidelity data generation</h2>
-              <p>Building the training data for a reduced model is usually the slow part. Lazy evaluation and distributed workflows brought that cost down significantly.</p>
+              <p>Building the training data for a reduced model is usually the slow part. Lazy evaluations and distributed workflows brought that cost down significantly.</p>
             </article>
             <article class="achievement-card">
               <img src="../assets/unfitted_stokes.png" alt="Unfitted Stokes results">
@@ -69,28 +69,28 @@
               <img src="../assets/errors_Stokes.png" alt="Space-time reduced models">
               <p class="card-kicker">Transient problems</p>
               <h2 class="card-title">Space-time reduced-order methods for unsteady systems</h2>
-              <p>Methods for unsteady PDE problems that are cheaper to run without giving up the accuracy an engineer would actually need.</p>
+              <p>Methods for unsteady PDE problems that are cheaper to run without giving up accuracy.</p>
             </article>
             <article class="achievement-card">
               <img src="../assets/topopt.png" alt="Topology optimisation result">
               <p class="card-kicker">Industrial R&amp;D</p>
               <h2 class="card-title">Topology optimisation for aerospace mechanisms</h2>
-              <p>A Matlab code for compliant mechanisms in satellite hardware, built around constraints that came from actual mechanical testing, not just theory.</p>
+              <p>A Matlab code for compliant mechanisms in satellite hardware, built around constraints that came from actual mechanical testing.</p>
             </article>
             <article class="achievement-card">
-              <img src="../assets/opals_rc_accuracy.png" alt="Opals.jl reservoir computing accuracy comparison">
+              <img src="../assets/opal_rc_efficiency.png" alt="Opals.jl reservoir computing efficiency comparison">
               <p class="card-kicker">Reservoir computing</p>
               <h2 class="card-title">A reservoir-computing module that beats ReservoirComputing.jl</h2>
-              <p>Wrote the echo-state network for Opals.jl's bias correction from scratch instead of depending on ReservoirComputing.jl, the usual go-to in Julia. With recycle-validation training it comes out both more accurate and cheaper to train. That kind of comparison matters if you take reservoir computing seriously as a field in its own right, not just as a footnote to deep learning.</p>
+              <p>Wrote the echo-state network for Opals.jl's bias correction from scratch instead of depending on ReservoirComputing.jl, the standard Julia library for reservoir computing. In benchmarks reported in the Opals.jl paper, it beats ReservoirComputing.jl on both accuracy and training efficiency.</p>
             </article>
             <article class="achievement-card">
-              <img src="../assets/opals_navier_stokes.png" alt="Reynolds number discovery in a turbulent flow">
+              <img src="../assets/opal_navier_stokes.png" alt="Reynolds number discovery in a turbulent flow">
               <p class="card-kicker">Data assimilation</p>
               <h2 class="card-title">Finding the hidden Reynolds number of a turbulent flow</h2>
               <p>An ensemble Kalman filter recovers the inflow velocity and viscosity of a turbulent Navier-Stokes flow (~6500 DOFs) from sparse, noisy sensors. The innovation statistics check out too: they come out about as Gaussian as the filter assumes.</p>
             </article>
             <article class="achievement-card">
-              <img src="../assets/opals_heateq.png" alt="Kriging-calibrated ROM surrogate in a data assimilation loop">
+              <img src="../assets/opal_heateq.png" alt="Kriging-calibrated ROM surrogate in a data assimilation loop">
               <p class="card-kicker">ROM-accelerated forecasting</p>
               <h2 class="card-title">Swapping a full-order PDE solver for a reduced-order one, mid-pipeline</h2>
               <p>A GridapROMs.jl surrogate drops into an Opals.jl assimilation loop in place of the full finite-element solver, with no change to the driver code. Memory use drops roughly 15x, and kriging calibration recovers most of the accuracy that would otherwise be lost.</p>
