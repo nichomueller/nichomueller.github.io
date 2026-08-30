@@ -74,6 +74,20 @@
                 <span class="mini-chip">Lazy evaluation</span>
               </div>
             </article>
+            <article class="publication-card publication-card--wide">
+              <div>
+                <p class="card-kicker">Data assimilation note</p>
+                <h2 class="card-title">Why reservoir computing fits naturally inside a bias-aware Kalman filter</h2>
+                <p class="publication-meta">Kalman filters assume the innovation, the gap between an observation and the model's prediction, is zero-mean Gaussian. A structural bias in the sensor or the model breaks that assumption outright, and the filter never really converges: it keeps correcting toward a systematically wrong target. Bias-aware filtering fixes this by modelling the bias itself, but that model needs to be retrained as new data comes in, and its Jacobian with respect to the forecast state is needed at every analysis step.</p>
+                <p class="publication-meta">As suggested in <a href="https://www.sciencedirect.com/science/article/pii/S0045782523006266">Novoa et al.</a>, an echo state network is a good fit for this because only the linear readout is trained; the recurrent reservoir weights stay fixed and random. Training reduces to a ridge regression problem instead of anything resembling backpropagation through time, which is cheap enough to redo repeatedly (Opals.jl uses a recycle-validation strategy for this), and the Jacobian of a linear-readout network is trivial to compute, which is exactly what the bias-aware correction step needs.</p>
+                <p class="publication-meta">The Opals.jl paper demonstrates this on a Van der Pol oscillator with a sensor corrupted by a cosine bias term. The bias-unaware EnKF diverges, since the biased observations never let the innovation settle into the zero-mean Gaussian the filter assumes. Adding the ESN-based bias correction fixes that directly: the innovation distribution becomes Gaussian again, and the filter converges on the true state and parameters.</p>
+              </div>
+              <div class="publication-actions">
+                <span class="mini-chip">Opals.jl</span>
+                <span class="mini-chip">Reservoir computing</span>
+                <a href="https://arxiv.org/abs/2608.24265">Preprint</a>
+              </div>
+            </article>
           </section>
         </div>
       </main>
