@@ -24,7 +24,6 @@
         <a href="achievements/">Achievements</a>
         <a href="software/">Software</a>
         <a href="publications/">Publications</a>
-        <a href="notes/">Notes</a>
         <a href="contact/">Contact</a>
       </nav>
     </header>
@@ -52,7 +51,7 @@
           <section class="hero">
             <div class="hero__copy">
               <p class="eyebrow">About</p>
-              <p class="hero__lead">I'm an applied mathematician and engineer working on data-driven simulation of physical systems, combining reduced-order modeling, data assimilation, and machine learning with physics-based solvers across diverse engineering and scientific applications. Ultimately, I want to develop technologies that help us understand and address the challenges of climate change and contribute to a more sustainable future for everyone.</p>
+              <p class="hero__lead">I'm an applied mathematician and engineer working on data-driven simulation of physical systems. I combine reduced-order modelling, data assimilation, and machine learning with physics-based solvers across diverse engineering and scientific applications. Ultimately, I want to develop technologies that help us understand and address the challenges of climate change and contribute to a more sustainable future for everyone.</p>
               <div class="cta-row">
                 <a class="button" href="cv/">View CV</a>
                 <a class="button--ghost" href="software/">Explore Software</a>
@@ -70,23 +69,23 @@
             <div class="card-grid">
               <article class="feature-card">
                 <p class="card-kicker">Simulation Systems</p>
-                <h3 class="card-title">Reduced-order models for PDE workflows that are otherwise too slow to iterate on</h3>
-                <p>I build simulation pipelines that go from a full finite element solver down to a low-dimensional approximation, without throwing away the physics, so calibration and design loops that used to take hours run in seconds.</p>
+                <h3 class="card-title">Reduced-order models for the efficient solution of large-scale problems</h3>
+                <p>I build cheap alternatives to the traditional, expensive simulation pipelines evaluating real-world physical systems, such as weather forecasting. Instead of requiring hours' (or days') worth of computations, reduced-order models take minutes to run, while still capturing the essential physics of the problem.</p>
               </article>
               <article class="feature-card">
                 <p class="card-kicker">Forecasting Pipelines</p>
-                <h3 class="card-title">Data assimilation and uncertainty quantification for operational settings</h3>
-                <p>I mostly work with Kalman-type filters, variational methods, and multi-fidelity algorithms. They all do roughly the same job: combine sparse, noisy observations with a physical model so the resulting prediction comes with a confidence interval you can trust.</p>
+                <h3 class="card-title">Data assimilation and uncertainty quantification for digital twins</h3>
+                <p>These techniques combine sparse, noisy observations with a physical model to produce unknown quantities of interest and their uncertainty. A typical example: given a few imperfect measurements of wind speed and humidity in a given region, what is the most likely state of the atmosphere, and how confident can we be in that estimate? To answer this, I develop Bayesian methods, variational approaches and other staples of modern data science.</p>
               </article>
               <article class="feature-card">
                 <p class="card-kicker">Scientific Software</p>
-                <h3 class="card-title">Research code that behaves like engineering software</h3>
-                <p>I develop performant scientific software grounded in mathematical rigor and designed to deliver meaningful results across a range of engineering and scientific applications. I build with reproducibility, testing, and documentation in mind from the outset, and I make my work open source so that it can be used, extended, and built upon by anyone interested.</p>
+                <h3 class="card-title">Building performant, reliable software for the scientific community</h3>
+                <p>I develop performant scientific software that is designed to deliver meaningful results across a range of engineering and scientific applications. As I tackle primarily large-scale physical problems, HPC capabilities are a central feature of the code I write. I build with reproducibility and documentation from the outset, and I make my work open source so that it can be used, extended, and built upon by anyone interested.</p>
               </article>
               <article class="feature-card">
-                <p class="card-kicker">Compute Strategy</p>
-                <h3 class="card-title">HPC-aware implementations for large-scale models</h3>
-                <p>My day-to-day toolkit includes MPI, GPU-aware computing, and Slurm-based workflows. I use these tools to develop scalable methods that can move from small proof-of-concept problems to demanding scientific and engineering applications.</p>
+                <p class="card-kicker">Machine Learning</p>
+                <h3 class="card-title">Developing modern approaches for scientific applications</h3>
+                <p>The massive availability of data has opened up new opportunities for machine learning techniques. These present valid alternatives to traditional physics-based approaches, as they enable the discovery of patterns and relationships even in highly nonlinear regimes. Although it can sometimes be difficult to keep up with a field that seems to develop almost daily, I try to stay on top of these developments and actively explore and implement new methods in my research. As there is still a lot to discover, this is an exciting area to work in: there is still plenty of room to figure out what really works, when, and why.</p>
               </article>
             </div>
           </section>
@@ -95,7 +94,7 @@
             <article class="current-work-sticker">
               <p class="card-kicker">Current work</p>
               <h2 class="section-title">Digital twins for offshore renewable energy</h2>
-              <p class="section-intro">Right now that's DigiOcean4Solar, an NWO Vidi project that's building a digital framework to simulate how waves, wind, and floating solar platforms interact at the scale of a whole farm. One island's wake changes the conditions the next island downstream has to be designed for, and modeling the whole farm as a system is what makes that visible ahead of time. My part is the forecasting and uncertainty quantification layer that sits on top of that.</p>
+              <p class="section-intro">Right now that's DigiOcean4Solar, an NWO Vidi project that's building a digital framework to simulate how waves, wind, and floating solar platforms interact at the scale of a whole farm. One island's wake changes the conditions the next island downstream has to be designed for, and modelling the whole farm as a system is what makes that visible ahead of time. I work on the forecasting and uncertainty quantification side of the project, while also developing reduced-order models to make these incredibly expensive simulations computationally feasible. By bringing all these pieces together, we aspire to create an actual digital ocean for solar farms: a virtual farm whose state is known in near real time, continuously updated using information from remote sensors such as satellites.</p>
             </article>
           </section>
 
@@ -104,15 +103,15 @@
               <div class="section-head">
                 <div>
                   <p class="eyebrow">Selected Work</p>
-                  <h2 class="section-title">Software I actually use</h2>
+                  <h2 class="section-title">Software I currently develop</h2>
                 </div>
               </div>
               <div class="media-grid">
                 <article class="project-card">
                   <img src="assets/gridaproms.png" alt="GridapROMs.jl">
                   <p class="card-kicker">GridapROMs.jl</p>
-                  <h3 class="card-title">Reduced-order modeling toolkit for parameterised PDEs</h3>
-                  <p>Handles nonlinear, transient, and multi-field problems, with reduced-order algorithms that have achieved up to 100,000x speedups over full-order simulations.</p>
+                  <h3 class="card-title">Reduced-order modelling toolkit for parameterised PDEs</h3>
+                  <p>Repository of reduced-order models written in Julia. It tackles a wide range of applications, from electromagnetics to nonlinear fluid dynamics, from problems defined on moving geometries to ones partitioned across multiple processors in HPC-friendly environments. Speedups of several thousand times over full-order simulations are possible with these algorithms.</p>
                   <div class="project-links">
                     <a href="software/">Details</a>
                     <a href="https://github.com/gridap/GridapROMs.jl">Repository</a>
@@ -122,7 +121,7 @@
                   <img src="assets/opal.png" alt="Opal.jl">
                   <p class="card-kicker">Opal.jl</p>
                   <h3 class="card-title">Data assimilation across ODEs, PDEs, and reduced-order surrogates</h3>
-                  <p>Kalman, particle, and variational filters behind one interface, with add-ons for localisation, inflation, bias correction, and integration with ROM pipelines for efficiency.</p>
+                  <p>Data assimilation framework written in Julia. It tackles a wide range of problems, from ordinary differential equations to high-dimensional partial differential equations, from full-order models to reduced-order surrogates. Kalman, particle, and variational filters sit behind one interface, with add-ons for localisation, inflation, and bias correction, and direct integration with ROM pipelines for efficient simulation.</p>
                   <div class="project-links">
                     <a href="software/">Details</a>
                     <a href="https://github.com/nichomueller/Opal.jl">Repository</a>
@@ -172,11 +171,11 @@
               <article class="timeline-card">
                 <div class="timeline-meta">2022 - 2025</div>
                 <h3 class="card-title">PhD in Applied Mathematics, Monash University</h3>
-                <p>Built reduced-order methods, novel tensor-based compression workflows, unfitted finite element techniques, and scientific software for parameterised PDEs and computational fluid dynamics.</p>
+                <p>Built reduced-order methods, novel tensor-based compression workflows, unfitted finite element techniques, and scientific software for parameterised PDEs, especially in the context of computational fluid dynamics.</p>
               </article>
               <article class="timeline-card">
                 <div class="timeline-meta">2020 - 2021</div>
-                <h3 class="card-title">R&amp;D internship at CSEM</h3>
+                <h3 class="card-title">R&amp;D internship at CSEM (Swiss Center for Electronics and Microtechnology)</h3>
                 <p>Worked on topology optimisation for compliant aerospace mechanisms under manufacturing and stress constraints, connecting numerical methods to engineering requirements.</p>
               </article>
             </div>
@@ -185,31 +184,27 @@
           <section class="section">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Notes</p>
-                <h2 class="section-title">Short writing on methods, software, and modeling practice</h2>
+                <p class="eyebrow">Thoughts</p>
+                <h2 class="section-title">A few things I've learned along the way</h2>
               </div>
-              <a class="button--ghost" href="notes/">See all notes</a>
             </div>
+
             <div class="card-grid">
               <article class="info-card note-card">
-                <p class="card-kicker">Project note</p>
-                <h3 class="card-title">Building scientific software that lasts</h3>
-                <p>A short piece on how thoughtful interfaces, testing, and benchmarking help turn research ideas into reliable tools for the wider scientific community.</p>
+                <h3 class="card-title">Research doesn't end with the method</h3>
+                <p>A mathematical method is only the beginning. I care about turning it into software that is clear enough to understand, robust enough to reuse, and flexible enough to apply beyond the problem that motivated it. Good architecture, testing, examples, and performance are part of the research too.</p>
               </article>
               <article class="info-card note-card">
-                <p class="card-kicker">Performance note</p>
-                <h3 class="card-title">The optimization behind GridapROMs.jl that isn't parallelism</h3>
-                <p>A specific implementation trick from the GridapROMs.jl paper: reordering a loop, not parallelizing it, is what drives the memory savings.</p>
+                <h3 class="card-title">Sometimes the best optimisation isn't more computing power</h3>
+                <p>In GridapROMs.jl, a simple change in the order of the loops turned out to matter more than parallelising them. Reusing local finite-element data across parameter values cuts memory use dramatically without changing the underlying mathematics. A useful reminder that performance often starts with looking carefully at how a computation is organised.</p>
               </article>
               <article class="info-card note-card">
-                <p class="card-kicker">Data assimilation note</p>
-                <h3 class="card-title">Why reservoir computing fits naturally inside a bias-aware Kalman filter</h3>
-                <p>Only the linear readout of an echo state network needs training, which is what makes it cheap enough to retrain repeatedly inside a filtering loop. From the Opals.jl paper.</p>
+                <h3 class="card-title">Simple models can be surprisingly powerful</h3>
+                <p>Reservoir computing is a good example. Only the linear readout of an echo state network needs to be trained, making it cheap enough to retrain repeatedly inside a data-assimilation loop. That simplicity makes it a natural fit for bias correction, where the model has to keep adapting as new observations arrive.</p>
               </article>
               <article class="info-card note-card">
-                <p class="card-kicker">Orientation</p>
-                <h3 class="card-title">The whole pipeline, start to finish</h3>
-                <p>My work spans mathematical modelling, numerical methods, and software engineering, from formulating a method on paper through to a package other people install and use.</p>
+                <h3 class="card-title">There is still a lot we don't know</h3>
+                <p>Machine learning and reduced-order modelling are developing incredibly quickly, and it can be difficult to keep up. I try to stay close to these developments and explore them in my research, but I don't think we are anywhere near having a method that works reliably for every problem. There is still plenty to learn about where each one holds up and where it doesn't.</p>
               </article>
             </div>
           </section>
