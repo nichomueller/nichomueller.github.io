@@ -26,7 +26,6 @@ jobs:
         cp -r publications __site/publications
         cp -r software __site/software
         cp -r achievements __site/achievements
-        cp -r notes __site/notes
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
