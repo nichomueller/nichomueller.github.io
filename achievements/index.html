@@ -60,20 +60,40 @@
           <section class="section">
             <article class="achievement-card">
               <p class="card-kicker">Geometric flexibility</p>
-              <h2 class="card-title">Reduced basis methods that survive a changing geometry</h2>
-              <p>Standard reduced basis methods assume the mesh stays fixed, which breaks the moment the domain's shape becomes a parameter itself. Combining unfitted finite elements with a mapping back to a reference domain avoids remeshing every time the geometry changes, while keeping the reduced solution close to the full-order one, down to pointwise errors on the order of 10<sup>-4</sup>–10<sup>-5</sup> even near the hole boundary, where the geometry variation is largest.</p>
+              <h2 class="card-title">Reduced order models built for changing geometries</h2>
+              <p>Standard reduced order models assume the mesh stays fixed, which breaks the moment the domain's shape becomes a parameter itself. Combining unfitted finite elements with a mapping back to a reference domain avoids remeshing every time the geometry changes, while keeping the reduced solution close to the full-order one, down to pointwise errors on the order of 10<sup>-3</sup>–10<sup>-4</sup> even near the hole boundary, where the geometry variation is largest.</p>
               <img src="../assets/unfitted_stokes.png" alt="Unfitted Stokes results on a parameterised domain with a hole">
-              <p class="figure-caption">Full-order (u(μ), p(μ)) vs. reduced-order velocity and pressure fields on a square domain with a parameterised circular hole, and the corresponding pointwise errors at two POD tolerances.</p>
+              <p class="figure-caption">Full-order vs. reduced-order velocity and pressure fields on a square domain with a parameterised circular hole, and the corresponding pointwise errors at two different accuracy levels.</p>
             </article>
           </section>
 
           <section class="section">
             <article class="achievement-card">
               <p class="card-kicker">Haemodynamics</p>
-              <h2 class="card-title">Space-time reduced-order models for pulsatile blood flow</h2>
-              <p>Unsteady haemodynamics is a natural stress test for space-time reduction: the flow is pulsatile, the geometry is a vessel bifurcation rather than a simple pipe, and wall shear stress, the quantity clinicians actually care about, is sensitive to exactly the kind of error a reduced model can introduce. Both space-time strategies reproduce the full-order velocity, pressure, and WSS fields closely across two very different flow regimes, without needing a separate reduced basis at every time step.</p>
-              <img src="../assets/errors_Stokes.png" alt="Space-time reduced-order results on a vessel bifurcation">
-              <p class="figure-caption">Reduced-order reconstructions of velocity, pressure, and wall shear stress (WSS) on a bifurcating vessel geometry, comparing the ST-GRB (left) and ST-PGRB (right) space-time reduction strategies across a high-flow and a low-flow regime.</p>
+              <h2 class="card-title">Space-time reduced-order models for haemodynamic simulations in patient-specific arteries</h2>
+              <p>This is the first space-time reduced-order method built specifically for haemodynamics: the physics describing how blood flows through the body over time. The reduced-order model reconstructs the full-order velocity, pressure, and wall shear stress fields efficiently and accurately, on a vessel bifurcation geometry. Wall shear stress in particular is the field clinicians actually care about, since it's linked to vessel damage and disease risk.</p>
+              <img src="../assets/errors_Stokes_pgrb.png" alt="Reduced-order velocity, pressure, and wall shear stress fields on a vessel bifurcation, with the corresponding errors">
+              <p class="figure-caption">Velocity, pressure, and wall shear stress on a vessel bifurcation. Top row: values reconstructed by the reduced-order model. Bottom row: the corresponding error against the full-order (FEM) solution, on a much smaller scale.</p>
+            </article>
+          </section>
+
+          <section class="section">
+            <article class="achievement-card">
+              <p class="card-kicker">Data assimilation</p>
+              <h2 class="card-title">Finding the hidden Reynolds number of a turbulent flow</h2>
+              <p>An ensemble Kalman filter recovers the inflow velocity and viscosity of a turbulent Navier-Stokes flow (~6500 DOFs) from sparse, noisy sensors, without ever being told the Reynolds number directly. The innovation statistics check out too: they come out about as Gaussian as the filter assumes, which is the sign that its underlying assumptions actually hold for this problem.</p>
+              <img src="../assets/opal_navier_stokes_grid.png" alt="Reynolds number discovery in a turbulent flow">
+              <p class="figure-caption">Ensemble Kalman filter estimates for a turbulent Navier-Stokes flow. Top row: inflow velocity and viscosity. Bottom row: a sensor observation and the resulting innovation density.</p>
+            </article>
+          </section>
+
+          <section class="section">
+            <article class="achievement-card">
+              <p class="card-kicker">Data assimilation</p>
+              <h2 class="card-title">Constructing a filter aware of sensor bias</h2>
+              <p>Here the sensor on a Van der Pol oscillator reports a biased version of the true state, not just a noisy one. A Kalman-type filter assumes the innovation, observation minus prediction, is zero-mean Gaussian, and a biased sensor breaks that outright: the bias-unaware filter above converges to a self-consistent but wrong periodic solution. Adding an echo-state network to model the bias itself, re-evaluated as new data arrives, fixes this directly. The bias-aware filter recovers the true state and parameters, and the innovation becomes the Gaussian distribution the filter was assuming all along.</p>
+              <img src="../assets/opal_van_der_pol_grid.png" alt="Bias-aware EnKF on a Van der Pol oscillator with a biased sensor">
+              <p class="figure-caption">True (black) vs. bias-unaware EnKF (red) vs. bias-aware EnKF (blue). Top row: an estimated parameter (x1) and state (x4). Bottom row: the reconstructed observation and the innovation density each filter produces.</p>
             </article>
           </section>
 
@@ -85,7 +105,7 @@
               <div class="achievement-figs">
                 <div>
                   <img src="../assets/opal_rc_accuracy.png" alt="Reservoir computing accuracy comparison">
-                  <p class="figure-caption">Forecasting the Hopf bifurcation system (x(t), y(t)) and the resulting RMSE over 1250 forecast steps: Opal.jl's echo-state network, plain and with recycle-validation (RV) training, vs. ReservoirComputing.jl.</p>
+                  <p class="figure-caption">Forecasting the Hopf bifurcation system over 1250 forecast steps: Opal.jl's echo-state network, plain and with recycle-validation (RV) training, vs. ReservoirComputing.jl.</p>
                 </div>
                 <div>
                   <img src="../assets/opal_rc_efficiency.png" alt="Reservoir computing training and forecast efficiency comparison">
@@ -95,25 +115,6 @@
             </article>
           </section>
 
-          <section class="section">
-            <article class="achievement-card">
-              <p class="card-kicker">Data assimilation</p>
-              <h2 class="card-title">Finding the hidden Reynolds number of a turbulent flow</h2>
-              <p>An ensemble Kalman filter recovers the inflow velocity and viscosity of a turbulent Navier-Stokes flow (~6500 DOFs) from sparse, noisy sensors, without ever being told the Reynolds number directly. The innovation statistics check out too: they come out about as Gaussian as the filter assumes, which is the sign that its underlying assumptions actually hold for this problem.</p>
-              <img src="../assets/opal_navier_stokes.png" alt="Reynolds number discovery in a turbulent flow">
-              <p class="figure-caption">Ensemble Kalman filter estimates of the inflow velocity, the viscosity, and a sensor observation, plus the resulting innovation density, for a turbulent Navier-Stokes flow.</p>
-            </article>
-          </section>
-
-          <section class="section">
-            <article class="achievement-card">
-              <p class="card-kicker">Data assimilation</p>
-              <h2 class="card-title">Correcting a biased sensor instead of just filtering around it</h2>
-              <p>Here the sensor on a Van der Pol oscillator reports a biased version of the true state, not just a noisy one. A Kalman-type filter assumes the innovation, observation minus prediction, is zero-mean Gaussian, and a biased sensor breaks that outright: the bias-unaware filter above converges to a self-consistent but wrong periodic solution. Adding an echo-state network to model the bias itself, retrained as new data arrives, fixes this directly. The bias-aware filter recovers the true state and parameters, and the innovation becomes the Gaussian distribution the filter was assuming all along.</p>
-              <img src="../assets/opal_van_der_pol.png" alt="Bias-aware EnKF on a Van der Pol oscillator with a biased sensor">
-              <p class="figure-caption">From left to right: estimated parameter x1, state x4, and reconstructed observation, true (black) vs. bias-unaware EnKF (red) vs. bias-aware EnKF (blue); and the innovation density each filter produces.</p>
-            </article>
-          </section>
         </div>
       </main>
     </div>
