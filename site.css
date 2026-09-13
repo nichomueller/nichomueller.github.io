@@ -477,13 +477,8 @@ img {
 
 .achievement-figs {
   display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-
-.achievement-figs > div {
-  flex: 1 1 320px;
-  min-width: 0;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .figure-caption {
