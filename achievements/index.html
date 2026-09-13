@@ -43,11 +43,11 @@
             <article class="achievement-card">
               <p class="card-kicker">Software platform</p>
               <h2 class="card-title">The first reduced-order modelling library combining comprehensiveness, modularity, and high-level API</h2>
-              <p>GridapROMs.jl separates the full-order solver, the reduced-basis construction, and the reduced online solve into distinct layers, so switching a driver script from a full-order run to a reduced one is a one-line change. That architecture is only useful if the offline stage is actually cheap: assembling a residual or Jacobian at hundreds of parameter values means looping over mesh cells and parameters together, and the naive way to do that (loop over parameters, rebuild element data every time) gets expensive fast. GridapROMs.jl instead loops over cells once and reuses lazily-evaluated element caches across every parameter value. The result, shown on the right, is that memory use stays nearly flat as the mesh is refined, since the cost is dominated by reusable per-cell caches rather than per-parameter storage; only wall time grows. Combined, these choices give reduced-order algorithms that have achieved up to 100,000x speedups over full-order simulations.</p>
+              <p>GridapROMs.jl is, as far as I know, the first reduced-order modelling library to combine this much breadth with an interface that is genuinely easy to use. This was also a major design objective of GridapROMs.jl's parent library, Gridap.jl, and which I extended to tackle parameterised equations in a reduced-order context. It supports POD, Tucker, tensor-train, interpolation, and localised subspace strategies, all exposed through the same high-level API, so moving between them is a matter of changing how the reduced space is built, not rewriting the surrounding code. That combination of comprehensiveness and modularity is what makes it practical on real problems: reduced-order algorithms built with the library have achieved speedups several thousand times over full-order simulations.</p>
               <div class="achievement-figs">
                 <div>
                   <img src="../assets/scheme_Julia.png" alt="GridapROMs.jl architecture diagram">
-                  <p class="figure-caption">Overview of GridapROMs.jl's interface.</p>
+                  <p class="figure-caption">Overview of GridapROMs.jl's structure. The user defines reduced-order models which rely on a layer of lower-level high-fidelity operations, ranging from integration to solution of the parameterised systems of interest.</p>
                 </div>
                 <div>
                   <img src="../assets/cost_Julia.png" alt="Time and memory cost of parametric assembly">
@@ -71,9 +71,9 @@
             <article class="achievement-card">
               <p class="card-kicker">Haemodynamics</p>
               <h2 class="card-title">Space-time reduced-order models for haemodynamic simulations in patient-specific arteries</h2>
-              <p>This is the first space-time reduced-order method built specifically for haemodynamics: the physics describing how blood flows through the body over time. The reduced-order model reconstructs the full-order velocity, pressure, and wall shear stress fields efficiently and accurately, on a vessel bifurcation geometry. Wall shear stress in particular is the field clinicians actually care about, since it's linked to vessel damage and disease risk.</p>
+              <p>This is the first space-time reduced basis method built specifically for haemodynamics: the physics describing how blood flows through the body over time. The reduced-order model efficiently and accurately reconstructs the full-order velocity, pressure, and wall shear stress fields, on different patient-specific vessels.</p>
               <img src="../assets/errors_Stokes_pgrb.png" alt="Reduced-order velocity, pressure, and wall shear stress fields on a vessel bifurcation, with the corresponding errors">
-              <p class="figure-caption">Velocity, pressure, and wall shear stress on a vessel bifurcation. Top row: values reconstructed by the reduced-order model. Bottom row: the corresponding error against the full-order (FEM) solution, on a much smaller scale.</p>
+              <p class="figure-caption">Velocity, pressure, and wall shear stress on a vessel bifurcation. Top row: values reconstructed by the reduced-order model. Bottom row: the corresponding error against the full-order (FEM) solution.</p>
             </article>
           </section>
 
