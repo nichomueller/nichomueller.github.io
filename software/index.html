@@ -20,7 +20,7 @@
       <nav class="nav" aria-label="Primary">
         <a href="../index.html">Home</a>
         <a href="../cv/">CV</a>
-        <a href="../achievements/">Achievements</a>
+        <a href="../achievements/">Contributions</a>
         <a class="active" href="./">Software</a>
         <a href="../publications/">Publications</a>
         <a href="../contact/">Contact</a>
@@ -52,11 +52,10 @@
                 <img src="../assets/gridaproms.png" alt="GridapROMs.jl screenshot">
                 <p class="card-kicker">Author</p>
                 <h2 class="card-title">GridapROMs.jl</h2>
-                <p>A Julia package for reduced-order modelling of parameterised PDEs, covering steady or transient, linear or nonlinear, single- or multi-field problems. Its reduced-order algorithms have achieved speedups several thousand times over full-order simulations.</p>
+                <p>A Julia package for reduced-order modelling of parameterised PDEs. It covers a wide range of equations, ranging from electromagnetics to nonlinear fluid dynamics, steady or transient, single- or multi-field, including problems posed on moving geometries. Its reduced-order algorithms have achieved speedups several thousand times over full-order simulations.</p>
                 <ul class="detail-list">
-                  <li>POD, Tucker, tensor-train, interpolation, and localised subspace strategies, all behind the same interface.</li>
-                  <li>Distributed-memory snapshot generation, because the offline stage is usually the bottleneck.</li>
-                  <li>A high-level API I've kept readable on purpose, even as the internals got more complicated.</li>
+                  <li>POD, Tucker, tensor-train, interpolation, and localised subspace strategies, all behind the same high-level, readable interface.</li>
+                  <li>Distributed-memory (MPI) snapshot generation for the offline stage; newer than the rest of the library and still maturing.</li>
                 </ul>
                 <div class="project-links">
                   <a href="https://github.com/gridap/GridapROMs.jl">Repository</a>
@@ -78,6 +77,16 @@
                 <div class="project-links">
                   <a href="https://github.com/nichomueller/Opal.jl">Repository</a>
                   <a href="https://nicholasmueller.co/Opal.jl/dev/">Documentation</a>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <img src="../assets/nonlinearroms.png" alt="NonlinearROMs.jl (work in progress)">
+                <p class="card-kicker">Author &middot; Work in progress</p>
+                <h2 class="card-title">NonlinearROMs.jl</h2>
+                <p>A Julia package for nonlinear, deep-learning-based reduced-order models, currently under active development. The focus is neural operators: Fourier neural operators (FNOs) and NOMADs are already implemented, DeepONets are in too, and graph neural operators (GNOs) are next.</p>
+                <div class="project-links">
+                  <a href="https://github.com/nichomueller/NonlinearROMs.jl">Repository</a>
                 </div>
               </article>
             </div>
