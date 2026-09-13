@@ -456,14 +456,46 @@ img {
   line-height: 1.75;
 }
 
-.project-card img,
-.achievement-card img {
+.project-card img {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   margin-bottom: 16px;
   border-radius: 18px;
   box-shadow: 0 14px 34px rgba(20, 24, 25, 0.12);
+}
+
+.achievement-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 8px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.achievement-figs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.achievement-figs > div {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.figure-caption {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.achievement-card .card-title {
+  margin-top: 4px;
 }
 
 .project-links,

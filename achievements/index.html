@@ -39,60 +39,79 @@
           <p class="eyebrow">Achievements</p>
           <h1 class="page-title">A few things worth pointing to</h1>
 
-          <section class="section media-grid">
+          <section class="section">
             <article class="achievement-card">
-              <img src="../assets/scheme_Julia.png" alt="GridapROMs architecture">
               <p class="card-kicker">Software platform</p>
-              <h2 class="card-title">A full reduced-order modelling library in Julia</h2>
-              <p>GridapROMs.jl's reduced-order algorithms have achieved up to 100,000x speedups over full-order simulations.</p>
+              <h2 class="card-title">A reduced-order modelling library built to actually be fast</h2>
+              <div class="achievement-figs">
+                <div>
+                  <img src="../assets/scheme_Julia.png" alt="GridapROMs.jl architecture diagram">
+                  <p class="figure-caption">GridapROMs.jl's offline/online split: full-order (HF) code, RB construction, and RB assembly/solve sit behind one interface, so a driver script can swap a full-order solve for a reduced one without changes elsewhere.</p>
+                </div>
+                <div>
+                  <img src="../assets/cost_Julia.png" alt="Time and memory cost of parametric assembly">
+                  <p class="figure-caption">Wall time and memory for assembling a parametric residual/Jacobian, GridapROMs.jl (dots) vs. a naive per-parameter loop (lines), across three mesh resolutions (h) and up to 600 parameters.</p>
+                </div>
+              </div>
+              <p>GridapROMs.jl separates the full-order solver, the reduced-basis construction, and the reduced online solve into distinct layers, so switching a driver script from a full-order run to a reduced one is a one-line change. That architecture is only useful if the offline stage is actually cheap: assembling a residual or Jacobian at hundreds of parameter values means looping over mesh cells and parameters together, and the naive way to do that (loop over parameters, rebuild element data every time) gets expensive fast. GridapROMs.jl instead loops over cells once and reuses lazily-evaluated element caches across every parameter value. The result, shown on the right, is that memory use stays nearly flat as the mesh is refined, since the cost is dominated by reusable per-cell caches rather than per-parameter storage; only wall time grows. Combined, these choices give reduced-order algorithms that have achieved up to 100,000x speedups over full-order simulations.</p>
             </article>
+          </section>
+
+          <section class="section">
             <article class="achievement-card">
-              <img src="../assets/cost_Julia.png" alt="Performance benchmarks">
-              <p class="card-kicker">Performance engineering</p>
-              <h2 class="card-title">Lowering the cost of high-fidelity data generation</h2>
-              <p>Building the training data for a reduced model is usually the slow part. Lazy evaluations and distributed workflows brought that cost down significantly.</p>
-            </article>
-            <article class="achievement-card">
-              <img src="../assets/unfitted_stokes.png" alt="Unfitted Stokes results">
+              <img src="../assets/unfitted_stokes.png" alt="Unfitted Stokes results on a parameterised domain with a hole">
+              <p class="figure-caption">Full-order (u(μ), p(μ)) vs. reduced-order velocity and pressure fields on a square domain with a parameterised circular hole, and the corresponding pointwise errors at two POD tolerances.</p>
               <p class="card-kicker">Geometric flexibility</p>
-              <h2 class="card-title">Reduced basis methods on parameterised domains</h2>
-              <p>Combined unfitted finite elements with reference-domain mappings so a changing geometry doesn't force a remesh every time.</p>
+              <h2 class="card-title">Reduced basis methods that survive a changing geometry</h2>
+              <p>Standard reduced basis methods assume the mesh stays fixed, which breaks the moment the domain's shape becomes a parameter itself. Combining unfitted finite elements with a mapping back to a reference domain avoids remeshing every time the geometry changes, while keeping the reduced solution close to the full-order one, down to pointwise errors on the order of 10<sup>-4</sup>–10<sup>-5</sup> even near the hole boundary, where the geometry variation is largest.</p>
             </article>
+          </section>
+
+          <section class="section">
             <article class="achievement-card">
-              <img src="../assets/table_TT.png" alt="Tensor train results">
-              <p class="card-kicker">Compression strategy</p>
-              <h2 class="card-title">Tensor-train integration for faster reduced solvers</h2>
-              <p>Tensor-based workflows that cut both runtime and memory when building reduced spaces and hyper-reduced operators.</p>
+              <img src="../assets/errors_Stokes.png" alt="Space-time reduced-order results on a vessel bifurcation">
+              <p class="figure-caption">Reduced-order reconstructions of velocity, pressure, and wall shear stress (WSS) on a bifurcating vessel geometry, comparing the ST-GRB (left) and ST-PGRB (right) space-time reduction strategies across a high-flow and a low-flow regime.</p>
+              <p class="card-kicker">Haemodynamics</p>
+              <h2 class="card-title">Space-time reduced-order models for pulsatile blood flow</h2>
+              <p>Unsteady haemodynamics is a natural stress test for space-time reduction: the flow is pulsatile, the geometry is a vessel bifurcation rather than a simple pipe, and wall shear stress, the quantity clinicians actually care about, is sensitive to exactly the kind of error a reduced model can introduce. Both space-time strategies reproduce the full-order velocity, pressure, and WSS fields closely across two very different flow regimes, without needing a separate reduced basis at every time step.</p>
             </article>
+          </section>
+
+          <section class="section">
             <article class="achievement-card">
-              <img src="../assets/errors_Stokes.png" alt="Space-time reduced models">
-              <p class="card-kicker">Transient problems</p>
-              <h2 class="card-title">Space-time reduced-order methods for unsteady systems</h2>
-              <p>Methods for unsteady PDE problems that are cheaper to run without giving up accuracy.</p>
-            </article>
-            <article class="achievement-card">
-              <img src="../assets/topopt.png" alt="Topology optimisation result">
-              <p class="card-kicker">Industrial R&amp;D</p>
-              <h2 class="card-title">Topology optimisation for aerospace mechanisms</h2>
-              <p>A Matlab code for compliant mechanisms in satellite hardware, built around constraints that came from actual mechanical testing.</p>
-            </article>
-            <article class="achievement-card">
-              <img src="../assets/opal_rc_efficiency.png" alt="Opal.jl reservoir computing efficiency comparison">
+              <div class="achievement-figs">
+                <div>
+                  <img src="../assets/opal_rc_accuracy.png" alt="Reservoir computing accuracy comparison">
+                  <p class="figure-caption">Forecasting the Hopf bifurcation system (x(t), y(t)) and the resulting RMSE over 1250 forecast steps: Opal.jl's echo-state network, plain and with recycle-validation (RV) training, vs. ReservoirComputing.jl.</p>
+                </div>
+                <div>
+                  <img src="../assets/opal_rc_efficiency.png" alt="Reservoir computing training and forecast efficiency comparison">
+                  <p class="figure-caption">Training and forecast time and memory vs. reservoir size, log-log scale, Opal.jl vs. ReservoirComputing.jl.</p>
+                </div>
+              </div>
               <p class="card-kicker">Reservoir computing</p>
               <h2 class="card-title">A reservoir-computing module that beats ReservoirComputing.jl</h2>
-              <p>Wrote the echo-state network for Opal.jl's bias correction from scratch instead of depending on ReservoirComputing.jl, the standard Julia library for reservoir computing. In benchmarks reported in the Opal.jl paper, it beats ReservoirComputing.jl on both accuracy and training efficiency.</p>
+              <p>Wrote the echo-state network used for Opal.jl's bias correction from scratch instead of depending on ReservoirComputing.jl, the standard Julia library for reservoir computing. With recycle-validation training it comes out both more accurate and cheaper to train and forecast, across every reservoir size tested.</p>
             </article>
+          </section>
+
+          <section class="section">
             <article class="achievement-card">
               <img src="../assets/opal_navier_stokes.png" alt="Reynolds number discovery in a turbulent flow">
+              <p class="figure-caption">Ensemble Kalman filter estimates of the inflow velocity, the viscosity, and a sensor observation, plus the resulting innovation density, for a turbulent Navier-Stokes flow.</p>
               <p class="card-kicker">Data assimilation</p>
               <h2 class="card-title">Finding the hidden Reynolds number of a turbulent flow</h2>
-              <p>An ensemble Kalman filter recovers the inflow velocity and viscosity of a turbulent Navier-Stokes flow (~6500 DOFs) from sparse, noisy sensors. The innovation statistics check out too: they come out about as Gaussian as the filter assumes.</p>
+              <p>An ensemble Kalman filter recovers the inflow velocity and viscosity of a turbulent Navier-Stokes flow (~6500 DOFs) from sparse, noisy sensors, without ever being told the Reynolds number directly. The innovation statistics check out too: they come out about as Gaussian as the filter assumes, which is the sign that its underlying assumptions actually hold for this problem.</p>
             </article>
+          </section>
+
+          <section class="section">
             <article class="achievement-card">
-              <img src="../assets/opal_heateq.png" alt="Kriging-calibrated ROM surrogate in a data assimilation loop">
-              <p class="card-kicker">ROM-accelerated forecasting</p>
-              <h2 class="card-title">Swapping a full-order PDE solver for a reduced-order one, mid-pipeline</h2>
-              <p>A GridapROMs.jl surrogate drops into an Opal.jl assimilation loop in place of the full finite-element solver, with no change to the driver code. Memory use drops roughly 15x, and kriging calibration recovers most of the accuracy that would otherwise be lost.</p>
+              <img src="../assets/opal_van_der_pol.png" alt="Bias-aware EnKF on a Van der Pol oscillator with a biased sensor">
+              <p class="figure-caption">From left to right: estimated parameter x1, state x4, and reconstructed observation, true (black) vs. bias-unaware EnKF (red) vs. bias-aware EnKF (blue); and the innovation density each filter produces.</p>
+              <p class="card-kicker">Data assimilation</p>
+              <h2 class="card-title">Correcting a biased sensor instead of just filtering around it</h2>
+              <p>Here the sensor on a Van der Pol oscillator reports a biased version of the true state, not just a noisy one. A Kalman-type filter assumes the innovation, observation minus prediction, is zero-mean Gaussian, and a biased sensor breaks that outright: the bias-unaware filter above converges to a self-consistent but wrong periodic solution. Adding an echo-state network to model the bias itself, retrained as new data arrives, fixes this directly. The bias-aware filter recovers the true state and parameters, and the innovation becomes the Gaussian distribution the filter was assuming all along.</p>
             </article>
           </section>
         </div>
