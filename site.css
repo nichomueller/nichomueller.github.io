@@ -280,7 +280,6 @@ img {
 
 .hero__lead,
 .page-lead {
-  max-width: 62ch;
   margin: 0;
   color: var(--muted);
   font-size: 1.08rem;
@@ -481,6 +480,25 @@ img {
   text-decoration: none;
 }
 
+.contact-links button {
+  font: inherit;
+  font-weight: 700;
+  color: var(--brand);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.contact-links button:hover,
+.contact-links button:focus-visible {
+  color: var(--brand-strong);
+}
+
+.contact-links button[data-copied="true"] {
+  color: var(--accent);
+}
+
 .tag-list,
 .publication-actions {
   display: flex;
@@ -585,10 +603,6 @@ img {
 .current-work-sticker .section-intro,
 .current-work-sticker .section-title {
   color: #f8f4ee;
-}
-
-.current-work-sticker .section-intro {
-  max-width: 72ch;
 }
 
 .site-footer {
