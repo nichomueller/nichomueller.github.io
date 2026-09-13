@@ -52,10 +52,11 @@
                 <img src="../assets/gridaproms.png" alt="GridapROMs.jl screenshot">
                 <p class="card-kicker">Author</p>
                 <h2 class="card-title">GridapROMs.jl</h2>
-                <p>A Julia package for reduced-order modelling of parameterised PDEs. It covers a wide range of equations, ranging from electromagnetics to nonlinear fluid dynamics, steady or transient, single- or multi-field, including problems posed on moving geometries. Its reduced-order algorithms have achieved speedups several thousand times over full-order simulations.</p>
+                <p>A Julia package for reduced-order modelling of parameterised PDEs. It covers a wide range of equations, ranging from electromagnetics to nonlinear fluid dynamics, steady or transient, from problems defined on moving geometries to ones partitioned across multiple processors in HPC-friendly environments. Its reduced-order algorithms have achieved speedups several thousand times over full-order simulations.</p>
                 <ul class="detail-list">
                   <li>POD, Tucker, tensor-train, interpolation, and localised subspace strategies, all behind the same high-level, readable interface.</li>
                   <li>Distributed-memory (MPI) snapshot generation for the offline stage; newer than the rest of the library and still maturing.</li>
+                  <li>Lazy evaluation keeps the cost of generating training data under control, which matters most for large-scale problems, whether they're solved serially or in parallel.</li>
                 </ul>
                 <div class="project-links">
                   <a href="https://github.com/gridap/GridapROMs.jl">Repository</a>
