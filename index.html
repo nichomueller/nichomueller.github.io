@@ -197,15 +197,15 @@
               </article>
               <article class="info-card note-card">
                 <h3 class="card-title">Sometimes the best optimisation isn't more computing power</h3>
-                <p>In GridapROMs.jl, a simple change in the order of the loops turned out to matter more than parallelising them. Reusing local finite-element data across parameter values cuts memory use dramatically without changing the underlying mathematics. A useful reminder that performance often starts with looking carefully at how a computation is organised.</p>
+                <p>In GridapROMs.jl, a simple change in the order of <em>for</em> loops turned out to matter more than parallelising them. Looping over mesh cells on the outside and handling every parameter value together on the inside, through a lazy evaluation structure built on Gridap's lazy-array machinery, reuses local finite-element caches across parameter values and cuts memory use dramatically without changing the underlying mathematics. A useful reminder that performance often starts with looking carefully at how a computation is organised.</p>
               </article>
               <article class="info-card note-card">
                 <h3 class="card-title">Simple models can be surprisingly powerful</h3>
-                <p>Reservoir computing is a good example. Only the linear readout of an echo state network needs to be trained, making it cheap enough to retrain repeatedly inside a data-assimilation loop. That simplicity makes it a natural fit for bias correction, where the model has to keep adapting as new observations arrive.</p>
+                <p>Reservoir computing is a good example. Only the linear readout of an echo state network needs training, so it skips the expensive automatic differentiation most machine learning methods rely on and stays cheap to retrain. Echo state networks are also naturally suited to capturing time-evolving processes, which makes them a good fit for bias correction, where the model has to keep adapting as new observations arrive.</p>
               </article>
               <article class="info-card note-card">
                 <h3 class="card-title">There is still a lot we don't know</h3>
-                <p>Machine learning and reduced-order modelling are developing incredibly quickly, and it can be difficult to keep up. I try to stay close to these developments and explore them in my research, but I don't think we are anywhere near having a method that works reliably for every problem. There is still plenty to learn about where each one holds up and where it doesn't.</p>
+                <p>Machine learning algorithms used as reduced-order modelling tools are developing incredibly quickly, and it can be difficult to keep up. I try to stay close to these developments and explore them in my research, but I don't think we are near having a method that we understand well enough to trust reliably for every problem. There is still plenty to learn about where each approach holds up, where it doesn't, and why.</p>
               </article>
             </div>
           </section>

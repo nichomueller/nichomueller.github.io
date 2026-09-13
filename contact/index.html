@@ -43,13 +43,19 @@
               <p class="card-kicker">Institutional</p>
               <h2 class="card-title">TU Delft</h2>
               <p>n.mueller@tudelft.nl</p>
-              <div class="contact-links"><a href="mailto:n.mueller@tudelft.nl">Send email</a></div>
+              <div class="contact-links">
+                <a href="mailto:n.mueller@tudelft.nl">Send email</a>
+                <button type="button" class="copy-email" data-email="n.mueller@tudelft.nl">Copy email</button>
+              </div>
             </article>
             <article class="contact-card">
               <p class="card-kicker">Personal</p>
               <h2 class="card-title">Direct contact</h2>
               <p>nicholas@nicholasmueller.co</p>
-              <div class="contact-links"><a href="mailto:nicholas@nicholasmueller.co">Send email</a></div>
+              <div class="contact-links">
+                <a href="mailto:nicholas@nicholasmueller.co">Send email</a>
+                <button type="button" class="copy-email" data-email="nicholas@nicholasmueller.co">Copy email</button>
+              </div>
             </article>
             <article class="contact-card">
               <p class="card-kicker">Profiles</p>
@@ -72,5 +78,29 @@
 
     <footer class="site-footer">Nicholas Mueller. Contact.</footer>
   </div>
+
+  <script>
+    document.querySelectorAll('.copy-email').forEach(function (btn) {
+      var defaultLabel = btn.textContent;
+      btn.addEventListener('click', function () {
+        var email = btn.dataset.email;
+        var done = function () {
+          btn.textContent = 'Copied!';
+          btn.dataset.copied = 'true';
+          setTimeout(function () {
+            btn.textContent = defaultLabel;
+            btn.dataset.copied = 'false';
+          }, 1800);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(done).catch(function () {
+            window.prompt('Copy email:', email);
+          });
+        } else {
+          window.prompt('Copy email:', email);
+        }
+      });
+    });
+  </script>
 </body>
 </html>
